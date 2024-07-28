@@ -1,0 +1,13 @@
+{
+    "name": "Word Embedding t-SNE Plot",
+    "short_name": "t-SNE Plot",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "description": "A web app to visualize word embeddings using t-SNE.",
+    "icons": [{
+        "src": "favicon.ico",
+        "sizes": "64x64",
+        "type": "image/x-icon"
+    }]
+}
