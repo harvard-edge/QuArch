@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    position: relative;
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+    background: #B8B6B6;
+    color: white;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(10px);
+}
+
+.tooltip_3d {
+    position: absolute;
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 1px solid #ccc;
+    width: 250px;
+    right: 0;
+    top: 0;
+}
+
+.tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.revert-button,
+.button-3d {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.total-scattering-button {
+    position: absolute;
+    top: 10px;
+    left: 10px !important;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#categoryDropdown {
+    width: 200px;
+}
+
+.dropdowns {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdowns select,
+.dropdowns input {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.button-2d {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#model-dropdown,
+#set-dropdown {
+    margin-bottom: 10px;
+    /* Add space between dropdowns */
+}

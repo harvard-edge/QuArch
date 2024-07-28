@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Embedding t-SNE Plot</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="scatter_plot_js.js"></script>
+</head>
+<br>
+
+<body>
+    <div class="container" id="total-scattering-container">
+        <svg></svg>
+        <div class="tooltip"></div>
+        <button class="total-scattering-button" onclick="location.href='model_scattering_vis.html'">Model Scattering</button>
+    </div>
+    <button class="revert-button">All Datapoints</button>
+    <button class="button-3d" onclick="location.href='scatter_plot_vis_3d.html'">3D Visualization</button>
+    <br>
+    <script src="lib/tsne.js"></script>
+    <script type="module" src="scatter_plot_vis.js"></script>
+</body>
+
+</html>
