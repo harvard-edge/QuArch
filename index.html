@@ -18,9 +18,26 @@
     <script src="js/lib/tsne.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
+        /* Ensure the body doesn't exceed the viewport width */
+        
         body {
             max-width: 100%;
             overflow-x: hidden;
+            font-size: 16px;
+            /* Set a base font size */
+        }
+        /* Set a maximum width for main containers to prevent overflow */
+        
+        .container {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        /* Apply box-sizing to all elements for better control of sizes */
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
         }
         
         .masthead {
@@ -124,18 +141,6 @@
             text-align: center;
             white-space: nowrap;
             vertical-align: baseline;
-        }
-        
-        .container {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-        /* Apply box-sizing to all elements for better control of sizes */
-        
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
         }
         /* Example responsive design adjustments */
         
