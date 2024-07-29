@@ -24,7 +24,6 @@
             max-width: 100%;
             overflow-x: hidden;
             font-size: 16px;
-            /* Set a base font size */
         }
         /* Set a maximum width for main containers to prevent overflow */
         
@@ -43,7 +42,7 @@
         .masthead {
             background-color: #a70000;
             color: white;
-            padding: 30px 0;
+            padding: 20px 0;
         }
         
         .navbar {
@@ -65,7 +64,6 @@
         .visualization-container svg {
             width: 100%;
             height: 300px;
-            /* Reduced height */
         }
         
         .btn-primary {
@@ -83,26 +81,6 @@
             --bs-btn-disabled-color: #fff;
             --bs-btn-disabled-bg: #000000;
             --bs-btn-disabled-border-color: #000000;
-        }
-        
-        @media (min-width: 992px) {
-            header.masthead {
-                padding-top: 12.5rem;
-                padding-bottom: 8rem;
-            }
-            header.masthead .page-heading h1,
-            header.masthead .page-heading .h1,
-            header.masthead .site-heading h1,
-            header.masthead .site-heading .h1 {
-                font-size: 5rem;
-            }
-            header.masthead .post-heading h1,
-            header.masthead .post-heading .h1 {
-                font-size: 3.5rem;
-            }
-            header.masthead .post-heading .subheading {
-                font-size: 1.875rem;
-            }
         }
         
         .tooltip {
@@ -143,32 +121,6 @@
             white-space: nowrap;
             vertical-align: baseline;
         }
-        /* Example responsive design adjustments */
-        
-        @media (min-width: 576px) {
-            .container {
-                max-width: 540px;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .container {
-                max-width: 720px;
-            }
-        }
-        
-        @media (min-width: 992px) {
-            .container {
-                max-width: 960px;
-            }
-        }
-        
-        @media (min-width: 1200px) {
-            .container {
-                max-width: 1140px;
-            }
-        }
-        /* Ensure padding and margin for the main content are not excessive */
         
         .container {
             padding-left: 15px;
@@ -185,7 +137,6 @@
             padding-left: 15px;
             padding-right: 15px;
         }
-        /* Adjust padding and margin for list-group-item */
         
         .list-group-item {
             position: relative;
@@ -199,6 +150,18 @@
         
         .list-group-item+.list-group-item {
             border-top-width: 0;
+        }
+        
+        .site-heading h1 {
+            font-size: 2.5rem;
+        }
+        
+        .site-heading .subheading {
+            font-size: 1.25rem;
+        }
+        
+        .list-group-item h4 {
+            font-size: 1.5rem;
         }
     </style>
 </head>
