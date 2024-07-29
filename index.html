@@ -86,21 +86,21 @@
         
         @media (min-width: 992px) {
             header.masthead {
-                padding-top: 12.5rem;
-                padding-bottom: 8rem;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
             }
             header.masthead .page-heading h1,
             header.masthead .page-heading .h1,
             header.masthead .site-heading h1,
             header.masthead .site-heading .h1 {
-                font-size: 5rem;
+                font-size: 3rem;
             }
             header.masthead .post-heading h1,
             header.masthead .post-heading .h1 {
-                font-size: 3.5rem;
+                font-size: 2.5rem;
             }
             header.masthead .post-heading .subheading {
-                font-size: 1.875rem;
+                font-size: 1.5rem;
             }
         }
         
@@ -166,6 +166,23 @@
             .container {
                 max-width: 1140px;
             }
+        }
+        /* Ensure padding and margin for the main content are not excessive */
+        
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .col-lg-5,
+        .col-lg-7 {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     </style>
 </head>
