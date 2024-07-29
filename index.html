@@ -18,33 +18,10 @@
     <script src="js/lib/tsne.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
-        /* Ensure the body doesn't exceed the viewport width */
-        
-        body {
-            max-width: 100%;
-            overflow-x: hidden;
-            font-size: 14px;
-            /* Reduced font size */
-        }
-        /* Set a maximum width for main containers to prevent overflow */
-        
-        .container {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-        /* Apply box-sizing to all elements for better control of sizes */
-        
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-        
         .masthead {
             background-color: #a70000;
             color: white;
-            padding: 10px 0;
-            /* Reduced padding */
+            padding: 30px 0;
         }
         
         .navbar {
@@ -65,7 +42,7 @@
         
         .visualization-container svg {
             width: 100%;
-            height: 300px;
+            height: 500px;
         }
         
         .btn-primary {
@@ -83,6 +60,26 @@
             --bs-btn-disabled-color: #fff;
             --bs-btn-disabled-bg: #000000;
             --bs-btn-disabled-border-color: #000000;
+        }
+        
+        @media (min-width: 992px) {
+            header.masthead {
+                padding-top: 12.5rem;
+                padding-bottom: 8rem;
+            }
+            header.masthead .page-heading h1,
+            header.masthead .page-heading .h1,
+            header.masthead .site-heading h1,
+            header.masthead .site-heading .h1 {
+                font-size: 5rem;
+            }
+            header.masthead .post-heading h1,
+            header.masthead .post-heading .h1 {
+                font-size: 3.5rem;
+            }
+            header.masthead .post-heading .subheading {
+                font-size: 1.875rem;
+            }
         }
         
         .tooltip {
@@ -122,52 +119,6 @@
             text-align: center;
             white-space: nowrap;
             vertical-align: baseline;
-        }
-        
-        .container {
-            padding-left: 10px;
-            /* Reduced padding */
-            padding-right: 10px;
-            /* Reduced padding */
-        }
-        
-        .row {
-            margin-left: 0;
-            margin-right: 0;
-        }
-        
-        .col-lg-5,
-        .col-lg-7 {
-            padding-left: 10px;
-            /* Reduced padding */
-            padding-right: 10px;
-            /* Reduced padding */
-        }
-        
-        .list-group-item {
-            position: relative;
-            display: block;
-            padding: 10px 15px;
-            color: var(--bs-list-group-color);
-            background-color: var(--bs-list-group-bg);
-            border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
-            margin-bottom: 10px;
-        }
-        
-        .list-group-item+.list-group-item {
-            border-top-width: 0;
-        }
-        
-        .site-heading h1 {
-            font-size: 2.5rem;
-        }
-        
-        .site-heading .subheading {
-            font-size: 1.25rem;
-        }
-        
-        .list-group-item h4 {
-            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -228,60 +179,70 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+
                                     <tr>
                                         <td scope="row" class='align-middle text-center'>1<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
                                         <td class='align-middle text-center'>Arnav Raj<br/>
                                             <td class='align-middle text-center'>513</td>
                                     </tr>
+
                                     <tr style="background:#f4f4f4">
                                         <td scope="row" class='align-middle text-center'>2<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
                                         <td class='align-middle text-center'>Satyapragnya Kar Kar<br/>
                                             <td class='align-middle text-center'>447</td>
                                     </tr>
+
                                     <tr>
                                         <td scope="row" class='align-middle text-center'>3<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
                                         <td class='align-middle text-center'>skatel<br/>
                                             <td class='align-middle text-center'>376</td>
                                     </tr>
+
                                     <tr style="background:#f4f4f4">
                                         <td scope="row" class='align-middle text-center'>4<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
                                         <td class='align-middle text-center'>maneeshvaddi<br/>
                                             <td class='align-middle text-center'>364</td>
                                     </tr>
+
                                     <tr>
                                         <td scope="row" class='align-middle text-center'>5<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
                                         <td class='align-middle text-center'>Arjun Chitla<br/>
                                             <td class='align-middle text-center'>355</td>
                                     </tr>
+
                                     <tr style="background:#f4f4f4">
                                         <td scope="row" class='align-middle text-center'>6<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
                                         <td class='align-middle text-center'>f20201987<br/>
                                             <td class='align-middle text-center'>339</td>
                                     </tr>
+
                                     <tr>
                                         <td scope="row" class='align-middle text-center'>7<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
                                         <td class='align-middle text-center'>Vishnunand Pillai<br/>
                                             <td class='align-middle text-center'>321</td>
                                     </tr>
+
                                     <tr style="background:#f4f4f4">
                                         <td scope="row" class='align-middle text-center'>8<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
                                         <td class='align-middle text-center'>arnavbalyan1<br/>
                                             <td class='align-middle text-center'>308</td>
                                     </tr>
+
                                     <tr>
                                         <td scope="row" class='align-middle text-center'>9<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
                                         <td class='align-middle text-center'>keerthana s<br/>
                                             <td class='align-middle text-center'>184</td>
                                     </tr>
+
                                     <tr style="background:#f4f4f4">
                                         <td scope="row" class='align-middle text-center'>10<br>
                                             <span class="badge badge-secondary">July 22, 2024</span></td>
@@ -305,7 +266,7 @@
                             <a href="https://www.sigarch.org/architecture-2-0-why-computer-architects-need-a-data-centric-ai-gymnasium/"><button type="button" class="btn btn-primary">Architecture 2.0</button></a>
                         </p>
                     </div>
-                </div>
+                </div class="list-group">
                 <div class="list-group">
                     <div class="list-group-item">
                         <h4>Model Leaderboard</h4>
@@ -322,6 +283,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+
                                     <tr>
                                         <td scope="row" class='align-middle text-center'>1<br>
                                             <span class="badge badge-secondary">Nov 28, 2023</span></td>
@@ -332,6 +294,7 @@
                                         <td class='align-middle text-center'>0.0</td>
                                         <td class='align-middle text-center'>NA</td>
                                     </tr>
+
                                     <tr style="background:#f4f4f4">
                                         <td scope="row" class='align-middle text-center'>2<br>
                                             <span class="badge badge-secondary">May 16, 2023</span></td>
@@ -342,6 +305,7 @@
                                         <td class='align-middle text-center'>0.0</td>
                                         <td class='align-middle text-center'>NA</td>
                                     </tr>
+
                                     <tr>
                                         <td scope="row" class='align-middle text-center'>3<br>
                                             <span class="badge badge-secondary">Nov 27, 2023</span></td>
@@ -352,6 +316,7 @@
                                         <td class='align-middle text-center'>0.0</td>
                                         <td class='align-middle text-center'>NA</td>
                                     </tr>
+
                                     <tr style="background:#f4f4f4">
                                         <td scope="row" class='align-middle text-center'>4<br>
                                             <span class="badge badge-secondary">Jul 6, 2023</span></td>
@@ -362,6 +327,7 @@
                                         <td class='align-middle text-center'>0.0</td>
                                         <td class='align-middle text-center'>NA</td>
                                     </tr>
+
                                     <tr>
                                         <td scope="row" class='align-middle text-center'>5<br>
                                             <span class="badge badge-secondary">Dec 1, 2023</span></td>
@@ -372,6 +338,7 @@
                                         <td class='align-middle text-center'>0.0</td>
                                         <td class='align-middle text-center'>NA</td>
                                     </tr>
+
                                     <tr style="background:#f4f4f4">
                                         <td scope="row" class='align-middle text-center'>6<br>
                                             <span class="badge badge-secondary">Dec 1, 2023</span></td>
@@ -386,6 +353,7 @@
                             </table>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
