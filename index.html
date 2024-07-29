@@ -64,7 +64,8 @@
         
         .visualization-container svg {
             width: 100%;
-            height: 500px;
+            height: 300px;
+            /* Reduced height */
         }
         
         .btn-primary {
@@ -86,21 +87,21 @@
         
         @media (min-width: 992px) {
             header.masthead {
-                padding-top: 4rem;
-                padding-bottom: 4rem;
+                padding-top: 12.5rem;
+                padding-bottom: 8rem;
             }
             header.masthead .page-heading h1,
             header.masthead .page-heading .h1,
             header.masthead .site-heading h1,
             header.masthead .site-heading .h1 {
-                font-size: 3rem;
+                font-size: 5rem;
             }
             header.masthead .post-heading h1,
             header.masthead .post-heading .h1 {
-                font-size: 2.5rem;
+                font-size: 3.5rem;
             }
             header.masthead .post-heading .subheading {
-                font-size: 1.5rem;
+                font-size: 1.875rem;
             }
         }
         
@@ -183,6 +184,21 @@
         .col-lg-7 {
             padding-left: 15px;
             padding-right: 15px;
+        }
+        /* Adjust padding and margin for list-group-item */
+        
+        .list-group-item {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            color: var(--bs-list-group-color);
+            background-color: var(--bs-list-group-bg);
+            border: var(--bs-list-group-border-width) solid var(--bs-list-group-border-color);
+            margin-bottom: 10px;
+        }
+        
+        .list-group-item+.list-group-item {
+            border-top-width: 0;
         }
     </style>
 </head>
