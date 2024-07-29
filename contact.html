@@ -107,6 +107,48 @@
         .team-member p.title {
             color: #666;
         }
+        
+        .container {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        /* Apply box-sizing to all elements for better control of sizes */
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        /* Example responsive design adjustments */
+        
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+        
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
     </style>
 </head>
 
