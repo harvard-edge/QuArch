@@ -28,7 +28,8 @@ async function loadAndProcessData() {
 }
 
 async function loadModelData(model, set, zs) {
-    const filePath = `./input/${model}/${model}_QuArch_v0_2_0_${set}_${zs}.json`;
+    const basePath = '/Users/sgiannuzzi/Desktop/QuArch/input'; // Base path for your data
+    const filePath = `${basePath}/${model}/${model}_QuArch_v0_2_0_${set}_${zs}.json`;
     try {
         const data = await d3.json(filePath);
         return data.map(item => item[0]); // Flatten the data
