@@ -256,6 +256,7 @@ export async function loadScatterPlotVis() {
         legend.style("display", "none"); // Hide the legend initially
 
         function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
+            print("entered")
             const selectedModel = document.getElementById("model-dropdown").value;
             const selectedSet = document.getElementById("set-dropdown").value;
             const setFieldSFT = `${selectedSet}_sft`;
