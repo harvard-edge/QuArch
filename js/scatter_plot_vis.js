@@ -27,6 +27,12 @@ async function loadAndProcessData() {
     return { vectors, questions, categories, modelsData };
 }
 
+async function loadModelData(model, set, zs) {
+    const filePath = `./input/${model}/${model}_QuArch_v0_2_0_${set}_${zs}.json`;
+    const data = await d3.json(filePath);
+    return data.map(item => item[0]); // Flatten the data
+}
+
 function resetSelection(g, colorScale, customColors, hullGroup, isSecondVis) {
     g.selectAll("circle")
         .attr("r", 3) // Reset radius to original size
@@ -255,19 +261,19 @@ export async function loadScatterPlotVis() {
         const legend = createLegend(svg);
         legend.style("display", "none"); // Hide the legend initially
 
-        function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
+        async function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
             const selectedModel = document.getElementById("model-dropdown").value;
             const selectedSet = document.getElementById("set-dropdown").value;
-            const setFieldSFT = `${selectedSet}_sft`;
-            const setFieldZS = `${selectedSet}_zs`;
-            const showSFT = document.getElementById("sft-checkbox").checked;
-            const showZS = document.getElementById("zs-checkbox").checked;
+            const selectedZS = document.getElementById("zs-checkbox").checked ? "zs" : "sft";
+
+            const modelData = await loadModelData(selectedModel, selectedSet, selectedZS);
 
             g.selectAll("circle")
+                .data(points)
                 .attr("r", function(p) {
                     if (isSecondVis) {
-                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
-                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
+                        const modelPoint = modelData.find(md => md.Question === p.text);
+                        if (modelPoint) {
                             return 5; // Increased radius for emphasis
                         }
                         return 3;
@@ -276,20 +282,15 @@ export async function loadScatterPlotVis() {
                 })
                 .style("fill", function(p) {
                     if (isSecondVis) {
+                        const modelPoint = modelData.find(md => md.Question === p.text);
                         if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
-                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
-                            }
-                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
+                            if (modelPoint) {
+                                return modelPoint.Predicted_Label ? "#00FF00" : "#FF0000";
                             }
                             return "#CCCCCC";
                         } else {
-                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
-                            }
-                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
+                            if (modelPoint) {
+                                return modelPoint.Predicted_Label ? "#00FF00" : "#FF0000";
                             }
                         }
                         return "#CCCCCC";
@@ -301,8 +302,8 @@ export async function loadScatterPlotVis() {
                 })
                 .style("opacity", function(p) {
                     if (isSecondVis) {
-                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
-                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
+                        const modelPoint = modelData.find(md => md.Question === p.text);
+                        if (modelPoint) {
                             return 1; // Higher opacity for emphasis
                         }
                         return 0.1; // Reduced opacity for non-relevant points
