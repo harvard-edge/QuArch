@@ -6,7 +6,7 @@ function zoomed(event) {
 }
 
 async function loadAndProcessData() {
-    const data = await d3.json("./input/QuArch_v0_2_0.json");
+    const data = await d3.json("./input/QuArch_v0_1_1_Filtered_Errors_modified.json");
 
     const embeddings = data.data.flatMap(paper =>
         paper.paragraphs.flatMap(paragraph =>
@@ -25,18 +25,6 @@ async function loadAndProcessData() {
     const modelsData = embeddings.map(d => d.modelsData);
 
     return { vectors, questions, categories, modelsData };
-}
-
-async function loadModelData(model, set, zs) {
-    const basePath = '/input'; // Base path for your data
-    const filePath = `${basePath}/${model}/${model}_QuArch_v0_2_0_${set}_${zs}.json`;
-    try {
-        const data = await d3.json(filePath);
-        return data.map(item => item[0]); // Flatten the data
-    } catch (error) {
-        console.error(`Failed to load ${filePath}: ${error}`);
-        return [];
-    }
 }
 
 function resetSelection(g, colorScale, customColors, hullGroup, isSecondVis) {
@@ -59,8 +47,7 @@ function createLegend(svg) {
 
     const legendData = [
         { color: "#00FF00", label: "Correct" },
-        { color: "#FF0000", label: "Incorrect" },
-        { color: "#CCCCCC", label: "Not Evaluated" }
+        { color: "#FF0000", label: "Incorrect" }
     ];
 
     const legendItem = legend.selectAll(".legend-item")
@@ -135,8 +122,7 @@ export async function loadScatterPlotVis() {
         const colorScale = d3.scaleOrdinal(colorPalette).domain(uniqueCategories);
 
         const customColors = {
-            "Interconnection Networks": "#351fb4",
-            "Reconfigurable Architectures (FPGA / CGRA)": "#ff7700" // Change to a different color, for example, orange
+            "Interconnection Networks": "#351fb4"
         };
 
         const points = reducedVectors.map((coords, i) => ({
@@ -268,19 +254,19 @@ export async function loadScatterPlotVis() {
         const legend = createLegend(svg);
         legend.style("display", "none"); // Hide the legend initially
 
-        async function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
+        function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
             const selectedModel = document.getElementById("model-dropdown").value;
             const selectedSet = document.getElementById("set-dropdown").value;
-            const selectedZS = document.getElementById("zs-checkbox").checked ? "zs" : "sft";
-
-            const modelData = await loadModelData(selectedModel, selectedSet, selectedZS);
+            const setFieldSFT = `${selectedSet}_sft`;
+            const setFieldZS = `${selectedSet}_zs`;
+            const showSFT = document.getElementById("sft-checkbox").checked;
+            const showZS = document.getElementById("zs-checkbox").checked;
 
             g.selectAll("circle")
-                .data(points)
                 .attr("r", function(p) {
                     if (isSecondVis) {
-                        const modelPoint = modelData.find(md => md.Question === p.text);
-                        if (modelPoint) {
+                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
+                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
                             return 5; // Increased radius for emphasis
                         }
                         return 3;
@@ -289,15 +275,20 @@ export async function loadScatterPlotVis() {
                 })
                 .style("fill", function(p) {
                     if (isSecondVis) {
-                        const modelPoint = modelData.find(md => md.Question === p.text);
                         if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
-                            if (modelPoint) {
-                                return modelPoint.Correctness ? "#00FF00" : "#FF0000";
+                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
+                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
+                            }
+                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
+                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
                             }
                             return "#CCCCCC";
                         } else {
-                            if (modelPoint) {
-                                return modelPoint.Correctness ? "#00FF00" : "#FF0000";
+                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
+                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
+                            }
+                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
+                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
                             }
                         }
                         return "#CCCCCC";
@@ -309,8 +300,8 @@ export async function loadScatterPlotVis() {
                 })
                 .style("opacity", function(p) {
                     if (isSecondVis) {
-                        const modelPoint = modelData.find(md => md.Question === p.text);
-                        if (modelPoint) {
+                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
+                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
                             return 1; // Higher opacity for emphasis
                         }
                         return 0.1; // Reduced opacity for non-relevant points
@@ -328,10 +319,10 @@ export async function loadScatterPlotVis() {
         }
 
         function updateCheckboxState(checkboxChanged) {
-            if (checkboxChanged && checkboxChanged.id === 'sft-checkbox' && checkboxChanged.checked) {
+            if (checkboxChanged.id === 'sft-checkbox' && checkboxChanged.checked) {
                 document.getElementById('zs-checkbox').checked = false;
             }
-            if (checkboxChanged && checkboxChanged.id === 'zs-checkbox' && checkboxChanged.checked) {
+            if (checkboxChanged.id === 'zs-checkbox' && checkboxChanged.checked) {
                 document.getElementById('sft-checkbox').checked = false;
             }
         }
@@ -368,7 +359,7 @@ export async function loadScatterPlotVis() {
             const modelDropdown = d3.select("#model-dropdown");
             const setDropdown = d3.select("#set-dropdown");
 
-            const modelList = ["llama3-8B", "llama3-70B", "mistral-7B"];
+            const modelList = ["llama2-7B", "llama2-13B", "llama3", "phi-3", "mistral-7B", "gemma-7B"];
             const sets = ["val", "test"];
 
             modelDropdown.selectAll('option').remove();
@@ -386,7 +377,7 @@ export async function loadScatterPlotVis() {
                     .text(set);
             });
 
-            modelDropdown.property("value", "llama3-8B");
+            modelDropdown.property("value", "llama2-7B");
             setDropdown.property("value", "val");
 
             updateScatterPlot(true);
