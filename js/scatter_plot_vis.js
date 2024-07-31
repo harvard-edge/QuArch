@@ -122,7 +122,8 @@ export async function loadScatterPlotVis() {
         const colorScale = d3.scaleOrdinal(colorPalette).domain(uniqueCategories);
 
         const customColors = {
-            "Interconnection Networks": "#351fb4"
+            "Interconnection Networks": "#351fb4",
+            "Reconfigurable Architecture (FPGA/CGRA)": "#FFA500" // Change to a different color, for example, orange
         };
 
         const points = reducedVectors.map((coords, i) => ({
