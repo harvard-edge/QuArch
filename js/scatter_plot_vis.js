@@ -6,7 +6,7 @@ function zoomed(event) {
 }
 
 async function loadAndProcessData() {
-    const data = await d3.json("./input/QuArch_v0_1_1_Filtered_Errors_modified.json");
+    const data = await d3.json("./input/QuArch_v0_2_0.json");
 
     const embeddings = data.data.flatMap(paper =>
         paper.paragraphs.flatMap(paragraph =>
@@ -359,7 +359,7 @@ export async function loadScatterPlotVis() {
             const modelDropdown = d3.select("#model-dropdown");
             const setDropdown = d3.select("#set-dropdown");
 
-            const modelList = ["llama2-7B", "llama2-13B", "llama3", "phi-3", "mistral-7B", "gemma-7B"];
+            const modelList = ["llama3-8B", "llama3-70B", "mistral-7B"];
             const sets = ["val", "test"];
 
             modelDropdown.selectAll('option').remove();
@@ -377,8 +377,8 @@ export async function loadScatterPlotVis() {
                     .text(set);
             });
 
-            modelDropdown.property("value", "llama2-7B");
-            setDropdown.property("value", "val");
+            modelDropdown.property("value", "llama3-8B");
+            setDropdown.property("value", "test");
 
             updateScatterPlot(true);
 
