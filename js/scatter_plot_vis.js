@@ -122,7 +122,8 @@ export async function loadScatterPlotVis() {
         const colorScale = d3.scaleOrdinal(colorPalette).domain(uniqueCategories);
 
         const customColors = {
-            "Interconnection Networks": "#351fb4"
+            "Interconnection Networks": "#351fb4",
+            "Reconfigurable Architectures (FPGA / CGRA)": "#F28C28"
         };
 
         const points = reducedVectors.map((coords, i) => ({
@@ -275,10 +276,13 @@ export async function loadScatterPlotVis() {
                 })
                 .style("fill", function(p) {
                     if (isSecondVis) {
+                        console.log(p.modelsData[selectedModel]);
                         if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
+                            console.log(p.modelsData[selectedModel][setFieldSFT]);
                             return p.modelsData[selectedModel][setFieldSFT].Correctness ? "#00FF00" : "#FF0000";
                         }
                         if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
+                            console.log(p.modelsData[selectedModel][setFieldZS]);
                             return p.modelsData[selectedModel][setFieldZS].Correctness ? "#00FF00" : "#FF0000";
                         }
                         return "#CCCCCC";
@@ -307,6 +311,7 @@ export async function loadScatterPlotVis() {
                     return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? (customColors[label.category] || colorScale(label.category)) : "#CCCCCC") : (isSecondVis ? "#555555" : (customColors[label.category] || colorScale(label.category)));
                 });
         }
+
 
         function updateCheckboxState(event) {
             const checkboxChanged = event.target;
