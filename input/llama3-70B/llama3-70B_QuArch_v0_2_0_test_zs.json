@@ -2,7 +2,7 @@
     [{
         "Input": "____ is the technology that allowed microprocessors to achieve higher performance improvement rates compared to earlier computers.",
         "Question": "____ is the technology that allowed microprocessors to achieve higher performance improvement rates compared to earlier computers.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is the primary factor that has led to the dominance of microprocessor-based computers across the entire range of computer design.",
@@ -42,7 +42,7 @@
     [{
         "Input": "The ____ serves as the boundary between the software and hardware.",
         "Question": "The ____ serves as the boundary between the software and hardware.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is typically used to store the return address in the MIPS architecture.",
@@ -57,7 +57,7 @@
     [{
         "Input": "____ refers to the specifics of a computer, including the detailed logic design and the packaging technology of the computer.",
         "Question": "____ refers to the specifics of a computer, including the detailed logic design and the packaging technology of the computer.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "____ is a key consideration for personal mobile devices when designing their computer architecture.",
@@ -97,7 +97,7 @@
     [{
         "Input": "The ____ strategy involves using a faster, less energy-efficient processor to allow the rest of the system to enter a sleep mode.",
         "Question": "The ____ strategy involves using a faster, less energy-efficient processor to allow the rest of the system to enter a sleep mode.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a key factor in determining cost, as it decreases the time needed to get down the learning curve and increases purchasing and manufacturing efficiency.",
@@ -107,7 +107,7 @@
     [{
         "Input": "The ____ of producing a functional die is the most significant cost factor for low-volume integrated circuit production.",
         "Question": "The ____ of producing a functional die is the most significant cost factor for low-volume integrated circuit production.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The Mean Time To Failure (MTTF) of a system is calculated by ____ the failure rate.",
@@ -122,7 +122,7 @@
     [{
         "Input": "____ are small, key pieces of real applications used as benchmarks.",
         "Question": "____ are small, key pieces of real applications used as benchmarks.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a widely used benchmark suite for evaluating processor performance across various application domains.",
@@ -132,7 +132,7 @@
     [{
         "Input": "In the SPEC2006 benchmark suite, ____ is the most commonly used programming language for integer programs.",
         "Question": "In the SPEC2006 benchmark suite, ____ is the most commonly used programming language for integer programs.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The SPECvirt_Sc2010 benchmark evaluates end-to-end performance of ____ servers.",
@@ -147,7 +147,7 @@
     [{
         "Input": "The ____ mean is used to compute the average of SPECRatios in benchmark suites.",
         "Question": "The ____ mean is used to compute the average of SPECRatios in benchmark suites.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ of performance ratios ensures that the choice of reference computer is irrelevant when comparing computer performance.",
@@ -172,7 +172,7 @@
     [{
         "Input": "The goal in applying Amdahl's law is to spend resources _____ to where time is spent.",
         "Question": "The goal in applying Amdahl's law is to spend resources _____ to where time is spent.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ is a fundamental component in computer design that runs at a constant rate and determines the timing of discrete events in the system.",
@@ -192,7 +192,7 @@
     [{
         "Input": "SPECpower uses a software stack written in ____ to measure server performance.",
         "Question": "SPECpower uses a software stack written in ____ to measure server performance.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In fault-tolerant systems, making sure that every component is ____ helps avoid single points of failure.",
@@ -227,7 +227,7 @@
     [{
         "Input": "____ is a measure that factors in both the frequency and cost of cache misses.",
         "Question": "____ is a measure that factors in both the frequency and cost of cache misses.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a program used to estimate the access time and energy consumption of alternative cache structures on CMOS microprocessors.",
@@ -237,7 +237,7 @@
     [{
         "Input": "In modern processors, the impact of ____ on cache design has led to increased use of higher associativity in first-level caches.",
         "Question": "In modern processors, the impact of ____ on cache design has led to increased use of higher associativity in first-level caches.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "Way selection in caches primarily aims to reduce ____ consumption.",
@@ -252,7 +252,7 @@
     [{
         "Input": "____ prefetch loads data only into the cache and not the register.",
         "Question": "____ prefetch loads data only into the cache and not the register.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "In DDR SDRAM terminology, the ____ refers to the peak bandwidth of the DIMM in MB/sec.",
@@ -262,12 +262,12 @@
     [{
         "Input": "____ is a technology that protects against complete failure of a single memory chip in very large systems.",
         "Question": "____ is a technology that protects against complete failure of a single memory chip in very large systems.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is the primary mechanism that protects processes from each other in modern computer systems.",
         "Question": "____ is the primary mechanism that protects processes from each other in modern computer systems.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The software that supports virtual machines is called a ____.",
@@ -292,12 +292,12 @@
     [{
         "Input": "The ____ approach to memory uses a glass that can be changed between amorphous and crystalline states.",
         "Question": "The ____ approach to memory uses a glass that can be changed between amorphous and crystalline states.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a cache memory hierarchy, ____ is typically used to determine which cache block to evict when the cache is full.",
         "Question": "In a cache memory hierarchy, ____ is typically used to determine which cache block to evict when the cache is full.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a tool used to estimate cache access times for different configurations in computer architecture research.",
@@ -332,7 +332,7 @@
     [{
         "Input": "An ____ occurs when an instruction writes to a register or memory location that a preceding instruction reads.",
         "Question": "An ____ occurs when an instruction writes to a register or memory location that a preceding instruction reads.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a type of data hazard where an instruction tries to read a source before a previous instruction writes it.",
@@ -342,12 +342,12 @@
     [{
         "Input": "A ____ hazard occurs when there are some instructions that write results early in the instruction pipeline and other instructions that read a source late in the pipeline.",
         "Question": "A ____ hazard occurs when there are some instructions that write results early in the instruction pipeline and other instructions that read a source late in the pipeline.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The property of whether a value will be used by an upcoming instruction is called ____.",
         "Question": "The property of whether a value will be used by an upcoming instruction is called ____.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a key factor in a compiler's ability to schedule instructions to avoid pipeline stalls.",
@@ -367,7 +367,7 @@
     [{
         "Input": "Tournament predictors typically use a ____ to choose between different predictors.",
         "Question": "Tournament predictors typically use a ____ to choose between different predictors.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "Dynamic scheduling helps overcome ____ hazards in pipelined processors.",
@@ -392,7 +392,7 @@
     [{
         "Input": "____ are used to hold data or addresses coming from and going to memory in a dynamically scheduled processor.",
         "Question": "____ are used to hold data or addresses coming from and going to memory in a dynamically scheduled processor.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a dynamically scheduled processor, the ____ stage renames registers, eliminating WAR and WAW hazards.",
@@ -417,17 +417,17 @@
     [{
         "Input": "____ is a key technique used in Tomasulo's scheme to resolve certain types of hazards.",
         "Question": "____ is a key technique used in Tomasulo's scheme to resolve certain types of hazards.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ holds the result of an instruction between the time the operation associated with the instruction completes and the time the instruction commits.",
         "Question": "The ____ holds the result of an instruction between the time the operation associated with the instruction completes and the time the instruction commits.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a processor with hardware-based speculation, if the ____ fills, the processor stops issuing instructions until an entry is made free.",
         "Question": "In a processor with hardware-based speculation, if the ____ fills, the processor stops issuing instructions until an entry is made free.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ provides precise exceptions in addition to supporting speculative execution.",
@@ -442,7 +442,7 @@
     [{
         "Input": "____ are inherently statically scheduled by the compiler.",
         "Question": "____ are inherently statically scheduled by the compiler.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The main technical challenge of VLIW processors is ____ compared to traditional architectures.",
@@ -462,7 +462,7 @@
     [{
         "Input": "____ typically harms performance and dramatically lowers energy efficiency in speculative execution.",
         "Question": "____ typically harms performance and dramatically lowers energy efficiency in speculative execution.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a technique that attempts to predict the result of a computation to further enhance ILP.",
@@ -477,7 +477,7 @@
     [{
         "Input": "A ____ is used to predict the target address of branches before the branch instruction is decoded.",
         "Question": "A ____ is used to predict the target address of branches before the branch instruction is decoded.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "An integrated instruction fetch unit typically includes ____ as part of its functionality.",
@@ -492,7 +492,7 @@
     [{
         "Input": "____ is a technique that predicts whether two memory operations refer to the same address, allowing for safe instruction reordering if they do not conflict.",
         "Question": "____ is a technique that predicts whether two memory operations refer to the same address, allowing for safe instruction reordering if they do not conflict.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "____ is typically more abundant in floating-point programs compared to integer programs, allowing for greater exploitation of instruction-level parallelism.",
@@ -502,7 +502,7 @@
     [{
         "Input": "The ____ of a processor is calculated by dividing the clock rate by the CPI.",
         "Question": "The ____ of a processor is calculated by dividing the clock rate by the CPI.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The primary limitation of speculating on multiple paths in a processor is ____ .",
@@ -532,17 +532,17 @@
     [{
         "Input": "____ multithreading switches threads only when there is a stall in the processor pipeline.",
         "Question": "____ multithreading switches threads only when there is a stall in the processor pipeline.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In multithreaded processors, the ____ state indicates that a thread is waiting for the completion of an event such as a cache miss or pipeline delay.",
         "Question": "In multithreaded processors, the ____ state indicates that a thread is waiting for the completion of an event such as a cache miss or pipeline delay.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a simple scoreboard architecture, operands for instructions are always retrieved from ____.",
         "Question": "In a simple scoreboard architecture, operands for instructions are always retrieved from ____.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ is typically used to achieve high instruction throughput by combining multiple issue and high clock rates in modern processors.",
@@ -552,12 +552,12 @@
     [{
         "Input": "____ is used to speed up function return in instruction fetch.",
         "Question": "____ is used to speed up function return in instruction fetch.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a technique that combines certain instruction pairs to issue them to a single reservation station while still allowing them to issue independently.",
         "Question": "____ is a technique that combines certain instruction pairs to issue them to a single reservation station while still allowing them to issue independently.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In register renaming, the ____ register designation is used to index the rename hardware.",
@@ -572,7 +572,7 @@
     [{
         "Input": "____ is typically used to communicate results between functional units in Tomasulo's algorithm.",
         "Question": "____ is typically used to communicate results between functional units in Tomasulo's algorithm.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a Tomasulo algorithm implementation, the ____ can become a bottleneck, limiting the number of results that can be computed per clock cycle.",
@@ -587,7 +587,7 @@
     [{
         "Input": "In vector architectures, _____ act as compiler-controlled buffers to hide memory latency and leverage memory bandwidth.",
         "Question": "In vector architectures, _____ act as compiler-controlled buffers to hide memory latency and leverage memory bandwidth.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In vector processors, ____ is divided across lanes, with each lane holding every nth element of each vector register, where n is the number of lanes.",
@@ -597,7 +597,7 @@
     [{
         "Input": "The technique used to handle vector operations longer than the maximum vector length is called ____.",
         "Question": "The technique used to handle vector operations longer than the maximum vector length is called ____.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In vector processors, ____ are part of the architectural state and are explicitly manipulated by compilers.",
@@ -627,7 +627,7 @@
     [{
         "Input": "____ is the programming model classification NVIDIA uses for CUDA.",
         "Question": "____ is the programming model classification NVIDIA uses for CUDA.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In GPU architecture, a ____ is composed of Thread Blocks and represents the entire code that runs on the GPU.",
@@ -672,7 +672,7 @@
     [{
         "Input": "In GPU architectures, ____ is typically used to hide DRAM latency.",
         "Question": "In GPU architectures, ____ is typically used to hide DRAM latency.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In GPU architectures, ____ is typically used to improve the dependability of long-running applications across thousands of servers.",
@@ -682,7 +682,7 @@
     [{
         "Input": "____ is typically responsible for handling atomic instructions in GPU architectures.",
         "Question": "____ is typically responsible for handling atomic instructions in GPU architectures.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ dependences arise when an operand is written at some point and read at a later point.",
@@ -702,17 +702,17 @@
     [{
         "Input": "In throughput computing kernels, ____ is typically bandwidth bound for large matrices.",
         "Question": "In throughput computing kernels, ____ is typically bandwidth bound for large matrices.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "____ parallelism became a key focus for improving computer performance when increasing single-thread speed reached diminishing returns.",
         "Question": "____ parallelism became a key focus for improving computer performance when increasing single-thread speed reached diminishing returns.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "Thread-level parallelism implies the existence of multiple ____ in a system.",
         "Question": "Thread-level parallelism implies the existence of multiple ____ in a system.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In ____, communication among threads occurs through a shared address space.",
@@ -727,7 +727,7 @@
     [{
         "Input": "____ defines the behavior of reads and writes to the same memory location.",
         "Question": "____ defines the behavior of reads and writes to the same memory location.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "____ is a cache coherence protocol where every cache that has a copy of data from a block of physical memory tracks the sharing status of the block.",
@@ -737,7 +737,7 @@
     [{
         "Input": "In a snooping-based cache coherence protocol, processors continuously monitor the ____ to check for invalidation requests.",
         "Question": "In a snooping-based cache coherence protocol, processors continuously monitor the ____ to check for invalidation requests.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "____ is a state in a simple cache coherence protocol that indicates the block has been updated in the private cache.",
@@ -757,7 +757,7 @@
     [{
         "Input": "In a snooping cache coherence system without a bus, ensuring that a race between two processors attempting to write the same block has only one winner is accomplished by using ____ for all misses.",
         "Question": "In a snooping cache coherence system without a bus, ensuring that a race between two processors attempting to write the same block has only one winner is accomplished by using ____ for all misses.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "In shared-memory multiprocessors, ____ occurs when a cache block is invalidated due to a write to a different word in the same block.",
@@ -792,7 +792,7 @@
     [{
         "Input": "The ____ instruction is used in conjunction with a load linked instruction to implement atomic operations.",
         "Question": "The ____ instruction is used in conjunction with a load linked instruction to implement atomic operations.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a spin lock implementation, the processor _____ while waiting to acquire the lock.",
@@ -827,7 +827,7 @@
     [{
         "Input": "In the MOSI cache coherence protocol, the ____ state behaves like Shared for reads but like Modified for supplying data on misses.",
         "Question": "In the MOSI cache coherence protocol, the ____ state behaves like Shared for reads but like Modified for supplying data on misses.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a cache coherence protocol, the ____ state indicates that no other node has a copy of the block, but it has not yet been modified.",
@@ -857,7 +857,7 @@
     [{
         "Input": "In warehouse-scale computers, ____ is managed by software to achieve high availability.",
         "Question": "In warehouse-scale computers, ____ is managed by software to achieve high availability.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ were the predecessors of modern warehouse-scale computers (WSCs).",
@@ -907,7 +907,7 @@
     [{
         "Input": "The ____ in a warehouse-scale computer significantly impacts software design and data placement.",
         "Question": "The ____ in a warehouse-scale computer significantly impacts software design and data placement.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "______ is typically the most inefficient operating range for power supplies in warehouse-scale computers.",
@@ -932,7 +932,7 @@
     [{
         "Input": "In warehouse-scale computers, ____ low power modes are generally more practical and effective than inactive low power modes for conserving energy.",
         "Question": "In warehouse-scale computers, ____ low power modes are generally more practical and effective than inactive low power modes for conserving energy.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In warehouse-scale computers, ____ is often used to compare different server options that have multiple dimensions.",
@@ -947,7 +947,7 @@
     [{
         "Input": "____ is a key factor in enabling warehouse-scale computing.",
         "Question": "____ is a key factor in enabling warehouse-scale computing.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a technique used in blade server enclosures to dynamically match power supply units to actual server power consumption.",
@@ -962,7 +962,7 @@
     [{
         "Input": "The power consumption of a server cooling fan is a ____ function of its speed.",
         "Question": "The power consumption of a server cooling fan is a ____ function of its speed.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ is a key component in many early computer architectures for performing arithmetic and logical operations.",
@@ -997,12 +997,12 @@
     [{
         "Input": "The ____ specifies the basic rules for which registers should be caller saved and which should be callee saved.",
         "Question": "The ____ specifies the basic rules for which registers should be caller saved and which should be callee saved.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ addressing is commonly used to support procedure returns in instruction set architectures.",
         "Question": "____ addressing is commonly used to support procedure returns in instruction set architectures.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is used to allocate local variables in high-level languages.",
@@ -1017,7 +1017,7 @@
     [{
         "Input": "In instruction set design, it is generally better to provide ____ instead of solutions.",
         "Question": "In instruction set design, it is generally better to provide ____ instead of solutions.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In MIPS architecture, ____ instructions are used to convert a simple branch into a conditional arithmetic instruction.",
@@ -1042,7 +1042,7 @@
     [{
         "Input": "The _____ uses a stack for floating-point data, unlike other processor architectures.",
         "Question": "The _____ uses a stack for floating-point data, unlike other processor architectures.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "Floating point ____ operations typically have the highest CPI among basic arithmetic operations.",
@@ -1067,7 +1067,7 @@
     [{
         "Input": "______ is used to determine which set a block is mapped to in a set associative cache.",
         "Question": "______ is used to determine which set a block is mapped to in a set associative cache.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a technique used to reduce the frequency of writing back blocks on replacement in write-back caches.",
@@ -1077,7 +1077,7 @@
     [{
         "Input": "In a write-back cache, ____ is typically used on a write miss.",
         "Question": "In a write-back cache, ____ is typically used on a write miss.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "In a set associative cache, the ____ selects the tag to be tested to determine if the desired block is in the cache.",
@@ -1097,7 +1097,7 @@
     [{
         "Input": "The impact of cache misses on processor performance is ____ for processors with lower CPI execution.",
         "Question": "The impact of cache misses on processor performance is ____ for processors with lower CPI execution.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In out-of-order execution processors, memory stalls are defined as the ____ latency of a miss.",
@@ -1122,7 +1122,7 @@
     [{
         "Input": "The primary benefit of ____ is that cache consistency can be determined by checking only the second-level cache.",
         "Question": "The primary benefit of ____ is that cache consistency can be determined by checking only the second-level cache.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In most modern desktop and server processors, ____ are given priority over writes when accessing memory.",
@@ -1132,12 +1132,12 @@
     [{
         "Input": "A ____ can be used to reduce the need for cache flushing during process switches in virtually addressed caches.",
         "Question": "A ____ can be used to reduce the need for cache flushing during process switches in virtually addressed caches.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ technique allows cache read to begin immediately while still performing tag comparison with physical addresses.",
         "Question": "The ____ technique allows cache read to begin immediately while still performing tag comparison with physical addresses.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is typically used as the lower-level backing store for main memory in the hierarchy.",
@@ -1147,7 +1147,7 @@
     [{
         "Input": "In virtual memory systems, ____ allows blocks to be placed anywhere in main memory.",
         "Question": "In virtual memory systems, ____ allows blocks to be placed anywhere in main memory.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In virtual memory systems, the write strategy for managing updates to main memory and disk is typically ____.",
@@ -1167,12 +1167,12 @@
     [{
         "Input": "In the IA-32 architecture, the ____ contains fields similar to those found in page table entries.",
         "Question": "In the IA-32 architecture, the ____ contains fields similar to those found in page table entries.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ field in segment descriptors is used to specify whether a segment grows towards higher or lower memory addresses.",
         "Question": "The ____ field in segment descriptors is used to specify whether a segment grows towards higher or lower memory addresses.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "The ____ bit in a page table entry indicates whether the page has been modified.",
@@ -1222,7 +1222,7 @@
     [{
         "Input": "The ideal CPI on a pipelined processor is almost always ____.",
         "Question": "The ideal CPI on a pipelined processor is almost always ____.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "A ____ is commonly used to describe a stall in a pipelined processor that takes up space but performs no useful work.",
@@ -1277,7 +1277,7 @@
     [{
         "Input": "The primary purpose of using a separate adder in the ID stage of a pipelined processor is to ____.",
         "Question": "The primary purpose of using a separate adder in the ID stage of a pipelined processor is to ____.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a pipelined processor, exceptions are typically handled by ____ associated with each instruction as it moves through the pipeline.",
@@ -1287,12 +1287,12 @@
     [{
         "Input": "In pipelined processors, ____ are typically treated as operands that require hazard detection for RAW hazards with branches.",
         "Question": "In pipelined processors, ____ are typically treated as operands that require hazard detection for RAW hazards with branches.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ of a pipelined processor is typically one cycle less than the number of pipeline stages from EX to the result-producing stage.",
         "Question": "The ____ of a pipelined processor is typically one cycle less than the number of pipeline stages from EX to the result-producing stage.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "____ is typically the stage in a pipeline where effective address calculation, ALU operations, and branch-target computation occur.",
@@ -1312,12 +1312,12 @@
     [{
         "Input": "____ is a technique for allowing instructions to execute out of order when there are sufficient resources and no data dependences.",
         "Question": "____ is a technique for allowing instructions to execute out of order when there are sufficient resources and no data dependences.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a key component of a scoreboard that indicates which of the four steps an instruction is in.",
         "Question": "____ is a key component of a scoreboard that indicates which of the four steps an instruction is in.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ faults are caused by mistakes made by operations and maintenance personnel.",
@@ -1337,7 +1337,7 @@
     [{
         "Input": "In queueing theory, the area where tasks accumulate while waiting to be serviced is called the ____.",
         "Question": "In queueing theory, the area where tasks accumulate while waiting to be serviced is called the ____.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is the simplest and most common queue discipline in I/O systems.",
@@ -1352,7 +1352,7 @@
     [{
         "Input": "____ is the element of storage exported from a disk array, usually constructed from a subset of the array's disks.",
         "Question": "____ is the element of storage exported from a disk array, usually constructed from a subset of the array's disks.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "_____ I/O allows a process to continue making requests so that many I/O requests can be operating simultaneously.",
@@ -1387,7 +1387,7 @@
     [{
         "Input": "____ is a common approach for solving embedded problems where custom hardware is integrated with a standardized processor core.",
         "Question": "____ is a common approach for solving embedded problems where custom hardware is integrated with a standardized processor core.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In embedded systems design, ____ is often used to ensure real-time data flow between memory and display.",
@@ -1397,12 +1397,12 @@
     [{
         "Input": "In cellular communication, the ____ is typically used for transmitting at a higher frequency range than the mobile device.",
         "Question": "In cellular communication, the ____ is typically used for transmitting at a higher frequency range than the mobile device.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a technique used in CDMA to preserve bandwidth and allow for more calls per cell.",
         "Question": "____ is a technique used in CDMA to preserve bandwidth and allow for more calls per cell.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ are attempts to combine DSP capabilities with more general-purpose processing abilities for signal processing applications.",
@@ -1417,17 +1417,17 @@
     [{
         "Input": "The ____ is typically used to distinguish messages intended for different processes on the same device.",
         "Question": "The ____ is typically used to distinguish messages intended for different processes on the same device.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ networks typically implement flow control mechanisms.",
         "Question": "____ networks typically implement flow control mechanisms.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "In ____, the sending and receiving overheads can practically be ignored compared to the propagation delay component.",
         "Question": "In ____, the sending and receiving overheads can practically be ignored compared to the propagation delay component.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is the simplest way to connect multiple devices in a network.",
@@ -1447,7 +1447,7 @@
     [{
         "Input": "______ is a common topology used in commercial products for interconnecting a set of devices when the number of switch ports is equal to or larger than the number of devices.",
         "Question": "______ is a common topology used in commercial products for interconnecting a set of devices when the number of switch ports is equal to or larger than the number of devices.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a Multistage Interconnection Network (MIN) built with k \u00d7 k switches, the minimum number of stages required to interconnect N input-output ports is ____.",
@@ -1462,7 +1462,7 @@
     [{
         "Input": "The ____ can maximize the number of switch output ports that accept packets, which increases the utilization of network bandwidth.",
         "Question": "The ____ can maximize the number of switch output ports that accept packets, which increases the utilization of network bandwidth.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In network simulations, ____ traffic is often used to allow the network to stabilize at a certain working point and for behavior to be analyzed in detail.",
@@ -1532,7 +1532,7 @@
     [{
         "Input": "The ____ topology was first used in the Connection Machine CM-5 supercomputer and later in IBM ASCI White and ASC Purple supercomputers.",
         "Question": "The ____ topology was first used in the Connection Machine CM-5 supercomputer and later in IBM ASCI White and ASC Purple supercomputers.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The primary reason for ATM's fixed transfer size is to ____.",
@@ -1557,12 +1557,12 @@
     [{
         "Input": "To prevent memory bank conflicts within a single vector memory instruction, the stride and number of banks should be ____.",
         "Question": "To prevent memory bank conflicts within a single vector memory instruction, the stride and number of banks should be ____.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a technique used in vector processors to allow dependent instructions to be executed in the same convoy, reducing execution time.",
         "Question": "____ is a technique used in vector processors to allow dependent instructions to be executed in the same convoy, reducing execution time.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ is often used to report vector processor performance on a loop instead of execution time.",
@@ -1612,12 +1612,12 @@
     [{
         "Input": "In the IA-64 architecture, a ____ is a sequence of consecutive instructions with no register data dependences among them.",
         "Question": "In the IA-64 architecture, a ____ is a sequence of consecutive instructions with no register data dependences among them.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "In modern VLIW architectures, ____ typically specifies the execution unit types required for each instruction in a bundle.",
         "Question": "In modern VLIW architectures, ____ typically specifies the execution unit types required for each instruction in a bundle.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In VLIW architectures, ____ is used to group multiple instructions that can potentially be executed in parallel.",
@@ -1682,7 +1682,7 @@
     [{
         "Input": "In IEEE floating-point arithmetic, ____ is used to represent the result of computations whose value is less than the minimum normalized number.",
         "Question": "In IEEE floating-point arithmetic, ____ is used to represent the result of computations whose value is less than the minimum normalized number.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In floating-point multiplication rounding, the ____ bit is used to record if any digits past the round digit are nonzero.",
@@ -1697,7 +1697,7 @@
     [{
         "Input": "In floating-point division algorithms, the ____ can be used to compute the remainder.",
         "Question": "In floating-point division algorithms, the ____ can be used to compute the remainder.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In IEEE floating-point arithmetic, the ____ exception occurs when the result of an operation must be rounded or when it overflows.",
@@ -1722,7 +1722,7 @@
     [{
         "Input": "The primary advantage of array multipliers over simpler designs is their ____ latency.",
         "Question": "The primary advantage of array multipliers over simpler designs is their ____ latency.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In SRT division, the number of bits examined from the ____ and divisor determines the speed of the divider.",
@@ -1757,7 +1757,7 @@
     [{
         "Input": "____ is a technique in some ISAs that allows an instruction to be skipped based on a condition, without using an explicit branch.",
         "Question": "____ is a technique in some ISAs that allows an instruction to be skipped based on a condition, without using an explicit branch.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ instructions allow arbitrary bit fields to be selected from or inserted into registers.",
@@ -1782,22 +1782,22 @@
     [{
         "Input": "In the 80x86 floating-point architecture, ____ is used to indicate the top of stack.",
         "Question": "In the 80x86 floating-point architecture, ____ is used to indicate the top of stack.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In x86 architecture, the result of a floating-point comparison must be transferred to the ____ before it can be tested using branch instructions.",
         "Question": "In x86 architecture, the result of a floating-point comparison must be transferred to the ____ before it can be tested using branch instructions.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is the maximum possible instruction length for an 80386 instruction.",
         "Question": "____ is the maximum possible instruction length for an 80386 instruction.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "The ____ instruction set architecture was designed to be close to programming languages in order to simplify compilers.",
         "Question": "The ____ instruction set architecture was designed to be close to programming languages in order to simplify compilers.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is an addressing mode where the address specified points to the location of the actual operand address, requiring an additional memory access.",
@@ -1807,7 +1807,7 @@
     [{
         "Input": "____ are set as a side effect of an operation and indicate whether the result is positive, negative, or zero or if an overflow occurred.",
         "Question": "____ are set as a side effect of an operation and indicate whether the result is positive, negative, or zero or if an overflow occurred.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "In RISC architectures like MIPS, ____ is typically used to allocate space for local variables and save registers.",
@@ -1822,7 +1822,7 @@
     [{
         "Input": "A ____ represents one of 16 possibilities.",
         "Question": "A ____ represents one of 16 possibilities.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In sign/magnitude representation of binary numbers, the ____ is used to indicate whether the number is positive or negative.",
@@ -1872,7 +1872,7 @@
     [{
         "Input": "In Boolean algebra, the ____ method involves checking all possible combinations of variables to prove a theorem.",
         "Question": "In Boolean algebra, the ____ method involves checking all possible combinations of variables to prove a theorem.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "In Boolean algebra, the ____ theorem allows us to duplicate terms as many times as we want in an equation.",
@@ -1887,7 +1887,7 @@
     [{
         "Input": "____ is a technique especially helpful in analyzing and designing multilevel circuits.",
         "Question": "____ is a technique especially helpful in analyzing and designing multilevel circuits.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In computer architecture, ____ is a graphical method for simplifying Boolean equations that works well for problems with up to four variables.",
@@ -1907,7 +1907,7 @@
     [{
         "Input": "In a Karnaugh map, circles used to identify prime implicants can ____ the edges of the map.",
         "Question": "In a Karnaugh map, circles used to identify prime implicants can ____ the edges of the map.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a method used for logic simplification in combinational logic design.",
@@ -1917,7 +1917,7 @@
     [{
         "Input": "An N:1 multiplexer requires ____ select lines.",
         "Question": "An N:1 multiplexer requires ____ select lines.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "An ____ can be reprogrammed to perform different logic functions by changing its data inputs.",
@@ -1942,7 +1942,7 @@
     [{
         "Input": "A ____ sets one of its outputs HIGH according to its input.",
         "Question": "A ____ sets one of its outputs HIGH according to its input.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is a fundamental theorem in Boolean algebra that states the negation of a conjunction is the disjunction of the negations.",
@@ -1962,7 +1962,7 @@
     [{
         "Input": "A ____ node in a latch design is susceptible to noise and charge leakage over time.",
         "Question": "A ____ node in a latch design is susceptible to noise and charge leakage over time.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ circuits are sequential circuits that have no stable states.",
@@ -1987,7 +1987,7 @@
     [{
         "Input": "____ encoding uses a single bit to represent each state in a finite state machine.",
         "Question": "____ encoding uses a single bit to represent each state in a finite state machine.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a Moore state machine, the output is determined solely by the ____ state.",
@@ -2032,7 +2032,7 @@
     [{
         "Input": "The time required for a bistable device to resolve from a near-metastable state is called the ____ time.",
         "Question": "The time required for a bistable device to resolve from a near-metastable state is called the ____ time.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "____ is a measure of the number of tokens that can be produced per unit time in a system.",
@@ -2057,7 +2057,7 @@
     [{
         "Input": "The primary purpose of ____ in digital design is to increase throughput by allowing multiple instructions to be processed simultaneously in different stages.",
         "Question": "The primary purpose of ____ in digital design is to increase throughput by allowing multiple instructions to be processed simultaneously in different stages.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is typically considered more verbose and cumbersome compared to Verilog.",
@@ -2077,7 +2077,7 @@
     [{
         "Input": "In Verilog, if a gate receives a ____ input, it may produce an x output when it can't determine the correct output value.",
         "Question": "In Verilog, if a gate receives a ____ input, it may produce an x output when it can't determine the correct output value.",
-        "Correctness": true
+        "Correctness": false
     }],
     [{
         "Input": "In VHDL, the ____ function is used to convert STD_LOGIC_VECTOR to INTEGER for positive (unsigned) values.",
@@ -2087,7 +2087,7 @@
     [{
         "Input": "____ is a special port type in VHDL that behaves as an output but may also be used within the module.",
         "Question": "____ is a special port type in VHDL that behaves as an output but may also be used within the module.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ are used to describe combinational logic in hardware description languages.",
@@ -2112,7 +2112,7 @@
     [{
         "Input": "In hardware description languages, ____ are commonly used to describe large blocks of combinational logic in a more abstract and less error-prone way compared to explicit gate-level descriptions.",
         "Question": "In hardware description languages, ____ are commonly used to describe large blocks of combinational logic in a more abstract and less error-prone way compared to explicit gate-level descriptions.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is used in Verilog to describe truth tables with don't cares.",
@@ -2137,12 +2137,12 @@
     [{
         "Input": "In VHDL, the ____ keyword is used to override default parameters when instantiating a module.",
         "Question": "In VHDL, the ____ keyword is used to override default parameters when instantiating a module.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The ____ is a sequential logic element that can be implemented using an HDL module and has two inputs that determine its next state based on the current state.",
         "Question": "The ____ is a sequential logic element that can be implemented using an HDL module and has two inputs that determine its next state based on the current state.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a prefix adder, the main challenge is to rapidly compute all the block ____ signals.",
@@ -2152,7 +2152,7 @@
     [{
         "Input": "The ____ forms the heart of most computer systems.",
         "Question": "The ____ forms the heart of most computer systems.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a rotator operation, bits shifted off one end of the number are ____ to fill empty spots at the other end.",
@@ -2172,7 +2172,7 @@
     [{
         "Input": "The output of an N-bit binary counter cycles through ____ possible values.",
         "Question": "The output of an N-bit binary counter cycles through ____ possible values.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ can be used to implement combinational logic functions by storing pre-computed output values for all possible input combinations.",
@@ -2187,7 +2187,7 @@
     [{
         "Input": "When adding two floating-point numbers, the number with the ____ exponent is shifted.",
         "Question": "When adding two floating-point numbers, the number with the ____ exponent is shifted.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is typically used to represent the exponent in IEEE 754 single-precision floating-point format.",
@@ -2262,7 +2262,7 @@
     [{
         "Input": "____ is the typical number of floating-point registers in the MIPS architecture.",
         "Question": "____ is the typical number of floating-point registers in the MIPS architecture.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "The _____ architecture has been the de facto PC standard for more than two decades.",
@@ -2272,7 +2272,7 @@
     [{
         "Input": "In IA-32 architecture, the ____ can directly operate on data in memory.",
         "Question": "In IA-32 architecture, the ____ can directly operate on data in memory.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In IA-32 architecture, the ____ register stores status flags used for making decisions about branches and tracking arithmetic operations.",
@@ -2317,7 +2317,7 @@
     [{
         "Input": "In a single-cycle processor, the ____ is always 1.",
         "Question": "In a single-cycle processor, the ____ is always 1.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is responsible for generating the appropriate sequence of control signals for each step of instruction execution in a multicycle MIPS processor.",
@@ -2327,7 +2327,7 @@
     [{
         "Input": "In a multicycle processor, the ____ signal is used to select between the incremented PC and other sources for the ALU input.",
         "Question": "In a multicycle processor, the ____ signal is used to select between the incremented PC and other sources for the ALU input.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a multicycle processor, the ____ stage is responsible for writing the result of an ALU operation back to a register.",
@@ -2352,7 +2352,7 @@
     [{
         "Input": "The ____ typically contains the main decoder and the ALU decoder in a MIPS processor design.",
         "Question": "The ____ typically contains the main decoder and the ALU decoder in a MIPS processor design.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is typically used to specify the operation to be performed by the ALU in a MIPS processor.",
@@ -2362,7 +2362,7 @@
     [{
         "Input": "In a typical MIPS-like architecture, the ____ instruction uses the ALU to perform subtraction.",
         "Question": "In a typical MIPS-like architecture, the ____ instruction uses the ALU to perform subtraction.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In MIPS architecture, the ____ component is responsible for sign-extending 16-bit immediate values to 32 bits.",
@@ -2392,7 +2392,7 @@
     [{
         "Input": "In ____, each processor has its own local memory system.",
         "Question": "In ____, each processor has its own local memory system.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is typically used to generate control signals in a multicycle processor.",
@@ -2437,12 +2437,12 @@
     [{
         "Input": "A fully associative cache contains a single set with ____ ways, where B is the number of blocks.",
         "Question": "A fully associative cache contains a single set with ____ ways, where B is the number of blocks.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In cache design, ____ are used to select words within a block.",
         "Question": "In cache design, ____ are used to select words within a block.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "In a ____ cache, dirty blocks are written back to main memory only when evicted.",
@@ -2462,7 +2462,7 @@
     [{
         "Input": "____ is typically the size of a page in virtual memory systems.",
         "Question": "____ is typically the size of a page in virtual memory systems.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "____ is typically used to store mappings between virtual page numbers and physical page numbers in a virtual memory system.",
@@ -2472,7 +2472,7 @@
     [{
         "Input": "In a ____ address space, the maximum amount of virtual memory each program can use is 4 GB.",
         "Question": "In a ____ address space, the maximum amount of virtual memory each program can use is 4 GB.",
-        "Correctness": false
+        "Correctness": true
     }],
     [{
         "Input": "A ____ is typically used to decode binary inputs and drive a seven-segment display.",
