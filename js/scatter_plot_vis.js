@@ -29,8 +29,13 @@ async function loadAndProcessData() {
 
 async function loadModelData(model, set, zs) {
     const filePath = `./input/${model}/${model}_QuArch_v0_2_0_${set}_${zs}.json`;
-    const data = await d3.json(filePath);
-    return data.map(item => item[0]); // Flatten the data
+    try {
+        const data = await d3.json(filePath);
+        return data.map(item => item[0]); // Flatten the data
+    } catch (error) {
+        console.error(`Failed to load ${filePath}: ${error}`);
+        return [];
+    }
 }
 
 function resetSelection(g, colorScale, customColors, hullGroup, isSecondVis) {
@@ -322,10 +327,10 @@ export async function loadScatterPlotVis() {
         }
 
         function updateCheckboxState(checkboxChanged) {
-            if (checkboxChanged.id === 'sft-checkbox' && checkboxChanged.checked) {
+            if (checkboxChanged && checkboxChanged.id === 'sft-checkbox' && checkboxChanged.checked) {
                 document.getElementById('zs-checkbox').checked = false;
             }
-            if (checkboxChanged.id === 'zs-checkbox' && checkboxChanged.checked) {
+            if (checkboxChanged && checkboxChanged.id === 'zs-checkbox' && checkboxChanged.checked) {
                 document.getElementById('sft-checkbox').checked = false;
             }
         }
