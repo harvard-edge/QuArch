@@ -275,21 +275,11 @@ export async function loadScatterPlotVis() {
                 })
                 .style("fill", function(p) {
                     if (isSecondVis) {
-                        if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
-                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
-                            }
-                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
-                            }
-                            return "#CCCCCC";
-                        } else {
-                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
-                            }
-                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
-                            }
+                        if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
+                            return p.modelsData[selectedModel][setFieldSFT].Correctness ? "#00FF00" : "#FF0000";
+                        }
+                        if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
+                            return p.modelsData[selectedModel][setFieldZS].Correctness ? "#00FF00" : "#FF0000";
                         }
                         return "#CCCCCC";
                     }
@@ -318,7 +308,8 @@ export async function loadScatterPlotVis() {
                 });
         }
 
-        function updateCheckboxState(checkboxChanged) {
+        function updateCheckboxState(event) {
+            const checkboxChanged = event.target;
             if (checkboxChanged.id === 'sft-checkbox' && checkboxChanged.checked) {
                 document.getElementById('zs-checkbox').checked = false;
             }
@@ -334,10 +325,10 @@ export async function loadScatterPlotVis() {
 
         labelGroups.on("click", onLabelClick);
 
-        document.getElementById('model-dropdown').onchange = function() { updateCheckboxState(); };
-        document.getElementById('set-dropdown').onchange = function() { updateCheckboxState(); };
-        document.getElementById('sft-checkbox').onchange = function() { updateCheckboxState(this); };
-        document.getElementById('zs-checkbox').onchange = function() { updateCheckboxState(this); };
+        document.getElementById('model-dropdown').onchange = function(event) { updateCheckboxState(event); };
+        document.getElementById('set-dropdown').onchange = function(event) { updateCheckboxState(event); };
+        document.getElementById('sft-checkbox').onchange = function(event) { updateCheckboxState(event); };
+        document.getElementById('zs-checkbox').onchange = function(event) { updateCheckboxState(event); };
 
         document.getElementById('update-vis').addEventListener('click', function() {
             updateScatterPlot(true);
