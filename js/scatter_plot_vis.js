@@ -53,7 +53,8 @@ function createLegend(svg) {
 
     const legendData = [
         { color: "#00FF00", label: "Correct" },
-        { color: "#FF0000", label: "Incorrect" }
+        { color: "#FF0000", label: "Incorrect" },
+        { color: "#CCCCCC", label: "Not Evaluated" }
     ];
 
     const legendItem = legend.selectAll(".legend-item")
@@ -285,12 +286,12 @@ export async function loadScatterPlotVis() {
                         const modelPoint = modelData.find(md => md.Question === p.text);
                         if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
                             if (modelPoint) {
-                                return modelPoint.Predicted_Label ? "#00FF00" : "#FF0000";
+                                return modelPoint.Correctness ? "#00FF00" : "#FF0000";
                             }
                             return "#CCCCCC";
                         } else {
                             if (modelPoint) {
-                                return modelPoint.Predicted_Label ? "#00FF00" : "#FF0000";
+                                return modelPoint.Correctness ? "#00FF00" : "#FF0000";
                             }
                         }
                         return "#CCCCCC";
