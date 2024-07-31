@@ -6,7 +6,7 @@ function zoomed(event) {
 }
 
 async function loadAndProcessData() {
-    const data = await d3.json("./input/QuArch_v0_2_0.json");
+    const data = await d3.json("./input/QuArch_v0_2_0_modified.json");
 
     const embeddings = data.data.flatMap(paper =>
         paper.paragraphs.flatMap(paragraph =>
@@ -70,82 +70,6 @@ function createLegend(svg) {
     return legend;
 }
 
-async function loadModelData(selectedModel, selectedSet, selectedType) {
-    const filePath = `./input/${selectedModel}/${selectedModel}_QuArch_v0_2_0_${selectedSet}_${selectedType}.json`;
-    console.log("Loading model data from:", filePath); // Debugging log
-    const modelData = await d3.json(filePath);
-    return modelData;
-}
-
-function updateScatterPlot(g, colorScale, customColors, hullGroup, isSecondVis = false, selectedCategory = null) {
-    const selectedModel = document.getElementById("model-dropdown").value;
-    const selectedSet = document.getElementById("set-dropdown").value;
-    const selectedType = document.getElementById("sft-checkbox").checked ? "sft" : "zs";
-
-    console.log("Selected Model:", selectedModel);
-    console.log("Selected Set:", selectedSet);
-    console.log("Selected Type:", selectedType);
-
-    if (!selectedModel || !selectedSet || !selectedType) {
-        console.error("Model, set, or type not selected correctly");
-        return;
-    }
-
-    loadModelData(selectedModel, selectedSet, selectedType).then(modelData => {
-        const modelDataMap = new Map();
-        modelData.forEach(item => {
-            const question = item[0].Question;
-            const correctness = item[0].Correctness;
-            modelDataMap.set(question, correctness);
-        });
-
-        g.selectAll("circle")
-            .attr("r", function(p) {
-                if (isSecondVis) {
-                    const correctness = modelDataMap.get(p.text);
-                    if (correctness !== undefined) {
-                        return 5; // Increased radius for emphasis
-                    }
-                    return 3;
-                }
-                return 3;
-            })
-            .style("fill", function(p) {
-                if (isSecondVis) {
-                    const correctness = modelDataMap.get(p.text);
-                    if (correctness !== undefined) {
-                        return correctness ? "#00FF00" : "#FF0000";
-                    }
-                    return "#CCCCCC";
-                }
-                if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
-                    return p.defaultColor;
-                }
-                return selectedCategory ? "#CCCCCC" : p.defaultColor;
-            })
-            .style("opacity", function(p) {
-                if (isSecondVis) {
-                    const correctness = modelDataMap.get(p.text);
-                    if (correctness !== undefined) {
-                        return 1; // Higher opacity for emphasis
-                    }
-                    return 0.1; // Reduced opacity for non-relevant points
-                }
-                return selectedCategory ? (p.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.1) : 1;
-            });
-
-        g.selectAll(".label text")
-            .style("opacity", function(label) {
-                return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.2) : 1;
-            })
-            .attr("fill", function(label) {
-                return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? (customColors[label.category] || colorScale(label.category)) : "#CCCCCC") : (isSecondVis ? "#555555" : (customColors[label.category] || colorScale(label.category)));
-            });
-    }).catch(error => {
-        console.error("Error loading model data:", error);
-    });
-}
-
 export async function loadScatterPlotVis() {
     const container = document.querySelector('.visualization-container');
     container.innerHTML = `
@@ -198,8 +122,8 @@ export async function loadScatterPlotVis() {
         const colorScale = d3.scaleOrdinal(colorPalette).domain(uniqueCategories);
 
         const customColors = {
-            "Interconnection Networks": "#351fb4",
-            "Reconfigurable Architectures (FPGA / CGRA)": "#F28C28"
+            "Reconfigurable Architectures (FPGA / CGRA)": "#FFA500",
+            "Interconnection Networks": "#351fb4"
         };
 
         const points = reducedVectors.map((coords, i) => ({
@@ -331,8 +255,71 @@ export async function loadScatterPlotVis() {
         const legend = createLegend(svg);
         legend.style("display", "none"); // Hide the legend initially
 
-        function updateCheckboxState(event) {
-            const checkboxChanged = event.target;
+        function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
+            const selectedModel = document.getElementById("model-dropdown").value;
+            const selectedSet = document.getElementById("set-dropdown").value;
+            const setFieldSFT = `${selectedSet}_sft`;
+            const setFieldZS = `${selectedSet}_zs`;
+            const showSFT = document.getElementById("sft-checkbox").checked;
+            const showZS = document.getElementById("zs-checkbox").checked;
+
+            g.selectAll("circle")
+                .attr("r", function(p) {
+                    if (isSecondVis) {
+                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
+                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
+                            return 5; // Increased radius for emphasis
+                        }
+                        return 3;
+                    }
+                    return 3;
+                })
+                .style("fill", function(p) {
+                    if (isSecondVis) {
+                        if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
+                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
+                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
+                            }
+                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
+                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
+                            }
+                            return "#CCCCCC";
+                        } else {
+                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
+                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
+                            }
+                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
+                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
+                            }
+                        }
+                        return "#CCCCCC";
+                    }
+                    if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
+                        return p.defaultColor;
+                    }
+                    return selectedCategory ? "#CCCCCC" : p.defaultColor;
+                })
+                .style("opacity", function(p) {
+                    if (isSecondVis) {
+                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
+                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
+                            return 1; // Higher opacity for emphasis
+                        }
+                        return 0.1; // Reduced opacity for non-relevant points
+                    }
+                    return selectedCategory ? (p.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.1) : 1;
+                });
+
+            g.selectAll(".label text")
+                .style("opacity", function(label) {
+                    return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.2) : 1;
+                })
+                .attr("fill", function(label) {
+                    return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? (customColors[label.category] || colorScale(label.category)) : "#CCCCCC") : (isSecondVis ? "#555555" : (customColors[label.category] || colorScale(label.category)));
+                });
+        }
+
+        function updateCheckboxState(checkboxChanged) {
             if (checkboxChanged.id === 'sft-checkbox' && checkboxChanged.checked) {
                 document.getElementById('zs-checkbox').checked = false;
             }
@@ -343,18 +330,18 @@ export async function loadScatterPlotVis() {
 
         function onLabelClick(event, d) {
             const selectedCategory = d.category.replace(/\s+/g, '-');
-            updateScatterPlot(g, colorScale, customColors, hullGroup, false, selectedCategory);
+            updateScatterPlot(false, selectedCategory);
         }
 
         labelGroups.on("click", onLabelClick);
 
-        document.getElementById('model-dropdown').onchange = function(event) { updateCheckboxState(event); };
-        document.getElementById('set-dropdown').onchange = function(event) { updateCheckboxState(event); };
-        document.getElementById('sft-checkbox').onchange = function(event) { updateCheckboxState(event); };
-        document.getElementById('zs-checkbox').onchange = function(event) { updateCheckboxState(event); };
+        document.getElementById('model-dropdown').onchange = function() { updateCheckboxState(); };
+        document.getElementById('set-dropdown').onchange = function() { updateCheckboxState(); };
+        document.getElementById('sft-checkbox').onchange = function() { updateCheckboxState(this); };
+        document.getElementById('zs-checkbox').onchange = function() { updateCheckboxState(this); };
 
         document.getElementById('update-vis').addEventListener('click', function() {
-            updateScatterPlot(g, colorScale, customColors, hullGroup, true);
+            updateScatterPlot(true);
         });
 
         document.getElementById('show-second-vis').addEventListener('click', function() {
@@ -373,7 +360,7 @@ export async function loadScatterPlotVis() {
             const modelDropdown = d3.select("#model-dropdown");
             const setDropdown = d3.select("#set-dropdown");
 
-            const modelList = ["llama3-8B", "llama3-70B", "mistral-7B"];
+            const modelList = ["llama3-8B", "mistral-7B", "llama3-70B"];
             const sets = ["val", "test"];
 
             modelDropdown.selectAll('option').remove();
@@ -394,7 +381,7 @@ export async function loadScatterPlotVis() {
             modelDropdown.property("value", "llama3-8B");
             setDropdown.property("value", "test");
 
-            updateScatterPlot(g, colorScale, customColors, hullGroup, true);
+            updateScatterPlot(true);
 
             // Set labels to grey
             g.selectAll(".label text")
@@ -406,7 +393,7 @@ export async function loadScatterPlotVis() {
 
             svg.on("click", function(event) {
                 if (event.target.tagName !== 'circle' && event.target.tagName !== 'text') {
-                    updateScatterPlot(g, colorScale, customColors, hullGroup, true);
+                    updateScatterPlot(true);
                 }
             });
 
