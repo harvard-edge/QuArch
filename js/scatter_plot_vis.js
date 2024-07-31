@@ -28,7 +28,7 @@ async function loadAndProcessData() {
 }
 
 async function loadModelData(model, set, zs) {
-    const basePath = '/Users/sgiannuzzi/Desktop/QuArch/input'; // Base path for your data
+    const basePath = '/input'; // Base path for your data
     const filePath = `${basePath}/${model}/${model}_QuArch_v0_2_0_${set}_${zs}.json`;
     try {
         const data = await d3.json(filePath);
