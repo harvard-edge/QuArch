@@ -5,6 +5,8 @@ function zoomed(event) {
     g.attr("transform", event.transform);
 }
 
+console.log("entered")
+
 async function loadAndProcessData() {
     const data = await d3.json("./input/QuArch_v0_2_0.json");
 
@@ -72,6 +74,7 @@ function createLegend(svg) {
 
 async function loadModelData(selectedModel, selectedSet, selectedType) {
     const filePath = `./input/${selectedModel}/${selectedModel}_QuArch_v0_2_0_${selectedSet}_${selectedType}.json`;
+    console.log("Loading model data from:", filePath); // Debugging log
     const modelData = await d3.json(filePath);
     return modelData;
 }
@@ -320,23 +323,6 @@ export async function loadScatterPlotVis() {
 
         const legend = createLegend(svg);
         legend.style("display", "none"); // Hide the legend initially
-
-        function updateCheckboxState(event) {
-            const checkboxChanged = event.target;
-            if (checkboxChanged.id === 'sft-checkbox' && checkboxChanged.checked) {
-                document.getElementById('zs-checkbox').checked = false;
-            }
-            if (checkboxChanged.id === 'zs-checkbox' && checkboxChanged.checked) {
-                document.getElementById('sft-checkbox').checked = false;
-            }
-        }
-
-        function onLabelClick(event, d) {
-            const selectedCategory = d.category.replace(/\s+/g, '-');
-            updateScatterPlot(false, selectedCategory);
-        }
-
-        labelGroups.on("click", onLabelClick);
 
         document.getElementById('model-dropdown').onchange = function(event) { updateCheckboxState(event); };
         document.getElementById('set-dropdown').onchange = function(event) { updateCheckboxState(event); };
