@@ -70,6 +70,72 @@ function createLegend(svg) {
     return legend;
 }
 
+async function loadModelData(selectedModel, selectedSet, selectedType) {
+    const filePath = `./input/${selectedModel}/${selectedModel}_QuArch_v0_2_0_${selectedSet}_${selectedType}.json`;
+    const modelData = await d3.json(filePath);
+    return modelData;
+}
+
+function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
+    const selectedModel = document.getElementById("model-dropdown").value;
+    const selectedSet = document.getElementById("set-dropdown").value;
+    const selectedType = document.getElementById("sft-checkbox").checked ? "sft" : "zs";
+
+    loadModelData(selectedModel, selectedSet, selectedType).then(modelData => {
+        const modelDataMap = new Map();
+        modelData.forEach(item => {
+            const question = item[0].Question;
+            const correctness = item[0].Correctness;
+            modelDataMap.set(question, correctness);
+        });
+
+        g.selectAll("circle")
+            .attr("r", function(p) {
+                if (isSecondVis) {
+                    const correctness = modelDataMap.get(p.text);
+                    if (correctness !== undefined) {
+                        return 5; // Increased radius for emphasis
+                    }
+                    return 3;
+                }
+                return 3;
+            })
+            .style("fill", function(p) {
+                if (isSecondVis) {
+                    const correctness = modelDataMap.get(p.text);
+                    if (correctness !== undefined) {
+                        return correctness ? "#00FF00" : "#FF0000";
+                    }
+                    return "#CCCCCC";
+                }
+                if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
+                    return p.defaultColor;
+                }
+                return selectedCategory ? "#CCCCCC" : p.defaultColor;
+            })
+            .style("opacity", function(p) {
+                if (isSecondVis) {
+                    const correctness = modelDataMap.get(p.text);
+                    if (correctness !== undefined) {
+                        return 1; // Higher opacity for emphasis
+                    }
+                    return 0.1; // Reduced opacity for non-relevant points
+                }
+                return selectedCategory ? (p.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.1) : 1;
+            });
+
+        g.selectAll(".label text")
+            .style("opacity", function(label) {
+                return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.2) : 1;
+            })
+            .attr("fill", function(label) {
+                return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? (customColors[label.category] || colorScale(label.category)) : "#CCCCCC") : (isSecondVis ? "#555555" : (customColors[label.category] || colorScale(label.category)));
+            });
+    }).catch(error => {
+        console.error("Error loading model data:", error);
+    });
+}
+
 export async function loadScatterPlotVis() {
     const container = document.querySelector('.visualization-container');
     container.innerHTML = `
@@ -254,66 +320,6 @@ export async function loadScatterPlotVis() {
 
         const legend = createLegend(svg);
         legend.style("display", "none"); // Hide the legend initially
-
-        function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
-            print("entered")
-            const selectedModel = document.getElementById("model-dropdown").value;
-            const selectedSet = document.getElementById("set-dropdown").value;
-            const setFieldSFT = `${selectedSet}_sft`;
-            const setFieldZS = `${selectedSet}_zs`;
-            const showSFT = document.getElementById("sft-checkbox").checked;
-            const showZS = document.getElementById("zs-checkbox").checked;
-
-            g.selectAll("circle")
-                .attr("r", function(p) {
-                    if (isSecondVis) {
-                        if ((showSFT && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldSFT]) && p.modelsData[selectedModel][setFieldSFT][0] !== "NA") ||
-                            (showZS && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldZS]) && p.modelsData[selectedModel][setFieldZS][0] !== "NA")) {
-                            return 5; // Increased radius for emphasis
-                        }
-                        return 3;
-                    }
-                    return 3;
-                })
-                .style("fill", function(p) {
-                    if (isSecondVis) {
-                        console.log("Point data:", p);
-                        if (showSFT && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldSFT]) && p.modelsData[selectedModel][setFieldSFT][0] !== "NA") {
-                            console.log("SFT Data:", p.modelsData[selectedModel][setFieldSFT]);
-                            return p.modelsData[selectedModel][setFieldSFT][0].Correctness ? "#00FF00" : "#FF0000";
-                        }
-                        if (showZS && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldZS]) && p.modelsData[selectedModel][setFieldZS][0] !== "NA") {
-                            console.log("ZS Data:", p.modelsData[selectedModel][setFieldZS]);
-                            return p.modelsData[selectedModel][setFieldZS][0].Correctness ? "#00FF00" : "#FF0000";
-                        }
-                        return "#CCCCCC";
-                    }
-                    if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
-                        return p.defaultColor;
-                    }
-                    return selectedCategory ? "#CCCCCC" : p.defaultColor;
-                })
-                .style("opacity", function(p) {
-                    if (isSecondVis) {
-                        if ((showSFT && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldSFT]) && p.modelsData[selectedModel][setFieldSFT][0] !== "NA") ||
-                            (showZS && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldZS]) && p.modelsData[selectedModel][setFieldZS][0] !== "NA")) {
-                            return 1; // Higher opacity for emphasis
-                        }
-                        return 0.1; // Reduced opacity for non-relevant points
-                    }
-                    return selectedCategory ? (p.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.1) : 1;
-                });
-
-            g.selectAll(".label text")
-                .style("opacity", function(label) {
-                    return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.2) : 1;
-                })
-                .attr("fill", function(label) {
-                    return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? (customColors[label.category] || colorScale(label.category)) : "#CCCCCC") : (isSecondVis ? "#555555" : (customColors[label.category] || colorScale(label.category)));
-                });
-        }
-
-
 
         function updateCheckboxState(event) {
             const checkboxChanged = event.target;
