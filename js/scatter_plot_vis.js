@@ -378,7 +378,7 @@ export async function loadScatterPlotVis() {
                     .text(set);
             });
 
-            modelDropdown.property("value", "llama2-7B");
+            modelDropdown.property("value", "llama3-8B");
             setDropdown.property("value", "val");
 
             updateScatterPlot(true);
