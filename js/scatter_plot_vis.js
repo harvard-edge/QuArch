@@ -313,6 +313,7 @@ export async function loadScatterPlotVis() {
         }
 
 
+
         function updateCheckboxState(event) {
             const checkboxChanged = event.target;
             if (checkboxChanged.id === 'sft-checkbox' && checkboxChanged.checked) {
