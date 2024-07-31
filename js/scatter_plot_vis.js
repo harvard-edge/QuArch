@@ -6,7 +6,7 @@ function zoomed(event) {
 }
 
 async function loadAndProcessData() {
-    const data = await d3.json("./input/QuArch_v0_1_1_Filtered_Errors_modified.json");
+    const data = await d3.json("./input/QuArch_v0_2_0.json");
 
     const embeddings = data.data.flatMap(paper =>
         paper.paragraphs.flatMap(paragraph =>
