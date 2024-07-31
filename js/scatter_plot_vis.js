@@ -123,7 +123,7 @@ export async function loadScatterPlotVis() {
 
         const customColors = {
             "Interconnection Networks": "#351fb4",
-            "Reconfigurable Architecture (FPGA/CGRA)": "#FFA500" // Change to a different color, for example, orange
+            "Reconfigurable Architectures (FPGA / CGRA)": "#ff7700" // Change to a different color, for example, orange
         };
 
         const points = reducedVectors.map((coords, i) => ({
