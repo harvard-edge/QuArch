@@ -360,7 +360,7 @@ export async function loadScatterPlotVis() {
             const modelDropdown = d3.select("#model-dropdown");
             const setDropdown = d3.select("#set-dropdown");
 
-            const modelList = ["llama2-7B", "llama2-13B", "llama3", "phi-3", "mistral-7B", "gemma-7B"];
+            const modelList = ["llama3-8B", "llama3-70B", "mistral-7B"];
             const sets = ["val", "test"];
 
             modelDropdown.selectAll('option').remove();
