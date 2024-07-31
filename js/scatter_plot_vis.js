@@ -266,8 +266,8 @@ export async function loadScatterPlotVis() {
             g.selectAll("circle")
                 .attr("r", function(p) {
                     if (isSecondVis) {
-                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
-                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
+                        if ((showSFT && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldSFT]) && p.modelsData[selectedModel][setFieldSFT][0] !== "NA") ||
+                            (showZS && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldZS]) && p.modelsData[selectedModel][setFieldZS][0] !== "NA")) {
                             return 5; // Increased radius for emphasis
                         }
                         return 3;
@@ -277,14 +277,13 @@ export async function loadScatterPlotVis() {
                 .style("fill", function(p) {
                     if (isSecondVis) {
                         console.log("Point data:", p);
-                        console.log("Selected Model Data:", p.modelsData[selectedModel]);
-                        if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
+                        if (showSFT && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldSFT]) && p.modelsData[selectedModel][setFieldSFT][0] !== "NA") {
                             console.log("SFT Data:", p.modelsData[selectedModel][setFieldSFT]);
-                            return p.modelsData[selectedModel][setFieldSFT].Correctness ? "#00FF00" : "#FF0000";
+                            return p.modelsData[selectedModel][setFieldSFT][0].Correctness ? "#00FF00" : "#FF0000";
                         }
-                        if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
+                        if (showZS && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldZS]) && p.modelsData[selectedModel][setFieldZS][0] !== "NA") {
                             console.log("ZS Data:", p.modelsData[selectedModel][setFieldZS]);
-                            return p.modelsData[selectedModel][setFieldZS].Correctness ? "#00FF00" : "#FF0000";
+                            return p.modelsData[selectedModel][setFieldZS][0].Correctness ? "#00FF00" : "#FF0000";
                         }
                         return "#CCCCCC";
                     }
@@ -295,8 +294,8 @@ export async function loadScatterPlotVis() {
                 })
                 .style("opacity", function(p) {
                     if (isSecondVis) {
-                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
-                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
+                        if ((showSFT && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldSFT]) && p.modelsData[selectedModel][setFieldSFT][0] !== "NA") ||
+                            (showZS && p.modelsData[selectedModel] && Array.isArray(p.modelsData[selectedModel][setFieldZS]) && p.modelsData[selectedModel][setFieldZS][0] !== "NA")) {
                             return 1; // Higher opacity for emphasis
                         }
                         return 0.1; // Reduced opacity for non-relevant points
@@ -312,7 +311,6 @@ export async function loadScatterPlotVis() {
                     return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? (customColors[label.category] || colorScale(label.category)) : "#CCCCCC") : (isSecondVis ? "#555555" : (customColors[label.category] || colorScale(label.category)));
                 });
         }
-
 
 
         function updateCheckboxState(event) {
