@@ -6,18 +6,26 @@ function zoomed(event) {
 }
 
 async function loadAndProcessData() {
-    const data = await d3.json("./input/QuArch_v0_2_0_modified.json");
+    const data = await d3.json("./input/test_FINAL_post-processed.json");
 
-    const embeddings = data.data.flatMap(paper =>
-        paper.paragraphs.flatMap(paragraph =>
-            paragraph.qas.map(qa => ({
-                question: qa.question,
-                embedding: qa.embedding,
-                category: qa.taxonomy["0"].split(':')[0], // Extract base category
-                modelsData: qa
-            }))
-        )
-    );
+    const embeddings = data.map(questionData => ({
+        question: questionData.question,
+        embedding: questionData.embedding,
+        category: questionData.taxonomy["0"].split(':')[0],
+        modelsData: {
+            "claude-3": questionData["claude-3"],
+            "gemini-1.5": questionData["gemini-1.5"],
+            "gemma-2-2b": questionData["gemma-2-2b"],
+            "gemma-2-9b": questionData["gemma-2-9b"],
+            "gemma-2-27b": questionData["gemma-2-27b"],
+            "llama-3.2-1b": questionData["llama-3.2-1b"],
+            "llama-3.2-3b": questionData["llama-3.2-3b"],
+            "llama-3.1-8b": questionData["llama-3.1-8b"],
+            "llama-3.1-70b": questionData["llama-3.1-70b"],
+            "mistral-7b": questionData["mistral-7b"],
+            "gpt-4o": questionData["gpt-4o"]
+        }
+    }));
 
     const vectors = embeddings.map(d => d.embedding);
     const questions = embeddings.map(d => d.question);
@@ -29,7 +37,7 @@ async function loadAndProcessData() {
 
 function resetSelection(g, colorScale, customColors, hullGroup, isSecondVis) {
     g.selectAll("circle")
-        .attr("r", 3) // Reset radius to original size
+        .attr("r", 3)
         .style("fill", d => isSecondVis ? "#CCCCCC" : d.defaultColor)
         .style("opacity", 1);
 
@@ -76,11 +84,9 @@ export async function loadScatterPlotVis() {
         <h5 class="text-center" id="scatter-header">Scatter of Questions across Hardware Terms</h5>
         <svg></svg>
         <div id="controls" style="display: none;">
+            <label for="model-dropdown">Select Model:</label>
             <select id="model-dropdown"></select>
-            <select id="set-dropdown"></select>
-            <label><input type="checkbox" id="sft-checkbox"> SFT</label>
-            <label><input type="checkbox" id="zs-checkbox" checked> ZS</label>
-            <button id="update-vis" class="btn btn-primary" style="margin-top: 10px;">Enter</button>
+            <button id="enter-model" class="btn btn-primary" style="margin-left: 10px;">Enter</button>
         </div>
         <p class="text-center">
             <button id="show-second-vis" class="btn btn-primary" style="margin-top: 10px;">Correctness Across Models</button>
@@ -101,7 +107,7 @@ export async function loadScatterPlotVis() {
     const { vectors, questions, categories, modelsData } = await loadAndProcessData();
 
     const tsneWorker = new Worker('./js/tsneWorker.js');
-    const iterations = 300; // Further reduced number of iterations for faster computation
+    const iterations = 300;
 
     tsneWorker.postMessage({ vectors, iterations });
 
@@ -180,43 +186,6 @@ export async function loadScatterPlotVis() {
             y: centroids[category].y
         }));
 
-        const resolveOverlaps = (labels) => {
-            const padding = 10;
-            let overlapping = true;
-
-            while (overlapping) {
-                overlapping = false;
-                for (let i = 0; i < labels.length; i++) {
-                    const label1 = labels[i];
-                    const tempText1 = svg.append("text").text(label1.category).attr("font-size", "18px");
-                    const bbox1 = tempText1.node().getBBox();
-                    tempText1.remove();
-
-                    for (let j = i + 1; j < labels.length; j++) {
-                        const label2 = labels[j];
-                        const tempText2 = svg.append("text").text(label2.category).attr("font-size", "18px");
-                        const bbox2 = tempText2.node().getBBox();
-                        tempText2.remove();
-
-                        if (Math.abs(label1.x - label2.x) < (bbox1.width + bbox2.width) / 2 + padding &&
-                            Math.abs(label1.y - label2.y) < (bbox1.height + bbox2.height) / 2 + padding) {
-                            overlapping = true;
-
-                            if (label1.y < label2.y) {
-                                label1.y -= bbox1.height + padding;
-                                label2.y += bbox2.height + padding;
-                            } else {
-                                label1.y += bbox1.height + padding;
-                                label2.y -= bbox2.height + padding;
-                            }
-                        }
-                    }
-                }
-            }
-        };
-
-        resolveOverlaps(labels);
-
         const labelGroups = g.selectAll("g.label")
             .data(labels)
             .enter().append("g")
@@ -257,18 +226,13 @@ export async function loadScatterPlotVis() {
 
         function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
             const selectedModel = document.getElementById("model-dropdown").value;
-            const selectedSet = document.getElementById("set-dropdown").value;
-            const setFieldSFT = `${selectedSet}_sft`;
-            const setFieldZS = `${selectedSet}_zs`;
-            const showSFT = document.getElementById("sft-checkbox").checked;
-            const showZS = document.getElementById("zs-checkbox").checked;
 
             g.selectAll("circle")
                 .attr("r", function(p) {
                     if (isSecondVis) {
-                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
-                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
-                            return 5; // Increased radius for emphasis
+                        const modelResult = p.modelsData[selectedModel];
+                        if (modelResult !== "NA") {
+                            return 5; // Increase radius if model data exists
                         }
                         return 3;
                     }
@@ -276,23 +240,8 @@ export async function loadScatterPlotVis() {
                 })
                 .style("fill", function(p) {
                     if (isSecondVis) {
-                        if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
-                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
-                            }
-                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
-                            }
-                            return "#CCCCCC";
-                        } else {
-                            if (showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldSFT] ? "#00FF00" : "#FF0000";
-                            }
-                            if (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA") {
-                                return p.modelsData[selectedModel][setFieldZS] ? "#00FF00" : "#FF0000";
-                            }
-                        }
-                        return "#CCCCCC";
+                        const modelResult = p.modelsData[selectedModel];
+                        return modelResult === 1 ? "#00FF00" : "#FF0000"; // Green for correct, red for incorrect
                     }
                     if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
                         return p.defaultColor;
@@ -301,48 +250,11 @@ export async function loadScatterPlotVis() {
                 })
                 .style("opacity", function(p) {
                     if (isSecondVis) {
-                        if ((showSFT && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldSFT] !== "NA") ||
-                            (showZS && p.modelsData[selectedModel] && p.modelsData[selectedModel][setFieldZS] !== "NA")) {
-                            return 1; // Higher opacity for emphasis
-                        }
-                        return 0.1; // Reduced opacity for non-relevant points
+                        return p.modelsData[selectedModel] !== "NA" ? 1 : 0.1;
                     }
                     return selectedCategory ? (p.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.1) : 1;
                 });
-
-            g.selectAll(".label text")
-                .style("opacity", function(label) {
-                    return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.2) : 1;
-                })
-                .attr("fill", function(label) {
-                    return selectedCategory ? (label.category.replace(/\s+/g, '-') === selectedCategory ? (customColors[label.category] || colorScale(label.category)) : "#CCCCCC") : (isSecondVis ? "#555555" : (customColors[label.category] || colorScale(label.category)));
-                });
         }
-
-        function updateCheckboxState(checkboxChanged) {
-            if (checkboxChanged.id === 'sft-checkbox' && checkboxChanged.checked) {
-                document.getElementById('zs-checkbox').checked = false;
-            }
-            if (checkboxChanged.id === 'zs-checkbox' && checkboxChanged.checked) {
-                document.getElementById('sft-checkbox').checked = false;
-            }
-        }
-
-        function onLabelClick(event, d) {
-            const selectedCategory = d.category.replace(/\s+/g, '-');
-            updateScatterPlot(false, selectedCategory);
-        }
-
-        labelGroups.on("click", onLabelClick);
-
-        document.getElementById('model-dropdown').onchange = function() { updateCheckboxState(); };
-        document.getElementById('set-dropdown').onchange = function() { updateCheckboxState(); };
-        document.getElementById('sft-checkbox').onchange = function() { updateCheckboxState(this); };
-        document.getElementById('zs-checkbox').onchange = function() { updateCheckboxState(this); };
-
-        document.getElementById('update-vis').addEventListener('click', function() {
-            updateScatterPlot(true);
-        });
 
         document.getElementById('show-second-vis').addEventListener('click', function() {
             resetSelection(g, colorScale, customColors, hullGroup, true);
@@ -354,42 +266,24 @@ export async function loadScatterPlotVis() {
             controls.style.display = 'block';
             showSecondVisButton.style.display = 'none';
             returnFirstVisButton.style.display = 'inline-block';
-            header.textContent = 'Correctness of Models Across Hardware Terms';
+            header.textContent = 'Model Correctness Across Hardware Terms';
 
-            // Populate dropdown menus and set initial values
             const modelDropdown = d3.select("#model-dropdown");
-            const setDropdown = d3.select("#set-dropdown");
-
-            const modelList = ["llama3-8B", "mistral-7B", "llama3-70B"];
-            const sets = ["val", "test"];
+            const modelList = ["claude-3", "gemini-1.5", "gemma-2-2b", "gemma-2-9b", "gemma-2-27b", "llama-3.2-1b", "llama-3.2-3b", "llama-3.1-8b", "llama-3.1-70b", "mistral-7b", "gpt-4o"];
 
             modelDropdown.selectAll('option').remove();
-            setDropdown.selectAll('option').remove();
-
             modelList.forEach(model => {
                 modelDropdown.append("option")
                     .attr("value", model)
                     .text(model);
             });
 
-            sets.forEach(set => {
-                setDropdown.append("option")
-                    .attr("value", set)
-                    .text(set);
-            });
-
-            modelDropdown.property("value", "llama3-8B");
-            setDropdown.property("value", "test");
-
+            modelDropdown.property("value", "llama-3.1-8b");
             updateScatterPlot(true);
 
-            // Set labels to grey
             g.selectAll(".label text")
                 .attr("fill", "#555555")
                 .style("opacity", 1);
-
-            // Make labels unclickable in the second vis
-            labelGroups.on("click", null);
 
             svg.on("click", function(event) {
                 if (event.target.tagName !== 'circle' && event.target.tagName !== 'text') {
@@ -397,7 +291,11 @@ export async function loadScatterPlotVis() {
                 }
             });
 
-            legend.style("display", "block"); // Show the legend in the second vis
+            legend.style("display", "block");
+        });
+
+        document.getElementById('enter-model').addEventListener('click', function() {
+            updateScatterPlot(true); // Update the scatter plot when "Enter" button is clicked
         });
 
         document.getElementById('return-to-first-vis').addEventListener('click', function() {
@@ -413,7 +311,7 @@ export async function loadScatterPlotVis() {
             header.textContent = 'Scatter of Questions across Hardware Terms';
 
             g.selectAll("circle")
-                .attr("r", 3) // Reset radius to original size
+                .attr("r", 3)
                 .style("fill", d => d.defaultColor)
                 .style("opacity", 1);
 
@@ -421,25 +319,22 @@ export async function loadScatterPlotVis() {
                 .style("opacity", 1)
                 .attr("fill", d => customColors[d.category] || colorScale(d.category));
 
-            labelGroups.on("click", onLabelClick);
-
             svg.on("click", function(event) {
                 if (event.target.tagName !== 'circle' && event.target.tagName !== 'text') {
                     resetSelection(g, colorScale, customColors, hullGroup, false);
                 }
             });
 
-            legend.style("display", "none"); // Hide the legend when returning to the first vis
+            legend.style("display", "none");
         });
 
-        // Add event listener for clicking outside the selected label area in the first vis
         svg.on("click", function(event) {
             if (event.target.tagName !== 'circle' && event.target.tagName !== 'text') {
                 resetSelection(g, colorScale, customColors, hullGroup, false);
             }
         });
 
-        updateScatterPlot(); // Ensure the initial update happens
+        updateScatterPlot();
     };
 
     tsneWorker.onerror = function(error) {
