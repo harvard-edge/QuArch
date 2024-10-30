@@ -283,7 +283,6 @@ export async function loadScatterPlotVis() {
         controls.style.display = 'none';
         showSecondVisButton.style.display = 'inline-block';
         returnFirstVisButton.style.display = 'none';
-        header.textContent = 'Scatter of Questions across Hardware Terms';
 
         g.selectAll("circle")
             .attr("r", 3)
