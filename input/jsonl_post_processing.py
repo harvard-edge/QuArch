@@ -1,12 +1,61 @@
 import json
-import os
 
-input_file = 'test_FINAL.jsonl'
-output_file = 'test_FINAL_post-processed.jsonl'
+# Function to load JSON data from a file
+def load_json(file_path):
+    with open(file_path, 'r') as f:
+        return json.load(f)
 
-# Dictionary of model names and corresponding data file paths
+# Function to process the model data and add the fields to test_FINAL data
+def process_test_final(test_final_path, field_file_paths, output_path):
+    # Load test_FINAL.jsonl file
+    with open(test_final_path, 'r') as f:
+        test_final_data = [json.loads(line) for line in f]
+    
+    # Load model data from each model file
+    model_data = {}
+    for model_name, file_path in field_file_paths.items():
+        model_data[model_name] = load_json(file_path)
+    
+    # Create a dictionary for fast access to question -> accuracy/labels for each model
+    model_questions_data = {}
+    for model_name, data in model_data.items():
+        question_dict = {}
+        for item in data:
+            question_text = item['doc']['question']  # Use question text for matching
+            # Check if the "acc" field exists, otherwise use "Expected Label" and "Predicted Label"
+            if 'acc' in item:
+                question_dict[question_text] = item['acc']
+            else:
+                expected_label = item['data_review_info'][0]['Expected Label']
+                predicted_label = item['data_review_info'][0]['Predicted Label']
+                question_dict[question_text] = 1.0 if expected_label == predicted_label else 0.0
+        model_questions_data[model_name] = question_dict
+    
+    # Process each entry in test_FINAL.jsonl
+    for entry in test_final_data:
+        question_text = entry['question']  # Use question text instead of question_id
+        print(f"Processing question: {question_text}")  # Debugging statement
+        
+        # Add fields for each model with the appropriate value (1, 0, or NA)
+        for model_name, questions_data in model_questions_data.items():
+            if question_text in questions_data:
+                value = questions_data[question_text]
+                entry[model_name] = 1 if value == 1.0 else 0
+                print(f"Assigned {model_name}: {entry[model_name]}")  # Debugging statement
+            else:
+                entry[model_name] = "NA"
+                print(f"Assigned {model_name}: NA (no match)")  # Debugging statement
+    
+    # Write the updated test_FINAL_post-processed.jsonl file
+    with open(output_path, 'w') as f:
+        for entry in test_final_data:
+            f.write(json.dumps(entry) + '\n')
+
+# Define file paths
+test_final_path = 'test_FINAL.jsonl'
+output_path = 'test_FINAL_post-processed.json'
 field_file_paths = {
-    "claude-3": "./eval_results/anthropic__claude-3.5-sonnet/samples_QuArch_v1_2024-10-15_claude-3_5-sonnet_0-1547_post-processed.json",
+    "claude-3.5": "./eval_results/anthropic__claude-3.5-sonnet/samples_QuArch_v1_2024-10-15_claude-3_5-sonnet_0-1547_post-processed.json",
     "gemini-1.5": "./eval_results/google__gemini-1.5-pro/samples_QuArch_v1_2024-10-15_gemini-1_5-pro_0-1547_post-processed.json",
     "gemma-2-2b": "./eval_results/google__gemma-2-2b-it/samples_QuArch_v1_2024-10-01T07-25-45.719370.json",
     "gemma-2-9b": "./eval_results/google__gemma-2-9b-it/samples_QuArch_v1_2024-10-01T07-31-20.757028.json",
@@ -19,64 +68,5 @@ field_file_paths = {
     "gpt-4o": "./eval_results/openai__gpt-4o/samples_QuArch_v1_2024-10-02T17-02-10.910773_gpt-4o_post-processed.json"
 }
 
-def load_samples(file_path):
-    samples_data = {}
-    try:
-        with open(file_path, 'r') as sf:
-            samples = json.load(sf)
-
-            for sample in samples:
-                question_id = sample.get("doc", {}).get("question_id")
-
-                if "data_review_info" in sample:
-                    expected_label = sample["data_review_info"][0].get("Expected Label")
-                    predicted_label = sample["data_review_info"][0].get("Predicted Label")
-
-                    if expected_label is not None and predicted_label is not None:
-                        samples_data[question_id] = 1 if expected_label == predicted_label else 0
-                elif "acc" in sample:
-                    acc_value = sample.get("acc")
-                    if acc_value is not None:
-                        samples_data[question_id] = round(acc_value)
-    except json.JSONDecodeError as e:
-        print(f"Error reading JSON from {file_path}: {e}")
-    except Exception as e:
-        print(f"Error processing file {file_path}: {e}")
-    
-    return samples_data
-
-# Load samples for each model
-field_samples_data = {}
-for field, file_path in field_file_paths.items():
-    if os.path.exists(file_path):
-        field_samples_data[field] = load_samples(file_path)
-    else:
-        print(f"Warning: File not found for {field} at {file_path}")
-        field_samples_data[field] = {}
-
-# Set initial fields to 'NA' for each model in the input JSONL file
-new_fields = {field: "NA" for field in field_file_paths.keys()}
-
-# Process the input JSONL file and add model-specific data
-with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
-    for line_num, line in enumerate(infile, 1):
-        try:
-            data = json.loads(line.strip())  # Strip to remove extra spaces/newlines
-            question_id = data.get("question_id")
-
-            # Populate fields from the loaded sample data
-            for field in new_fields:
-                if question_id in field_samples_data[field]:
-                    data[field] = field_samples_data[field][question_id]
-                else:
-                    data[field] = "NA"
-
-            # Write updated data to output file
-            outfile.write(json.dumps(data) + '\n')
-        
-        except json.JSONDecodeError as e:
-            print(f"Error parsing JSON on line {line_num} of {input_file}: {e}")
-        except Exception as e:
-            print(f"Unexpected error processing line {line_num}: {e}")
-
-print(f"Updated file saved as {output_file}")
+# Run the script
+process_test_final(test_final_path, field_file_paths, output_path)
