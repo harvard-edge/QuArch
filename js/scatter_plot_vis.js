@@ -8,30 +8,34 @@ function zoomed(event) {
 }
 
 async function loadPreprocessedData() {
-    const data = await d3.json("./preprocessed_data.json");
-
-    const points = data.map(d => ({
-        x: d.x,
-        y: d.y,
-        question: d.question,
-        category: d.taxonomy["0"].split(':')[0],
-        modelsData: {
-            "claude-3.5": d["claude-3.5"],
-            "gemini-1.5": d["gemini-1.5"],
-            "gemma-2-2b": d["gemma-2-2b"],
-            "gemma-2-9b": d["gemma-2-9b"],
-            "gemma-2-27b": d["gemma-2-27b"],
-            "llama-3.2-1b": d["llama-3.2-1b"],
-            "llama-3.2-3b": d["llama-3.2-3b"],
-            "llama-3.1-8b": d["llama-3.1-8b"],
-            "llama-3.1-70b": d["llama-3.1-70b"],
-            "mistral-7b": d["mistral-7b"],
-            "gpt-4o": d["gpt-4o"]
-        }
-    }));
-
-    return points;
+    try {
+        const data = await d3.json("./preprocessed_data.json");
+        console.log("Fetched data:", data);
+        const points = data.map(d => ({
+            x: d.x,
+            y: d.y,
+            question: d.question,
+            category: d.taxonomy["0"].split(':')[0],
+            modelsData: {
+                "claude-3.5": d["claude-3.5"],
+                "gemini-1.5": d["gemini-1.5"],
+                "gemma-2-2b": d["gemma-2-2b"],
+                "gemma-2-9b": d["gemma-2-9b"],
+                "gemma-2-27b": d["gemma-2-27b"],
+                "llama-3.2-1b": d["llama-3.2-1b"],
+                "llama-3.2-3b": d["llama-3.2-3b"],
+                "llama-3.1-8b": d["llama-3.1-8b"],
+                "llama-3.1-70b": d["llama-3.1-70b"],
+                "mistral-7b": d["mistral-7b"],
+                "gpt-4o": d["gpt-4o"]
+            }
+        }));
+        return points;
+    } catch (error) {
+        console.error("Error loading JSON:", error);
+    }
 }
+
 
 function createLegend(svg) {
     const legend = svg.append("g")
