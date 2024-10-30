@@ -9,8 +9,13 @@ function zoomed(event) {
 
 async function loadPreprocessedData() {
     try {
-        const data = await d3.json("./preprocessed_data.json");
+        const dataPart1 = await d3.json("./preprocessed_data_part1.json");
+        const dataPart2 = await d3.json("./preprocessed_data_part2.json");
+
+        const data = dataPart1.concat(dataPart2);
+
         console.log("Fetched data:", data);
+
         const points = data.map(d => ({
             x: d.x,
             y: d.y,
@@ -30,11 +35,13 @@ async function loadPreprocessedData() {
                 "gpt-4o": d["gpt-4o"]
             }
         }));
+
         return points;
     } catch (error) {
         console.error("Error loading JSON:", error);
     }
 }
+
 
 
 function createLegend(svg) {
