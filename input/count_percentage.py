@@ -42,6 +42,5 @@ percentages = {model: (model_counters[model]["count_1"] / model_counters[model][
                if model_counters[model]["total"] > 0 else 0
                for model in models}
 
-# Print the percentages
 for model, percentage in percentages.items():
     print(f"{model}: {percentage:.2f}%")
