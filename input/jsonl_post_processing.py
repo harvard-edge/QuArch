@@ -1,28 +1,26 @@
+# code written with support of ChatGPT
+
+# script that accepts test_FINAL.jsonl and adds model correctness data, creating test_FINAL_post-processed.json
+
 import json
 
-# Function to load JSON data from a file
 def load_json(file_path):
     with open(file_path, 'r') as f:
         return json.load(f)
 
-# Function to process the model data and add the fields to test_FINAL data
 def process_test_final(test_final_path, field_file_paths, output_path):
-    # Load test_FINAL.jsonl file
     with open(test_final_path, 'r') as f:
         test_final_data = [json.loads(line) for line in f]
     
-    # Load model data from each model file
     model_data = {}
     for model_name, file_path in field_file_paths.items():
         model_data[model_name] = load_json(file_path)
     
-    # Create a dictionary for fast access to question -> accuracy/labels for each model
     model_questions_data = {}
     for model_name, data in model_data.items():
         question_dict = {}
         for item in data:
-            question_text = item['doc']['question']  # Use question text for matching
-            # Check if the "acc" field exists, otherwise use "Expected Label" and "Predicted Label"
+            question_text = item['doc']['question'] 
             if 'acc' in item:
                 question_dict[question_text] = item['acc']
             else:
@@ -31,27 +29,23 @@ def process_test_final(test_final_path, field_file_paths, output_path):
                 question_dict[question_text] = 1.0 if expected_label == predicted_label else 0.0
         model_questions_data[model_name] = question_dict
     
-    # Process each entry in test_FINAL.jsonl
     for entry in test_final_data:
-        question_text = entry['question']  # Use question text instead of question_id
-        print(f"Processing question: {question_text}")  # Debugging statement
+        question_text = entry['question'] 
+        print(f"Processing question: {question_text}")  
         
-        # Add fields for each model with the appropriate value (1, 0, or NA)
         for model_name, questions_data in model_questions_data.items():
             if question_text in questions_data:
                 value = questions_data[question_text]
                 entry[model_name] = 1 if value == 1.0 else 0
-                print(f"Assigned {model_name}: {entry[model_name]}")  # Debugging statement
+                print(f"Assigned {model_name}: {entry[model_name]}")  
             else:
                 entry[model_name] = "NA"
-                print(f"Assigned {model_name}: NA (no match)")  # Debugging statement
+                print(f"Assigned {model_name}: NA (no match)") 
     
-    # Write the updated test_FINAL_post-processed.jsonl file
     with open(output_path, 'w') as f:
         for entry in test_final_data:
             f.write(json.dumps(entry) + '\n')
 
-# Define file paths
 test_final_path = 'test_FINAL.jsonl'
 output_path = 'test_FINAL_post-processed.json'
 field_file_paths = {
@@ -68,5 +62,4 @@ field_file_paths = {
     "gpt-4o": "./eval_results/openai__gpt-4o/samples_QuArch_v1_2024-10-02T17-02-10.910773_gpt-4o_post-processed.json"
 }
 
-# Run the script
 process_test_final(test_final_path, field_file_paths, output_path)
