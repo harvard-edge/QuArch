@@ -82,7 +82,6 @@ export async function loadScatterPlotVis() {
         <div id="controls" style="display: none;">
             <label for="model-dropdown">Select Model:</label>
             <select id="model-dropdown"></select>
-            <button id="enter-model" class="btn btn-primary" style="margin-left: 10px;">Enter</button>
         </div>
         <p class="text-center">
             <button id="show-second-vis" class="btn btn-primary" style="margin-top: 10px;">Correctness Across Models</button>
@@ -262,8 +261,8 @@ export async function loadScatterPlotVis() {
         legend.style("display", "block");
     });
 
-    document.getElementById('enter-model').addEventListener('click', function() {
-        updateScatterPlot(true); // Update the scatter plot when "Enter" button is clicked
+    document.getElementById('model-dropdown').addEventListener('change', function() {
+        updateScatterPlot(true); // Update the scatter plot whenever the model dropdown changes
     });
 
     document.getElementById('return-to-first-vis').addEventListener('click', function() {
