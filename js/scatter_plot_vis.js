@@ -63,7 +63,7 @@ function createLegend(svg) {
 
 function resetSelection(g, colorScale, customColors, hullGroup, isSecondVis) {
     g.selectAll("circle")
-        .attr("r", 3) // Always set radius to 3, keeping it consistent across both views
+        .attr("r", 3)
         .style("fill", d => isSecondVis ? "#CCCCCC" : d.defaultColor)
         .style("opacity", 1);
 
@@ -120,7 +120,7 @@ export async function loadScatterPlotVis() {
         "Processor Architecture": "#8e3ccb"
     };
 
-    // Set default colors for points
+
     points.forEach(d => {
         d.defaultColor = customColors[d.category] || colorScale(d.category);
     });
@@ -131,7 +131,7 @@ export async function loadScatterPlotVis() {
     const circles = g.selectAll("circle")
         .data(points)
         .enter().append("circle")
-        .attr("r", 3) // Set radius to 3 for all points
+        .attr("r", 3)
         .attr("cx", d => xScale(d.x))
         .attr("cy", d => yScale(d.y))
         .style("fill", d => d.defaultColor)
@@ -147,7 +147,6 @@ export async function loadScatterPlotVis() {
                 .style("visibility", "hidden");
         });
 
-    // Calculate centroids based on median x, y positions for each category
     const centroids = {};
     uniqueCategories.forEach(category => {
         const categoryPoints = points.filter(p => p.category === category);
@@ -162,7 +161,6 @@ export async function loadScatterPlotVis() {
         y: centroids[category].y
     }));
 
-    // Render the labels in the first visualization
     const labelGroups = g.selectAll("g.label")
         .data(labels)
         .enter().append("g")
@@ -178,7 +176,7 @@ export async function loadScatterPlotVis() {
             .attr("dy", "0.35em")
             .attr("text-anchor", "middle")
             .attr("fill", customColors[d.category] || colorScale(d.category))
-            .attr("font-size", "18px")
+            .attr("font-size", "14px")
             .attr("font-weight", "bold")
             .text(d.category);
 
@@ -197,17 +195,17 @@ export async function loadScatterPlotVis() {
     });
 
     const legend = createLegend(svg);
-    legend.style("display", "none"); // Hide the legend initially
+    legend.style("display", "none");
 
     function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
         const selectedModel = document.getElementById("model-dropdown").value;
 
         g.selectAll("circle")
-            .attr("r", 3) // Keep radius consistent for all points, even in the second visualization
+            .attr("r", 3)
             .style("fill", function(p) {
                 if (isSecondVis) {
                     const modelResult = p.modelsData[selectedModel];
-                    return modelResult === 1 ? "#00FF00" : "#FF0000"; // Green for correct, red for incorrect
+                    return modelResult === 1 ? "#00FF00" : "#FF0000";
                 }
                 if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
                     return p.defaultColor;
@@ -222,7 +220,6 @@ export async function loadScatterPlotVis() {
             });
     }
 
-    // Event listeners for toggling between visualizations
     document.getElementById('show-second-vis').addEventListener('click', function() {
         resetSelection(g, colorScale, customColors, hullGroup, true);
         const controls = document.getElementById('controls');
@@ -262,7 +259,7 @@ export async function loadScatterPlotVis() {
     });
 
     document.getElementById('model-dropdown').addEventListener('change', function() {
-        updateScatterPlot(true); // Update the scatter plot whenever the model dropdown changes
+        updateScatterPlot(true);
     });
 
     document.getElementById('return-to-first-vis').addEventListener('click', function() {
@@ -278,7 +275,7 @@ export async function loadScatterPlotVis() {
         header.textContent = 'Scatter of Questions across Hardware Terms';
 
         g.selectAll("circle")
-            .attr("r", 3) // Keep radius consistent in the first visualization as well
+            .attr("r", 3)
             .style("fill", d => d.defaultColor)
             .style("opacity", 1);
 
