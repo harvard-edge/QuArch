@@ -90,7 +90,6 @@ function resetSelection(g, colorScale, customColors, hullGroup, isSecondVis) {
 export async function loadScatterPlotVis() {
     const container = document.querySelector('.visualization-container');
     container.innerHTML = `
-        <h5 class="text-center" id="scatter-header">Scatter of Questions across Hardware Terms</h5>
         <svg></svg>
         <div id="controls" style="display: none;">
             <label for="model-dropdown">Select Model:</label>
@@ -243,7 +242,6 @@ export async function loadScatterPlotVis() {
         controls.style.display = 'block';
         showSecondVisButton.style.display = 'none';
         returnFirstVisButton.style.display = 'inline-block';
-        header.textContent = 'Model Correctness Across Hardware Terms';
 
         const modelDropdown = d3.select("#model-dropdown");
         const modelList = ["claude-3.5", "gemini-1.5", "gemma-2-2b", "gemma-2-9b", "gemma-2-27b", "llama-3.2-1b", "llama-3.2-3b", "llama-3.1-8b", "llama-3.1-70b", "mistral-7b", "gpt-4o"];
