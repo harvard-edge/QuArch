@@ -74,18 +74,6 @@ function resetSelection(g, colorScale, customColors, hullGroup, isSecondVis) {
     hullGroup.selectAll(".hull").remove();
 }
 
-function simulateLabelCollision(labels, xScale, yScale) {
-    // Use D3 forceSimulation to avoid label overlap
-    const labelSimulation = d3.forceSimulation(labels)
-        .force("x", d3.forceX(d => xScale(d.x)).strength(1))
-        .force("y", d3.forceY(d => yScale(d.y)).strength(1))
-        .force("collide", d3.forceCollide(15)) // Prevent overlap by a minimum distance
-        .stop();
-
-    // Run the simulation
-    for (let i = 0; i < 300; ++i) labelSimulation.tick();
-}
-
 export async function loadScatterPlotVis() {
     const container = document.querySelector('.visualization-container');
     container.innerHTML = `
@@ -128,7 +116,9 @@ export async function loadScatterPlotVis() {
 
     const customColors = {
         "Reconfigurable Architectures (FPGA / CGRA)": "#FFA500",
-        "Interconnection Networks": "#351fb4"
+        "Interconnection Networks": "#351fb4",
+        "Graphics Processing Unit (GPU) Architecture": "#fc59a3",
+        "Processor Architecture": "#8e3ccb"
     };
 
     // Set default colors for points
@@ -158,6 +148,7 @@ export async function loadScatterPlotVis() {
                 .style("visibility", "hidden");
         });
 
+    // Calculate centroids based on median x, y positions for each category
     const centroids = {};
     uniqueCategories.forEach(category => {
         const categoryPoints = points.filter(p => p.category === category);
@@ -172,9 +163,7 @@ export async function loadScatterPlotVis() {
         y: centroids[category].y
     }));
 
-    // Apply label collision detection
-    simulateLabelCollision(labels, xScale, yScale);
-
+    // Render the labels in the first visualization
     const labelGroups = g.selectAll("g.label")
         .data(labels)
         .enter().append("g")
@@ -211,23 +200,30 @@ export async function loadScatterPlotVis() {
     const legend = createLegend(svg);
     legend.style("display", "none"); // Hide the legend initially
 
-    function updateScatterPlot(isSecondVis = false) {
+    function updateScatterPlot(isSecondVis = false, selectedCategory = null) {
         const selectedModel = document.getElementById("model-dropdown").value;
 
         g.selectAll("circle")
-            .attr("r", 3)
+            .attr("r", 3) // Keep radius consistent for all points, even in the second visualization
             .style("fill", function(p) {
                 if (isSecondVis) {
                     const modelResult = p.modelsData[selectedModel];
                     return modelResult === 1 ? "#00FF00" : "#FF0000"; // Green for correct, red for incorrect
                 }
-                return p.defaultColor;
+                if (selectedCategory && p.category.replace(/\s+/g, '-') === selectedCategory) {
+                    return p.defaultColor;
+                }
+                return selectedCategory ? "#CCCCCC" : p.defaultColor;
             })
             .style("opacity", function(p) {
-                return isSecondVis ? (p.modelsData[selectedModel] !== "NA" ? 1 : 0.1) : 1;
+                if (isSecondVis) {
+                    return p.modelsData[selectedModel] !== "NA" ? 1 : 0.1;
+                }
+                return selectedCategory ? (p.category.replace(/\s+/g, '-') === selectedCategory ? 1 : 0.1) : 1;
             });
     }
 
+    // Event listeners for toggling between visualizations
     document.getElementById('show-second-vis').addEventListener('click', function() {
         resetSelection(g, colorScale, customColors, hullGroup, true);
         const controls = document.getElementById('controls');
@@ -257,6 +253,12 @@ export async function loadScatterPlotVis() {
             .attr("fill", "#555555")
             .style("opacity", 1);
 
+        svg.on("click", function(event) {
+            if (event.target.tagName !== 'circle' && event.target.tagName !== 'text') {
+                updateScatterPlot(true);
+            }
+        });
+
         legend.style("display", "block");
     });
 
@@ -277,13 +279,19 @@ export async function loadScatterPlotVis() {
         header.textContent = 'Scatter of Questions across Hardware Terms';
 
         g.selectAll("circle")
-            .attr("r", 3)
+            .attr("r", 3) // Keep radius consistent in the first visualization as well
             .style("fill", d => d.defaultColor)
             .style("opacity", 1);
 
         g.selectAll(".label text")
             .style("opacity", 1)
             .attr("fill", d => customColors[d.category] || colorScale(d.category));
+
+        svg.on("click", function(event) {
+            if (event.target.tagName !== 'circle' && event.target.tagName !== 'text') {
+                resetSelection(g, colorScale, customColors, hullGroup, false);
+            }
+        });
 
         legend.style("display", "none");
     });
