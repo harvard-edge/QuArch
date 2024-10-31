@@ -4628,6 +4628,7 @@ textarea.form-control-lg {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
+  margin-top: 0; /* Remove any top margin */
 }
 
 .list-group-numbered {
@@ -10673,7 +10674,7 @@ header.masthead {
   padding-top: calc(8rem + 57px);
   padding-bottom: 8rem;
   background: no-repeat center center;
-  background-color: #6c757d;
+  background-color: #crimso;
   background-size: cover;
   background-attachment: scroll;
 }
