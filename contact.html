@@ -6,151 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>QuArch Team Page</title>
+    <title>QuArch Website</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
+    <!-- font awesome -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- core theme CSS )-->
     <link href="css/styles.css" rel="stylesheet" />
-    <style>
-        body {
-            font-size: 0.9em;
-            /* Slightly increase the overall font size */
-        }
-        
-        .masthead {
-            background-color: #a70000;
-            color: white;
-            padding: 20px 0;
-            /* Increase padding slightly */
-        }
-        
-        .navbar {
-            background-color: #a70000;
-        }
-        
-        .navbar-nav .nav-link {
-            color: #ffffff !important;
-            font-size: 0.9em;
-            /* Increase font size slightly */
-            padding: 12px 24px;
-            /* Increase padding slightly */
-        }
-        
-        .navbar-brand {
-            color: #ffffff !important;
-            font-size: 0.9em;
-            /* Increase font size slightly */
-        }
-        
-        @media (min-width: 992px) {
-            header.masthead {
-                padding-top: 7rem;
-                padding-bottom: 5rem;
-            }
-            header.masthead .page-heading h1,
-            header.masthead .page-heading .h1,
-            header.masthead .site-heading h1,
-            header.masthead .site-heading .h1 {
-                font-size: 3.5rem;
-            }
-            header.masthead .post-heading h1,
-            header.masthead .post-heading .h1 {
-                font-size: 2.75rem;
-            }
-            header.masthead .post-heading .subheading {
-                font-size: 1.75rem;
-            }
-        }
-        
-        .team-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            height: 550px;
-            /* Increase height slightly */
-        }
-        
-        .team-member {
-            position: absolute;
-            width: 120px;
-            /* Increase width slightly */
-            text-align: center;
-        }
-        
-        .team-member img {
-            border-radius: 50%;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            margin-bottom: 12px;
-            /* Increase margin slightly */
-        }
-        
-        .team-member:nth-child(1) {
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .team-member:nth-child(2) {
-            top: 220px;
-            /* Increase vertical position slightly */
-            left: 12%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .team-member:nth-child(3) {
-            top: 220px;
-            /* Increase vertical position slightly */
-            right: 12%;
-            transform: translate(50%, -50%);
-        }
-        
-        .team-member p {
-            margin: 0;
-            text-align: center;
-            width: 100%;
-            font-size: 0.9em;
-            /* Increase font size slightly */
-        }
-        
-        .team-member p.name {
-            font-weight: bold;
-        }
-        
-        .team-member p.title {
-            color: #666;
-        }
-        
-        .container {
-            max-width: 95%;
-            /* Increase container width slightly */
-        }
-    </style>
+    <script src="js/lib/tsne.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 
 <body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-        <div class="container px-3 px-lg-4">
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container px-2 px-lg-3">
             <a class="navbar-brand" href="index.html">QuArch</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto py-3 py-lg-4">
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-2 py-lg-3" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-2 py-lg-3" href="contact.html">Contact</a></li>
+                <ul class="navbar-nav ms-auto py-2 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-2 py-2 py-lg-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-2 py-2 py-lg-3" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- Page Header-->
     <header class="masthead" style="background-color: #a70000;">
         <div class="container position-relative px-3 px-lg-4">
