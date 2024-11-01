@@ -10,9 +10,10 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- font awesome -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- core theme CSS )-->
+    <!-- core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
-<<<<<<< HEAD
+    <script src="js/lib/tsne.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         body {
             font-size: 0.8em;
@@ -28,10 +29,6 @@
             background-color: #a70000;
         }
         
-        .navbar.scrolled {
-            background-color: #a70000 !important;
-        }
-        
         .navbar-nav .nav-link {
             color: #ffffff !important;
         }
@@ -40,52 +37,31 @@
             color: #ffffff !important;
         }
         
-        @media (min-width: 992px) {
-            header.masthead {
-                padding-top: 6rem;
-                padding-bottom: 4rem;
-            }
-            header.masthead .page-heading h1,
-            header.masthead .page-heading .h1,
-            header.masthead .site-heading h1,
-            header.masthead .site-heading .h1 {
-                font-size: 3rem;
-            }
-            header.masthead .post-heading h1,
-            header.masthead .post-heading .h1 {
-                font-size: 2.5rem;
-            }
-            header.masthead .post-heading .subheading {
-                font-size: 1.5rem;
-            }
-        }
-        
         .team-container {
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            /* Changed to row for side-by-side layout */
             align-items: center;
-            gap: 40px;
+            justify-content: center;
+            /* Centering the team members */
             padding-top: 20px;
         }
         
         .team-member {
             text-align: center;
             width: 140px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            margin: 0 20px;
+            /* Adds spacing between the team members */
         }
         
         .team-member img {
             border-radius: 50%;
-            width: 100px;
-            height: 100px;
+            width: 140px;
+            /* Ensures both images have the same width */
+            height: 140px;
+            /* Ensures both images have the same height */
             object-fit: cover;
             margin-bottom: 12px;
-        }
-        
-        .team-member:nth-child(2) {
-            margin-top: -10px;
         }
         
         .team-member p {
@@ -94,18 +70,25 @@
             font-size: 0.9em;
         }
         
-        .team-member p.name {
+        .team-member .name {
             font-weight: bold;
+            color: black;
         }
         
-        .team-member p.title {
+        .team-member .title {
             color: #666;
+            font-size: 0.9em;
+            margin: 4px 0;
+        }
+        
+        .contributors-section {
+            margin-top: 20px;
         }
         
         .additional-photo {
             display: flex;
             justify-content: center;
-            margin-top: 30px;
+            margin-top: 10px;
         }
         
         .additional-photo img {
@@ -117,11 +100,20 @@
         .container {
             max-width: 90%;
         }
+        
+        .team-member:nth-child(1) {
+            top: 0;
+            left: 65%;
+            transform: translate(-50%, 8%);
+        }
+        
+        .team-member:nth-child(2) {
+            top: 0;
+            left: 25%;
+            transform: translate(-50%, 10%);
+        }
     </style>
-=======
-    <script src="js/lib/tsne.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
->>>>>>> 48a22e89402b64b4c47ebac0ea671d3c09fdcd86
+
 </head>
 
 <body>
@@ -141,55 +133,55 @@
         </div>
     </nav>
 
-<<<<<<< HEAD
-=======
     <!-- Page Header-->
->>>>>>> 48a22e89402b64b4c47ebac0ea671d3c09fdcd86
     <header class="masthead" style="background-color: #a70000;">
-        <div class="container position-relative px-2 px-lg-3">
-            <div class="row gx-2 gx-lg-3 justify-content-center">
+        <div class="container position-relative px-3 px-lg-4">
+            <div class="row gx-3 gx-lg-4 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="site-heading" style="margin-bottom: 100px;">
+                    <div class="page-heading">
                         <h1>Contact Us</h1>
-                        <span class="subheading"> Interested in getting involved? </span>
+                        <span class="subheading">Interested in getting involved?</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
+    <!-- Main Content-->
     <main class="mb-4">
         <div class="container px-3 px-lg-4">
             <div class="row gx-3 gx-lg-4 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7" style="text-align: center;">
-                    <h2>Project Leaders</h2>
+                    <h2 style="color:black">Project Leaders</h2>
                     <div class="team-container">
+                        <!-- Vijay -->
                         <div class="team-member">
                             <img src="images/vijay.jpg" alt="Professor Vijay Janapa Reddi">
                             <p class="name">Professor Vijay Janapa Reddi</p>
                             <p class="title">Director of Edge Computing Lab</p>
-                            <p>vj@eecs.harvard.edu</p>
+                            <p style="color:black">vj@eecs.harvard.edu</p>
                         </div>
+                        <!-- Shvetank -->
                         <div class="team-member">
                             <img src="images/shvetankprakashpic.jpg" alt="Shvetank Paraksh">
                             <p class="name">Shvetank Paraksh</p>
                             <p class="title">Graduate Student at Harvard</p>
-                            <p>sprakash@g.harvard.edu</p>
+                            <p style="color:black">sprakash@g.harvard.edu</p>
                         </div>
                     </div>
-                    <br><br>
-                    <h2>Contributors</h2>
-                    <div class="additional-photo">
-                        <img src="images/contributors.png" alt="Additional Team Photo">
+                    <div class="contributors-section">
+                        <h2 style="color:black; margin-top: -200px;">Contributors</h2>
+                        <div class="additional-photo">
+                            <img src="images/contributors.png" alt="Additional Team Photo">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
+    <!-- Footer-->
     <footer class="border-top">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="container px-3 px-lg-4">
+            <div class="row gx-3 gx-lg-4 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <ul class="list-inline text-center">
                         <li class="list-inline-item">
@@ -207,7 +199,9 @@
         </div>
     </footer>
 
+    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
 
