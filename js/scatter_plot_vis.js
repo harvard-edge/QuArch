@@ -148,7 +148,7 @@ export async function loadScatterPlotVis() {
         .attr("cy", d => yScale(d.y))
         .style("fill", d => d.defaultColor)
         .on("mouseover", function(event, d) {
-            tooltip.html(`<strong>Category: ${d.category}<br>Question: ${d.question}</strong>`)
+            tooltip.html(`<strong>Category: ${d.category}`) //to add question back in:  <br>Question: ${d.question}</strong>
                 .style("left", `${event.pageX + 15}px`)
                 .style("top", `${event.pageY + 15}px`)
                 .style("opacity", 1)
