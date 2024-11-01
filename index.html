@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- code written with support of ChatGPT -->
 
 <head>
     <meta charset="utf-8" />
@@ -11,144 +10,13 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- font awesome -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
     <!-- core theme CSS )-->
     <link href="css/styles.css" rel="stylesheet" />
     <script src="js/lib/tsne.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        body {
-            font-size: 0.8em;
-        }
-        
-        .masthead {
-            background-color: #a70000;
-            color: white;
-            padding: 15px 0;
-        }
-        
-        .navbar {
-            background-color: #a70000;
-        }
-        
-        .navbar.scrolled {
-            background-color: #a70000 !important;
-        }
-        
-        .navbar-nav .nav-link {
-            color: #ffffff !important;
-        }
-        
-        .navbar-brand {
-            color: #ffffff !important;
-        }
-        
-        .visualization-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .visualization-container svg {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .btn-primary {
-            --bs-btn-color: #fff;
-            --bs-btn-bg: #000000;
-            --bs-btn-border-color: #000000;
-            --bs-btn-hover-color: #fff;
-            --bs-btn-hover-bg: #320000;
-            --bs-btn-hover-border-color: #FFFFFF;
-            --bs-btn-focus-shadow-rgb: 38, 151, 175;
-            --bs-btn-active-color: #fff;
-            --bs-btn-active-bg: #000000;
-            --bs-btn-active-border-color: #000000;
-            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-            --bs-btn-disabled-color: #fff;
-            --bs-btn-disabled-bg: #000000;
-            --bs-btn-disabled-border-color: #000000;
-            font-size: 0.8em;
-            padding: 10px 15px;
-        }
-        
-        @media (min-width: 992px) {
-            header.masthead {
-                padding-top: 6rem;
-                padding-bottom: 4rem;
-            }
-            header.masthead .page-heading h1,
-            header.masthead .page-heading .h1,
-            header.masthead .site-heading h1,
-            header.masthead .site-heading .h1 {
-                font-size: 3rem;
-            }
-            header.masthead .post-heading h1,
-            header.masthead .post-heading .h1 {
-                font-size: 2.5rem;
-            }
-            header.masthead .post-heading .subheading {
-                font-size: 1.5rem;
-            }
-        }
-        
-        .tooltip {
-            position: absolute;
-            text-align: left;
-            padding: 4px;
-            font-size: 12px;
-            background: #444444;
-            color: white;
-            border-radius: 4px;
-            pointer-events: none;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s, transform 0.3s;
-            transform: translateY(10px);
-        }
-        
-        .tooltip.show {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0px);
-        }
-        
-        .badge {
-            --bs-badge-padding-x: 0.5em;
-            --bs-badge-padding-y: 0.25em;
-            --bs-badge-font-size: 0.65em;
-            --bs-badge-font-weight: 700;
-            --bs-badge-color: #a6a6a6;
-            --bs-badge-border-radius: 0.375rem;
-            display: inline-block;
-            padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
-            font-size: var(--bs-badge-font-size);
-            font-weight: var(--bs-badge-font-weight);
-            line-height: 1;
-            color: var(--bs-badge-color);
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: baseline;
-        }
-        
-        .container {
-            max-width: 90%;
-        }
-        
-        .table {
-            font-size: 0.8em;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="tooltip"></div>
-
     <nav class="navbar navbar-expand-lg" id="mainNav">
         <div class="container px-2 px-lg-3">
             <a class="navbar-brand" href="index.html">QuArch</a>
@@ -171,7 +39,7 @@
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <div class="site-heading">
                         <h1>QuArch</h1>
-                        <span class="subheading">A <strong style="font-weight: 700;">Qu</strong>estion <strong style="font-weight: 700;">A</strong>nswering Computer <strong style="font-weight: 700;">Arch</strong>itecture Dataset</span>
+                        <span class="subheading"><strong style="font-weight: 700;">Qu</strong>estion <strong style="font-weight: 700;">A</strong>nswering Computer <strong style="font-weight: 700;">Arch</strong>itecture Dataset</span>
                         <p class="text-center">
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcEtWiSFjfOZKWLKMXdYtscexaMWCL7klUOpjvSijsyZSgiw/viewform"><button type="button" class="btn btn-primary">Join The Community Effort</button></a>
                         </p>
@@ -185,10 +53,13 @@
         <div class="row">
             <div class="col-lg-7">
                 <div class="list-group">
-                    <div class="list-group-item" style="margin-bottom: 30px;margin-top: 40px">
-                        <h4>About</h4>
-                        <p>The QuArch project is focused on creating publicly accessible QA datasets that address complex topics in computer architecture and hardware.</p>
-                        <p>For more details about QuArch, please refer to the following paper:</p>
+                    <div class="list-group-item" style="margin-bottom: 30px;margin-top: 0px">
+                        <h4>What is QuaArch?</h4>
+                        <p><b>QuArch</b> (Question Answering in Computer Architecture) is a specialized dataset designed to support AI-driven question answering in the domain of computer architecture and hardware. Built from the Archipedia corpus—a comprehensive collection of research articles, technical papers, and insights spanning decades—QuArch consists of questions on a wide range of computer architecture topics, with answers derived from curated technical content.</p>
+
+<p><b>QuArch</b> provides structured datasets for both straightforward and complex questions in areas such as processor design, memory systems, and performance optimization. By tackling these technical topics, the goal of QuArch is to serve as a benchmark dataset, helping researchers build and evaluate AI models for accuracy and relevance in the computer architecture domain.</p>
+
+<p>The <i>alpha</i> release of <b>QuArch v1.0</b> offers a foundation of question-answer pairs, designed to help advance natural language understanding in technical fields and bridge the gap between AI capabilities and specialized knowledge in computer hardware and architecture. For more details about QuArch, refer to this paper:</p>
                         <p class="text-center">
                             <a href="https://www.sigarch.org/architecture-2-0-why-computer-architects-need-a-data-centric-ai-gymnasium/"><button type="button" class="btn btn-primary">Architecture 2.0</button></a>
                         </p>
@@ -220,6 +91,7 @@
                 <div class="list-group">
                     <div class="list-group-item" style="margin-bottom: 10px">
                         <h4>Model Leaderboard</h4>
+                        <p>QuArch is being used to assess domain knowledge in computer architecture to build AI agents that can assist computer architects in reasoning about system problems, trade-offs, and optimizations.</p>
                         <div class="card-body">
                             <table class="table table-responsive">
                                 <thead class="thead-light">
