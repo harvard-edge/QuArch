@@ -96,8 +96,8 @@ export async function loadScatterPlotVis() {
             <select id="model-dropdown"></select>
         </div>
         <p class="text-center">
-            <button id="show-second-vis" class="btn btn-primary" style="margin-top: 10px;">Correctness Across Models</button>
-            <button id="return-to-first-vis" class="btn btn-primary" style="margin-top: 10px; display: none;">Total Question Distribution</button>
+            <button id="show-second-vis" class="btn btn-primary" style="background-color: black; outline: .5px white; margin-top: 10px;">Correctness Across Models</button>
+            <button id="return-to-first-vis" class="btn btn-primary" style="background-color: black; outline: .5px white; margin-top: 10px; display: none;">Total Question Distribution</button>
         </p>`;
 
     const svg = d3.select(".visualization-container svg")
