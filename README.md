@@ -51,9 +51,18 @@ The leaderboard tracks the performance of AI models in QuArch. It assesses domai
 ## **QuArch Embeddings**
 QuArch provides a visualization of embeddings, which plot how questions and answers relate to one another. The dataset includes **total question distributions** as well as **correctness across models**. You can toggle between these two views using the buttons below.
 
-**Controls:**
-- 📊 **Total Question Distribution**: Plots all questions from the dataset.
-- ✅ **Correctness Across Models**: Highlights the correctness of each model's performance.
+### **📊 Total Question Distribution**
+Plots all questions from the dataset.
+
+![Total Question Distribution](images/total_distribution.png "Total Distribution of Embeddings")
+
+---
+
+### **✅ Correctness Across Models**
+Highlights the correctness of each model's performance. The following image is an example of **llama-3.2-1b**'s performance.
+
+![Correctness Across Models](images/correctness_distribution.png "Example of Correctness Distribution of Embeddings")
+
 
 ---
 
