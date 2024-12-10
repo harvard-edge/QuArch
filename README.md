@@ -14,7 +14,7 @@
 
 By tackling these technical topics, QuArch serves as a benchmark dataset, helping researchers build and evaluate AI models for accuracy and relevance in the computer architecture domain.
 
-The **alpha release of QuArch v1.0** offers a foundation of question-answer pairs, designed to help advance natural language understanding in technical fields and bridge the gap between AI capabilities and specialized knowledge in computer hardware and architecture.
+The **alpha release of QuArch v0.1** offers a foundation of question-answer pairs, designed to help advance natural language understanding in technical fields and bridge the gap between AI capabilities and specialized knowledge in computer hardware and architecture.
 
 For more details about QuArch, refer to the following paper:
 
@@ -25,7 +25,7 @@ For more details about QuArch, refer to the following paper:
 ## **Resources**
 Explore the QuArch project through the following links:
 - 🔗 **[Hugging Face](https://huggingface.co/Harvard-Edge)**
-- 📄 **[Archipedia Paper](https://example.com/archipedia-paper)**
+- 📄 **[QuArch Paper](https://example.com/archipedia-paper)**
 
 ---
 
@@ -62,7 +62,6 @@ Plots all questions from the dataset.
 Highlights the correctness of each model's performance. The following image is an example of **llama-3.2-1b**'s performance.
 
 ![Correctness Across Models](images/correctness_distribution.png "Example of Correctness Distribution of Embeddings")
-
 
 ---
 
