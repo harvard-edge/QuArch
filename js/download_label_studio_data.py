@@ -4,7 +4,7 @@ from label_studio_sdk import Client
 
 LABEL_STUDIO_URL = "https://app.heartex.com"
 API_KEY = "d0489d9470f62d08d26cf49946d8b5383b847bcf"
-PROJECT_ID = "87981"
+PROJECT_ID = "118163"
 
 EXPORT_ENDPOINT = f"{LABEL_STUDIO_URL}/api/projects/{PROJECT_ID}/export?include=completed_by,user"
 

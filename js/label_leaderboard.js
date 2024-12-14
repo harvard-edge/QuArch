@@ -69,8 +69,22 @@
     }
 
     function getUserContributions(data) {
-        const contributions = {};
+        // Hardcoded additions for specific users
+        const hardcodedAdditions = {
+            'amir.yazdanbakhsh': 596,
+            'andycheng': 606,
+            'ankitan': 22,
+            'aryatschand': 558,
+            'jyik': 580,
+            'rghosal': 467,
+            'sprakash': 1167, // 643 + 524
+            'vjreddi': 265 // 194 + 71
+        };
 
+        // Initialize contributions with hardcoded base numbers only
+        const contributions = {...hardcodedAdditions };
+
+        // Add contributions from the data
         data.forEach(function(task) {
             const annotations = task && task.annotations ? task.annotations : [];
 
