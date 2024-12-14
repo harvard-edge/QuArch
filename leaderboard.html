@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Leaderboard</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- core theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container px-2 px-lg-3">
+            <a class="navbar-brand" href="index.html">QuArch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-2 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-2 py-2 py-lg-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-2 py-2 py-lg-3" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-2 py-2 py-lg-3" href="leaderboard.html">Leaderboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead" style="background-color: #a70000;">
+        <div class="container position-relative px-2 px-lg-3">
+            <div class="row gx-2 gx-lg-3 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1>Labeling Leaderboard</h1>
+                        <span class="subheading">See contributions from all QuArch labelers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="main">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="list-group">
+                    <div class="list-group-item leaderboard-container">
+                        <h4>Label Studio Leaderboard</h4>
+                        <p>Below is the complete list of labelers who have contributed to QuArch. </p>
+
+                        <div id="dataContainer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/harvard-edge/GenAI4HW">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="small text-center text-muted fst-italic">Copyright &copy; Harvard University 2024</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/label_leaderboard.js"></script>
+</body>
+
+</html>
