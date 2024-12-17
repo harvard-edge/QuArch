@@ -32,7 +32,7 @@
             });
 
         const title = document.createElement('h2');
-        title.textContent = 'Leaderboard';
+        title.textContent = 'Labels Contributed';
         title.style.textAlign = 'center';
         title.style.marginBottom = '20px';
         dataContainer.appendChild(title);
