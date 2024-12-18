@@ -1,1 +1,427 @@
-[]
+[{
+        "id": 141926942,
+        "annotations": [{
+                "id": 51176030,
+                "completed_by": 58327,
+                "result": [{
+                        "id": "XnwL74cp3C",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "A"
+                            ]
+                        },
+                        "origin": "manual",
+                        "to_name": "question",
+                        "from_name": "annotation"
+                    },
+                    {
+                        "id": "LqmpDqh5nJ",
+                        "type": "rating",
+                        "value": {
+                            "rating": 3
+                        },
+                        "origin": "manual",
+                        "to_name": "question",
+                        "from_name": "rating"
+                    }
+                ],
+                "reviews": [],
+                "history": [{
+                    "id": 55596835,
+                    "comment": null,
+                    "organization_id": 10735,
+                    "project_id": 118163,
+                    "annotation_id": 51176030,
+                    "draft_id": null,
+                    "review_id": null,
+                    "task_id": 141926942,
+                    "result": [{
+                            "id": "XnwL74cp3C",
+                            "type": "choices",
+                            "value": {
+                                "choices": [
+                                    "A"
+                                ]
+                            },
+                            "origin": "manual",
+                            "to_name": "question",
+                            "from_name": "annotation"
+                        },
+                        {
+                            "id": "LqmpDqh5nJ",
+                            "type": "rating",
+                            "value": {
+                                "rating": 3
+                            },
+                            "origin": "manual",
+                            "to_name": "question",
+                            "from_name": "rating"
+                        }
+                    ],
+                    "lead_time": 337.866,
+                    "action": "submitted",
+                    "started_at": "2024-12-18T16:31:57.125000Z",
+                    "created_at": "2024-12-18T16:37:35.747099Z",
+                    "created_by": 58327,
+                    "comment_id": null
+                }],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2024-12-18T16:37:35.234512Z",
+                "updated_at": "2024-12-18T16:37:35.234521Z",
+                "draft_created_at": "2024-12-18T16:35:49.917677Z",
+                "lead_time": 337.866,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "06a0d356-ff80-4c65-b921-939be6d48932",
+                "import_id": null,
+                "last_action": "submitted",
+                "task": 141926942,
+                "project": 118163,
+                "updated_by": 58327,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": 58327,
+                "annotator_email": "shreyasgrampurohit@iitb.ac.in"
+            },
+            {
+                "id": 51175002,
+                "completed_by": 20699,
+                "result": [{
+                        "id": "FOxTtiswE-",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "A"
+                            ]
+                        },
+                        "origin": "manual",
+                        "to_name": "question",
+                        "from_name": "annotation"
+                    },
+                    {
+                        "id": "KLiDZmzo0Z",
+                        "type": "rating",
+                        "value": {
+                            "rating": 4
+                        },
+                        "origin": "manual",
+                        "to_name": "question",
+                        "from_name": "rating"
+                    }
+                ],
+                "reviews": [],
+                "history": [{
+                    "id": 55595685,
+                    "comment": null,
+                    "organization_id": 10735,
+                    "project_id": 118163,
+                    "annotation_id": 51175002,
+                    "draft_id": null,
+                    "review_id": null,
+                    "task_id": 141926942,
+                    "result": [{
+                            "id": "FOxTtiswE-",
+                            "type": "choices",
+                            "value": {
+                                "choices": [
+                                    "A"
+                                ]
+                            },
+                            "origin": "manual",
+                            "to_name": "question",
+                            "from_name": "annotation"
+                        },
+                        {
+                            "id": "KLiDZmzo0Z",
+                            "type": "rating",
+                            "value": {
+                                "rating": 4
+                            },
+                            "origin": "manual",
+                            "to_name": "question",
+                            "from_name": "rating"
+                        }
+                    ],
+                    "lead_time": 10.488,
+                    "action": "submitted",
+                    "started_at": "2024-12-18T16:18:50.898000Z",
+                    "created_at": "2024-12-18T16:19:01.812506Z",
+                    "created_by": 20699,
+                    "comment_id": null
+                }],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2024-12-18T16:19:01.669073Z",
+                "updated_at": "2024-12-18T16:19:01.669083Z",
+                "draft_created_at": "2024-12-18T16:18:58.912673Z",
+                "lead_time": 10.488,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "42c6c9a6-52f5-44d7-82b6-e3c9b02e484a",
+                "import_id": null,
+                "last_action": "submitted",
+                "task": 141926942,
+                "project": 118163,
+                "updated_by": 20699,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": 20699,
+                "annotator_email": "sprakash@g.harvard.edu"
+            }
+        ],
+        "drafts": [],
+        "predictions": [],
+        "agreement": 100.0,
+        "data": {
+            "type": "Cloze",
+            "year": 2016,
+            "title": "Eyeriss: a spatial architecture for energy-efficient dataflow for convolutional neural networks",
+            "answer": "A",
+            "authors": "Yu-Hsin Chen, Joel Emer, and Vivienne Sze",
+            "context": "Deep convolutional neural networks (CNNs) are widely used in modern AI systems for their superior accuracy but at the cost of high computational complexity. The complexity comes from the need to simultaneously process hundreds of filters and channels in the high-dimensional convolutions, which involve a significant amount of data movement. Although highly-parallel compute paradigms, such as SIMD/SIMT, effectively address the computation requirement to achieve high throughput, energy consumption still remains high as data movement can be more expensive than computation. Accordingly, finding a dataflow that supports parallel processing with minimal data movement cost is crucial to achieving energy-efficient CNN processing without compromising accuracy. In this paper, we present a novel dataflow, called row-stationary (RS), that minimizes data movement energy consumption on a spatial architecture. This is realized by exploiting local data reuse of filter weights and feature map pixels, i.e., activations, in the high-dimensional convolutions, and minimizing data movement of partial sum accumulations. Unlike dataflows used in existing designs, which only reduce certain types of data movement, the proposed RS dataflow can adapt to different CNN shape configurations and reduces all types of data movement through maximally utilizing the processing engine (PE) local storage, direct inter-PE communication and spatial parallelism. To evaluate the energy efficiency of the different dataflows, we propose an analysis framework that compares energy cost under the same hardware area and processing parallelism constraints. Experiments using the CNN configurations of AlexNet show that the proposed RS dataflow is more energy efficient than existing dataflows in both convolutional (1.4\u00d7 to 2.5\u00d7) and fully-connected layers (at least 1.3\u00d7 for batch size larger than 16). The RS dataflow has also been demonstrated on a fabricated chip, which verifies our energy analysis.",
+            "question": "In AI systems using CNNs, reducing ___ is crucial to achieving energy-efficient processing without compromising accuracy.\nA) data movement cost\nB) processing latency\nC) model complexity\nD) network depth",
+            "gen_model": "gpt-4o",
+            "conference": "ISCA",
+            "val_models": [
+                "gpt-4o",
+                "claude-3_5-sonnet",
+                "gemini-1_5-pro"
+            ],
+            "models_against_generic": [],
+            "models_in_favor_generic": [
+                "gpt-4o",
+                "claude-3_5-sonnet",
+                "gemini-1_5-pro"
+            ]
+        },
+        "meta": {},
+        "created_at": "2024-12-12T18:19:38.772553Z",
+        "updated_at": "2024-12-18T16:37:35.295887Z",
+        "inner_id": 1,
+        "total_annotations": 2,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 1,
+        "unresolved_comment_count": 1,
+        "last_comment_updated_at": "2024-12-18T16:37:29.286901Z",
+        "project": 118163,
+        "updated_by": 58327,
+        "comment_authors": [
+            58327
+        ]
+    },
+    {
+        "id": 141926944,
+        "annotations": [{
+                "id": 51176106,
+                "completed_by": 58327,
+                "result": [{
+                        "id": "uFQOYnJ0EN",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "B"
+                            ]
+                        },
+                        "origin": "manual",
+                        "to_name": "question",
+                        "from_name": "annotation"
+                    },
+                    {
+                        "id": "hauiJbda-0",
+                        "type": "rating",
+                        "value": {
+                            "rating": 2
+                        },
+                        "origin": "manual",
+                        "to_name": "question",
+                        "from_name": "rating"
+                    }
+                ],
+                "reviews": [],
+                "history": [{
+                    "id": 55596912,
+                    "comment": null,
+                    "organization_id": 10735,
+                    "project_id": 118163,
+                    "annotation_id": 51176106,
+                    "draft_id": null,
+                    "review_id": null,
+                    "task_id": 141926944,
+                    "result": [{
+                            "id": "uFQOYnJ0EN",
+                            "type": "choices",
+                            "value": {
+                                "choices": [
+                                    "B"
+                                ]
+                            },
+                            "origin": "manual",
+                            "to_name": "question",
+                            "from_name": "annotation"
+                        },
+                        {
+                            "id": "hauiJbda-0",
+                            "type": "rating",
+                            "value": {
+                                "rating": 2
+                            },
+                            "origin": "manual",
+                            "to_name": "question",
+                            "from_name": "rating"
+                        }
+                    ],
+                    "lead_time": 68.123,
+                    "action": "submitted",
+                    "started_at": "2024-12-18T16:37:36.391000Z",
+                    "created_at": "2024-12-18T16:38:44.899670Z",
+                    "created_by": 58327,
+                    "comment_id": null
+                }],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2024-12-18T16:38:44.772780Z",
+                "updated_at": "2024-12-18T16:38:44.772788Z",
+                "draft_created_at": "2024-12-18T16:37:56.463403Z",
+                "lead_time": 68.123,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "549fbd0e-24dd-4438-8862-1b61d0de3ff7",
+                "import_id": null,
+                "last_action": "submitted",
+                "task": 141926944,
+                "project": 118163,
+                "updated_by": 58327,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": 58327,
+                "annotator_email": "shreyasgrampurohit@iitb.ac.in"
+            },
+            {
+                "id": 51175053,
+                "completed_by": 20699,
+                "result": [{
+                        "id": "QPLFlWkdyH",
+                        "type": "choices",
+                        "value": {
+                            "choices": [
+                                "B"
+                            ]
+                        },
+                        "origin": "manual",
+                        "to_name": "question",
+                        "from_name": "annotation"
+                    },
+                    {
+                        "id": "6hTetMgrK8",
+                        "type": "rating",
+                        "value": {
+                            "rating": 4
+                        },
+                        "origin": "manual",
+                        "to_name": "question",
+                        "from_name": "rating"
+                    }
+                ],
+                "reviews": [],
+                "history": [{
+                    "id": 55595741,
+                    "comment": null,
+                    "organization_id": 10735,
+                    "project_id": 118163,
+                    "annotation_id": 51175053,
+                    "draft_id": null,
+                    "review_id": null,
+                    "task_id": 141926944,
+                    "result": [{
+                            "id": "QPLFlWkdyH",
+                            "type": "choices",
+                            "value": {
+                                "choices": [
+                                    "B"
+                                ]
+                            },
+                            "origin": "manual",
+                            "to_name": "question",
+                            "from_name": "annotation"
+                        },
+                        {
+                            "id": "6hTetMgrK8",
+                            "type": "rating",
+                            "value": {
+                                "rating": 4
+                            },
+                            "origin": "manual",
+                            "to_name": "question",
+                            "from_name": "rating"
+                        }
+                    ],
+                    "lead_time": 22.596,
+                    "action": "submitted",
+                    "started_at": "2024-12-18T16:19:24.907000Z",
+                    "created_at": "2024-12-18T16:19:48.077538Z",
+                    "created_by": 20699,
+                    "comment_id": null
+                }],
+                "was_cancelled": false,
+                "ground_truth": false,
+                "created_at": "2024-12-18T16:19:47.961868Z",
+                "updated_at": "2024-12-18T16:19:47.961882Z",
+                "draft_created_at": "2024-12-18T16:19:35.802018Z",
+                "lead_time": 22.596,
+                "prediction": {},
+                "result_count": 2,
+                "unique_id": "f5e8699a-d657-479d-aa77-2b5b5ab89f04",
+                "import_id": null,
+                "last_action": "submitted",
+                "task": 141926944,
+                "project": 118163,
+                "updated_by": 20699,
+                "parent_prediction": null,
+                "parent_annotation": null,
+                "last_created_by": 20699,
+                "annotator_email": "sprakash@g.harvard.edu"
+            }
+        ],
+        "drafts": [],
+        "predictions": [],
+        "agreement": 100.0,
+        "data": {
+            "type": "Cloze",
+            "year": 2016,
+            "title": "Eyeriss: a spatial architecture for energy-efficient dataflow for convolutional neural networks",
+            "answer": "B",
+            "authors": "Yu-Hsin Chen, Joel Emer, and Vivienne Sze",
+            "context": "Deep convolutional neural networks (CNNs) are widely used in modern AI systems for their superior accuracy but at the cost of high computational complexity. The complexity comes from the need to simultaneously process hundreds of filters and channels in the high-dimensional convolutions, which involve a significant amount of data movement. Although highly-parallel compute paradigms, such as SIMD/SIMT, effectively address the computation requirement to achieve high throughput, energy consumption still remains high as data movement can be more expensive than computation. Accordingly, finding a dataflow that supports parallel processing with minimal data movement cost is crucial to achieving energy-efficient CNN processing without compromising accuracy. In this paper, we present a novel dataflow, called row-stationary (RS), that minimizes data movement energy consumption on a spatial architecture. This is realized by exploiting local data reuse of filter weights and feature map pixels, i.e., activations, in the high-dimensional convolutions, and minimizing data movement of partial sum accumulations. Unlike dataflows used in existing designs, which only reduce certain types of data movement, the proposed RS dataflow can adapt to different CNN shape configurations and reduces all types of data movement through maximally utilizing the processing engine (PE) local storage, direct inter-PE communication and spatial parallelism. To evaluate the energy efficiency of the different dataflows, we propose an analysis framework that compares energy cost under the same hardware area and processing parallelism constraints. Experiments using the CNN configurations of AlexNet show that the proposed RS dataflow is more energy efficient than existing dataflows in both convolutional (1.4\u00d7 to 2.5\u00d7) and fully-connected layers (at least 1.3\u00d7 for batch size larger than 16). The RS dataflow has also been demonstrated on a fabricated chip, which verifies our energy analysis.",
+            "question": "In deep convolutional neural networks, ____ can be more energy-expensive than computation.\nA) Parallel processing\nB) Data movement\nC) Filter application\nD) Accuracy optimization",
+            "gen_model": "claude-3_5-sonnet",
+            "conference": "ISCA",
+            "val_models": [
+                "gpt-4o",
+                "claude-3_5-sonnet",
+                "gemini-1_5-pro"
+            ],
+            "models_against_generic": [],
+            "models_in_favor_generic": [
+                "gpt-4o",
+                "claude-3_5-sonnet",
+                "gemini-1_5-pro"
+            ]
+        },
+        "meta": {},
+        "created_at": "2024-12-12T18:19:38.772645Z",
+        "updated_at": "2024-12-18T16:38:44.844141Z",
+        "inner_id": 3,
+        "total_annotations": 2,
+        "cancelled_annotations": 0,
+        "total_predictions": 0,
+        "comment_count": 0,
+        "unresolved_comment_count": 0,
+        "last_comment_updated_at": null,
+        "project": 118163,
+        "updated_by": 58327,
+        "comment_authors": []
+    }
+]

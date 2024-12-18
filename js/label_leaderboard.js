@@ -69,7 +69,6 @@
     }
 
     function getUserContributions(data) {
-        // Hardcoded additions for specific users
         const hardcodedAdditions = {
             'amir.yazdanbakhsh': 596,
             'andycheng': 606,
@@ -81,10 +80,8 @@
             'vjreddi': 265 // 194 + 71
         };
 
-        // Initialize contributions with hardcoded base numbers only
         const contributions = {...hardcodedAdditions };
 
-        // Add contributions from the data
         data.forEach(function(task) {
             const annotations = task && task.annotations ? task.annotations : [];
 
@@ -101,14 +98,8 @@
     }
 
     function getUserIdentifier(annotation) {
-        if (annotation && annotation.completed_by) {
-            if (typeof annotation.completed_by === 'object' && annotation.completed_by.email) {
-                return annotation.completed_by.email.split('@')[0];
-            }
-
-            if (typeof annotation.completed_by === 'number') {
-                return `User ${annotation.completed_by}`;
-            }
+        if (annotation && annotation.annotator_email) {
+            return annotation.annotator_email.split('@')[0];
         }
 
         return 'Unknown User';
