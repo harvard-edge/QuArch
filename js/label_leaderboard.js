@@ -1,3 +1,4 @@
+// trying this version js 
 (function() {
     const DATA_URL = 'label_studio_data.json';
 
@@ -104,4 +105,4 @@
 
         return 'Unknown User';
     }
-});
+})();
