@@ -104,7 +104,4 @@
 
         return 'Unknown User';
     }
-})();
-
-
-￼
+});
