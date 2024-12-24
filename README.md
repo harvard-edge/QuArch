@@ -1,6 +1,8 @@
 # QuArch
 
-**QuArch** stands for **Qu**estion-Answering in Computer **Arch**itecture. It is a specialized dataset designed to support AI-driven question answering in the domain of computer architecture and hardware.
+**QuArch** stands for **Qu**estion-Answering in Computer **Arch**itecture. It is a specialized dataset designed to support AI-driven question answering in the domain of computer architecture and hardware. 
+
+*All QuArch project information below is hosted on a web-based interactive front-end but provided here in a README format for anonymity.*
 
 ---
 
