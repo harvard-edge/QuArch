@@ -1,11 +1,11 @@
 # QuArch
 
-**QuArch** stands for **Qu**estion **A**nswering in Computer **Arch**itecture. It is a specialized dataset designed to support AI-driven question answering in the domain of computer architecture and hardware.
+**QuArch** stands for **Qu**estion-Answering in Computer **Arch**itecture. It is a specialized dataset designed to support AI-driven question answering in the domain of computer architecture and hardware.
 
 ---
 
 ## **What is QuArch?**
-**QuArch** (Question Answering in Computer Architecture) is a specialized dataset designed to support AI-driven question answering in the domain of computer architecture and hardware. Built from the Archipedia corpus—a comprehensive collection of research articles, technical papers, and insights spanning decades—QuArch consists of questions on a wide range of computer architecture topics, with answers derived from curated technical content.
+**QuArch** (Question-Answering in Computer Architecture) is a specialized dataset designed to support AI-driven question-answering in the domain of computer architecture and hardware. Built from the Archipedia corpus—a comprehensive collection of scholarly articles, technical papers, and insights spanning five decades—QuArch consists of questions on a wide range of computer architecture topics, with answers derived from curated technical content.
 
 **QuArch** provides structured datasets for both straightforward and complex questions in areas such as:
 - **Processor Design**
@@ -14,18 +14,9 @@
 
 By tackling these technical topics, QuArch serves as a benchmark dataset, helping researchers build and evaluate AI models for accuracy and relevance in the computer architecture domain.
 
-The **alpha release of QuArch v0.1** offers a foundation of question-answer pairs, designed to help advance natural language understanding in technical fields and bridge the gap between AI capabilities and specialized knowledge in computer hardware and architecture.
+The **alpha release of QuArch v0.1** offers a foundation of question-answer pairs, designed to help advance natural language understanding in technical fields and bridge the gap between AI capabilities and specialized knowledge in computer hardware and architecture. 
 
-For more details about QuArch, refer to the following paper:
-
-> 📘 **[Architecture 2.0](https://www.sigarch.org/architecture-2-0-why-computer-architects-need-a-data-centric-ai-gymnasium/)**
-
----
-
-## **Resources**
-Explore the QuArch project through the following links:
-- 🔗 **[Hugging Face](https://huggingface.co/Harvard-Edge)**
-- 📄 **[QuArch Paper](https://example.com/archipedia-paper)**
+*Sample QAs from QuArch v0.1 are available in `quarch.jsonl`. The entire dataset will be open-sourced using the [Hugging Face](https://huggingface.co/datasets) account of the authors after publication.*
 
 ---
 
@@ -49,7 +40,7 @@ The leaderboard tracks the performance of AI models in QuArch. It assesses domai
 ---
 
 ## **QuArch Embeddings**
-QuArch provides a visualization of embeddings, which plot how questions and answers relate to one another. The dataset includes **total question distributions** as well as **correctness across models**. You can toggle between these two views using the buttons below.
+We provide a visualization of the dataset's embeddings, which plots how the QAs relate to one another. The dataset includes **total question distributions** as well as **correctness across models**. Our web-based interface allows you to toggle between these two views below.
 
 ### **📊 Total Question Distribution**
 Plots all questions from the dataset.
@@ -59,25 +50,8 @@ Plots all questions from the dataset.
 ---
 
 ### **✅ Correctness Across Models**
-Highlights the correctness of each model's performance. The following image is an example of **llama-3.2-1b**'s performance.
+Highlights the correctness of each model's performance. The following image is an example of **Llama-3.2-1B**'s performance.
 
 ![Correctness Across Models](images/correctness_distribution.png "Example of Correctness Distribution of Embeddings")
 
----
 
-## **Navigation**
-**QuArch** includes a fully interactive interface. The navigation bar includes links to the following pages:
-- **Home**: View the main page for QuArch.
-- **Contact**: Reach out to the team.
-
----
-
-## **Footer**
-The footer includes a link to the QuArch GitHub repository. If you'd like to contribute or explore the source code, check it out here:
-
-[![GitHub](https://img.shields.io/badge/GitHub-QuArch-blue?logo=github)](https://github.com/harvard-edge/GenAI4HW)
-
----
-
-## **Copyright**
-All rights reserved. Copyright © Harvard University, 2024.
