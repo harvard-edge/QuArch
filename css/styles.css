@@ -12842,3 +12842,164 @@ header.masthead .post-heading .meta a {
     font-size: 2.25rem;
   }
 }
+
+// Variables
+$primary-color: #000; // Black
+$secondary-color: #a70000; // Masthead background
+$outline-color: #fff; // White
+$text-muted-color: #666;
+$table-header-bg: #f8f9fa; // Light gray for table headers
+$heading-margin-top: 40px;
+$heading-margin-bottom: 40px;
+
+// Reusable Mixins
+@mixin button-style {
+  background-color: $primary-color;
+  outline: 0.5px solid $outline-color;
+  text-align: center;
+}
+
+@mixin flex-center($direction: row, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin table-striped($stripe-color: #f2f2f2) {
+  tbody tr:nth-child(odd) {
+    background-color: $stripe-color;
+  }
+}
+
+// Base Styles
+body {
+  font-family: Arial, sans-serif;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700; // Bold font for headings
+}
+
+h2 {
+  margin-top: $heading-margin-top;
+  margin-bottom: $heading-margin-bottom;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 10px;
+  font-size: 1em;
+  color: $primary-color;
+}
+
+// Navbar
+.navbar {
+  background-color: $secondary-color;
+
+  .navbar-brand, .navbar-nav .nav-link {
+    color: $outline-color !important;
+  }
+}
+
+// Masthead
+.masthead {
+  background-color: $secondary-color;
+  color: $outline-color;
+  padding: 15px 0;
+
+  .site-heading, .page-heading {
+    text-align: center;
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .subheading {
+      font-weight: 700;
+    }
+  }
+}
+
+// List Groups
+.list-group-item {
+  margin-bottom: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+// Tables
+.table {
+  &.table-striped {
+    @include table-striped();
+  }
+
+  &.table-bordered {
+    border: 1px solid $table-header-bg;
+  }
+
+  thead {
+    th {
+      background-color: $table-header-bg;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  tbody {
+    td {
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}
+
+// Leaderboard Section
+.leaderboard-container {
+  text-align: left;
+
+  p {
+    font-size: 1em;
+    color: $primary-color;
+  }
+}
+
+// Footer
+footer {
+  &.border-top {
+    padding: 1rem 0;
+    text-align: center;
+
+    .list-inline {
+      margin-bottom: 1rem;
+
+      .fa-stack {
+        cursor: pointer;
+      }
+    }
+
+    .text-muted {
+      font-style: italic;
+    }
+  }
+}
+
+button,
+.btn {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+

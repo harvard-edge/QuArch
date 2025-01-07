@@ -14,111 +14,6 @@
     <link href="css/styles.css" rel="stylesheet" />
     <script src="js/lib/tsne.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        main p {
-            font-size: 1.6em;
-            color: black;
-        }
-        
-        body {
-            font-size: 0.8em;
-        }
-        
-        .masthead {
-            background-color: #a70000;
-            color: white;
-            padding: 15px 0;
-        }
-        
-        .navbar {
-            background-color: #a70000;
-        }
-        
-        .navbar-nav .nav-link {
-            color: #ffffff !important;
-        }
-        
-        .navbar-brand {
-            color: #ffffff !important;
-        }
-        
-        .team-container {
-            display: flex;
-            flex-direction: row;
-            /* Changed to row for side-by-side layout */
-            align-items: center;
-            justify-content: center;
-            /* Centering the team members */
-            padding-top: 20px;
-        }
-        
-        .team-member {
-            text-align: center;
-            width: 140px;
-            margin: 0 20px;
-            /* Adds spacing between the team members */
-        }
-        
-        .team-member img {
-            border-radius: 50%;
-            width: 140px;
-            /* Ensures both images have the same width */
-            height: 140px;
-            /* Ensures both images have the same height */
-            object-fit: cover;
-            margin-bottom: 12px;
-        }
-        
-        .team-member p {
-            margin: 0;
-            text-align: center;
-            font-size: 0.9em;
-        }
-        
-        .team-member .name {
-            font-weight: bold;
-            color: black;
-        }
-        
-        .team-member .title {
-            color: #666;
-            font-size: 0.9em;
-            margin: 4px 0;
-        }
-        
-        .contributors-section {
-            margin-top: 20px;
-        }
-        
-        .additional-photo {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        
-        .additional-photo img {
-            border-radius: 10px;
-            max-width: 100%;
-            height: auto;
-        }
-        
-        .container {
-            max-width: 90%;
-        }
-        
-        .team-member:nth-child(1) {
-            top: 0;
-            left: 65%;
-            transform: translate(-50%, 8%);
-        }
-        
-        .team-member:nth-child(2) {
-            top: 0;
-            left: 25%;
-            transform: translate(-50%, 10%);
-        }
-    </style>
-
 </head>
 
 <body>
@@ -158,7 +53,7 @@
     <main class="mb-4" style="color: black;">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-md-10 col-lg-8 col-xl-7">
+            <div class="col-lg-10">
                 <h3>Why a Question-Answering (QA) Dataset for Computer Architecture?</h3>
                 <p>
                     Computer architecture involves complex challenges across the technology stack, requiring the synthesis of high-level insights with low-level implementations. This demands a deep understanding of workload behavior, architectural constraints, and system-level interactions. Question-answering systems are uniquely suited to address these multifaceted needs by requiring knowledge retrieval, reasoning, situational modeling, and input interpretation—skills essential for solving architectural problems. Training language models on QA datasets like QuArch can improve their ability to assist in tasks such as optimizing cache hierarchies and designing efficient interconnects. QA datasets have already proven instrumental in advancing domain-specific tools in fields like medicine, law, and software engineering. With QuArch, we aim to unlock similar opportunities for computer architecture, overcoming the current lack of specialized data and fostering innovation.
