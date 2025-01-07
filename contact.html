@@ -45,26 +45,23 @@
         .team-container {
             display: flex;
             flex-direction: row;
-            /* Changed to row for side-by-side layout */
             align-items: center;
-            justify-content: center;
-            /* Centering the team members */
+            justify-content: flex-start; /* Aligns items to the left */
             padding-top: 20px;
+            gap: 30px; /* Adds spacing between the items */
         }
-        
+
         .team-member {
-            text-align: center;
-            width: 140px;
+            text-align: left;
+            width: 160px;
             margin: 0 20px;
             /* Adds spacing between the team members */
         }
         
         .team-member img {
             border-radius: 50%;
-            width: 140px;
-            /* Ensures both images have the same width */
-            height: 140px;
-            /* Ensures both images have the same height */
+            width: 160px; /* Adjusted size */
+            height: 160px; /* Adjusted size */
             object-fit: cover;
             margin-bottom: 12px;
         }
