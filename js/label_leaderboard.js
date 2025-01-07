@@ -46,6 +46,7 @@
             <tr>
                 <th class="text-center">Rank</th>
                 <th class="text-center">Annotator</th>
+                <th class="text-center">Affiliation</th>
                 <th class="text-center">Contributions</th>
             </tr>
         `;
@@ -55,11 +56,13 @@
         sortedUsers.forEach(function(user, index) {
             const username = user[0];
             const count = user[1];
+            const affiliation = getAffiliation(username);
 
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td class="text-center">${index + 1}</td>
                 <td class="text-center">${username}</td>
+                <td class="text-center">${affiliation}</td>
                 <td class="text-center">${count}</td>
             `;
             tbody.appendChild(row);
@@ -105,4 +108,22 @@
 
         return 'Unknown User';
     }
+
+    function getAffiliation(username) {
+        const affiliations = {
+            'amir.yazdanbakhsh': 'Google DeepMind',
+            'andycheng': 'Harvard University',
+            'ankitan': 'Qualcomm AI Research',
+            'aryatschand': 'Harvard University',
+            'jyik': 'Harvard University',
+            'rghosal': 'Harvard University',
+            'sprakash': 'Harvard University',
+            'vjreddi': 'Harvard University',
+            'shreyasgrampurohit': 'IIT Bombay',
+            'Unknown User': 'N/A'
+        };
+    
+        return affiliations[username] || 'N/A';
+    }
+    
 })();
