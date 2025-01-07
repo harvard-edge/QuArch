@@ -47,7 +47,7 @@
             flex-direction: row;
             align-items: left;
             justify-content: flex-start; /* Aligns items to the left */
-            padding-top: 50px;
+            padding-top: 100px;
             gap: 30px; /* Adds spacing between the items */
         }
 
@@ -73,7 +73,6 @@
         }
         
         .team-member .name {
-            font-weight: bold;
             color: black;
         }
         
@@ -101,6 +100,18 @@
         
         .container {
             max-width: 90%;
+        }
+
+        .team-member:nth-child(1) {
+            top: 0;
+            left: 65%;
+            transform: translate(-50%, 8%);
+        }
+        
+        .team-member:nth-child(2) {
+            top: 0;
+            left: 25%;
+            transform: translate(-50%, 10%);
         }
         
     </style>
@@ -153,7 +164,7 @@
                         <!-- Vijay -->
                         <div class="team-member">
                             <img src="images/vijay.jpg" alt="Professor Vijay Janapa Reddi">
-                            <p class="name">Professor Vijay Janapa Reddi</p>
+                            <p class="name">Vijay Janapa Reddi</p>
                             <p class="title">Associate Professor at Harvard University</p>
                         </div>
                         <!-- Shvetank -->
