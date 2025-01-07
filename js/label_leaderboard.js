@@ -44,10 +44,10 @@
         const thead = document.createElement('thead');
         thead.innerHTML = `
             <tr>
-                <th class="text-center">Rank</th>
-                <th class="text-center">Annotator</th>
+                <th class="text-center">Overall Rank</th>
+                <th class="text-center">Annotator Username</th>
                 <th class="text-center">Affiliation</th>
-                <th class="text-center">Contributions</th>
+                <th class="text-center">Badges</th>
             </tr>
         `;
         table.appendChild(thead);
@@ -57,13 +57,14 @@
             const username = user[0];
             const count = user[1];
             const affiliation = getAffiliation(username);
+            const badges = getBadges(count);
 
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td class="text-center">${index + 1}</td>
                 <td class="text-center">${username}</td>
                 <td class="text-center">${affiliation}</td>
-                <td class="text-center">${count}</td>
+                <td class="text-center">${badges}</td>
             `;
             tbody.appendChild(row);
         });
@@ -124,6 +125,25 @@
         };
     
         return affiliations[username] || 'N/A';
+    }
+
+    function getBadges(contributionCount) {
+        const badges = [];
+
+        if (contributionCount > 1000) {
+            badges.push('<i class="fas fa-medal" style="color: gold;" title="Gold Contributor"></i>');
+        }
+        if (contributionCount > 100) {
+            badges.push('<i class="fas fa-award" style="color: silver;" title="Silver Contributor"></i>');
+        }
+        if (contributionCount > 10) {
+            badges.push('<i class="fas fa-trophy" style="color: bronze;" title="Bronze Contributor"></i>');
+        }
+        if (contributionCount > 1) {
+            badges.push('<i class="fas fa-star" style="color: green;" title="First-Time Contributor"></i>');
+        }
+
+        return badges.join(' ');
     }
     
 })();
