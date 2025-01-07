@@ -155,11 +155,12 @@
         legend.style.textAlign = 'center';
 
         legend.innerHTML = `
-            <h3>Badge Key</h3>
-            <p><i class="fas fa-medal" style="color: gold;"></i> Gold Contributor (>1000 Labels) </p>
-            <p><i class="fas fa-award" style="color: silver;"></i> Silver Contributor (>100 Labels) </p>
-            <p><i class="fas fa-trophy" style="color: bronze;"></i> Bronze Contributor (>10 Labels) </p>
-            <p><i class="fas fa-star" style="color: green;"></i> First-Time Contributor! </p>
+            <div style="display: flex; justify-content: center; gap: 20px;">
+                <span><i class="fas fa-medal" style="color: gold;"></i> Gold Contributor (>1000 Labels </span>
+                <span><i class="fas fa-award" style="color: silver;"></i> Silver Contributor (>100 Labels) </span>
+                <span><i class="fas fa-trophy" style="color: bronze;"></i> Bronze Contributor (>10 Labels) </span>
+                <span><i class="fas fa-star" style="color: green;"></i> First-Time Contributor! </span>
+            </div>
         `;
 
         container.appendChild(legend);
