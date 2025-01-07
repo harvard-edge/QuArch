@@ -135,13 +135,13 @@
         if (contributionCount > 1000) {
             badges.push('<i class="fas fa-medal" style="color: gold;" title="Gold Contributor"></i>');
         }
-        if (contributionCount > 100) {
+        else if (contributionCount > 100) {
             badges.push('<i class="fas fa-award" style="color: silver;" title="Silver Contributor"></i>');
         }
-        if (contributionCount > 10) {
+        else if (contributionCount > 10) {
             badges.push('<i class="fas fa-trophy" style="color: bronze;" title="Bronze Contributor"></i>');
         }
-        if (contributionCount > 1) {
+        else if (contributionCount > 1) {
             badges.push('<i class="fas fa-star" style="color: green;" title="First-Time Contributor"></i>');
         }
 
