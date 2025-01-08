@@ -84,7 +84,8 @@
             'jyik': 580,
             'rghosal': 467,
             'sprakash': 1167, // 643 + 524
-            'vjreddi': 265 // 194 + 71
+            'vjreddi': 265, // 194 + 71
+            'shreyasgrampurohit': 2
         };
 
         const contributions = {...hardcodedAdditions };
