@@ -1,427 +1,2781 @@
-[{
-        "id": 141926942,
-        "annotations": [{
-                "id": 51176030,
-                "completed_by": 58327,
-                "result": [{
-                        "id": "XnwL74cp3C",
-                        "type": "choices",
-                        "value": {
-                            "choices": [
-                                "A"
-                            ]
-                        },
-                        "origin": "manual",
-                        "to_name": "question",
-                        "from_name": "annotation"
-                    },
-                    {
-                        "id": "LqmpDqh5nJ",
-                        "type": "rating",
-                        "value": {
-                            "rating": 3
-                        },
-                        "origin": "manual",
-                        "to_name": "question",
-                        "from_name": "rating"
-                    }
-                ],
-                "reviews": [],
-                "history": [{
-                    "id": 55596835,
-                    "comment": null,
-                    "organization_id": 10735,
-                    "project_id": 118163,
-                    "annotation_id": 51176030,
-                    "draft_id": null,
-                    "review_id": null,
-                    "task_id": 141926942,
-                    "result": [{
-                            "id": "XnwL74cp3C",
-                            "type": "choices",
-                            "value": {
-                                "choices": [
-                                    "A"
-                                ]
-                            },
-                            "origin": "manual",
-                            "to_name": "question",
-                            "from_name": "annotation"
-                        },
-                        {
-                            "id": "LqmpDqh5nJ",
-                            "type": "rating",
-                            "value": {
-                                "rating": 3
-                            },
-                            "origin": "manual",
-                            "to_name": "question",
-                            "from_name": "rating"
-                        }
-                    ],
-                    "lead_time": 337.866,
-                    "action": "submitted",
-                    "started_at": "2024-12-18T16:31:57.125000Z",
-                    "created_at": "2024-12-18T16:37:35.747099Z",
-                    "created_by": 58327,
-                    "comment_id": null
-                }],
-                "was_cancelled": false,
-                "ground_truth": false,
-                "created_at": "2024-12-18T16:37:35.234512Z",
-                "updated_at": "2024-12-18T16:37:35.234521Z",
-                "draft_created_at": "2024-12-18T16:35:49.917677Z",
-                "lead_time": 337.866,
-                "prediction": {},
-                "result_count": 2,
-                "unique_id": "06a0d356-ff80-4c65-b921-939be6d48932",
-                "import_id": null,
-                "last_action": "submitted",
-                "task": 141926942,
-                "project": 118163,
-                "updated_by": 58327,
-                "parent_prediction": null,
-                "parent_annotation": null,
-                "last_created_by": 58327,
-                "annotator_email": "shreyasgrampurohit@iitb.ac.in"
+[
+  {
+    "id": 141926942,
+    "annotations": [
+      {
+        "id": 52161440,
+        "completed_by": 59557,
+        "result": [
+          {
+            "id": "gCUVmmaijE",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
             },
-            {
-                "id": 51175002,
-                "completed_by": 20699,
-                "result": [{
-                        "id": "FOxTtiswE-",
-                        "type": "choices",
-                        "value": {
-                            "choices": [
-                                "A"
-                            ]
-                        },
-                        "origin": "manual",
-                        "to_name": "question",
-                        "from_name": "annotation"
-                    },
-                    {
-                        "id": "KLiDZmzo0Z",
-                        "type": "rating",
-                        "value": {
-                            "rating": 4
-                        },
-                        "origin": "manual",
-                        "to_name": "question",
-                        "from_name": "rating"
-                    }
-                ],
-                "reviews": [],
-                "history": [{
-                    "id": 55595685,
-                    "comment": null,
-                    "organization_id": 10735,
-                    "project_id": 118163,
-                    "annotation_id": 51175002,
-                    "draft_id": null,
-                    "review_id": null,
-                    "task_id": 141926942,
-                    "result": [{
-                            "id": "FOxTtiswE-",
-                            "type": "choices",
-                            "value": {
-                                "choices": [
-                                    "A"
-                                ]
-                            },
-                            "origin": "manual",
-                            "to_name": "question",
-                            "from_name": "annotation"
-                        },
-                        {
-                            "id": "KLiDZmzo0Z",
-                            "type": "rating",
-                            "value": {
-                                "rating": 4
-                            },
-                            "origin": "manual",
-                            "to_name": "question",
-                            "from_name": "rating"
-                        }
-                    ],
-                    "lead_time": 10.488,
-                    "action": "submitted",
-                    "started_at": "2024-12-18T16:18:50.898000Z",
-                    "created_at": "2024-12-18T16:19:01.812506Z",
-                    "created_by": 20699,
-                    "comment_id": null
-                }],
-                "was_cancelled": false,
-                "ground_truth": false,
-                "created_at": "2024-12-18T16:19:01.669073Z",
-                "updated_at": "2024-12-18T16:19:01.669083Z",
-                "draft_created_at": "2024-12-18T16:18:58.912673Z",
-                "lead_time": 10.488,
-                "prediction": {},
-                "result_count": 2,
-                "unique_id": "42c6c9a6-52f5-44d7-82b6-e3c9b02e484a",
-                "import_id": null,
-                "last_action": "submitted",
-                "task": 141926942,
-                "project": 118163,
-                "updated_by": 20699,
-                "parent_prediction": null,
-                "parent_annotation": null,
-                "last_created_by": 20699,
-                "annotator_email": "sprakash@g.harvard.edu"
-            }
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "5BXrvbxTL-",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
         ],
-        "drafts": [],
-        "predictions": [],
-        "agreement": 100.0,
-        "data": {
-            "type": "Cloze",
-            "year": 2016,
-            "title": "Eyeriss: a spatial architecture for energy-efficient dataflow for convolutional neural networks",
-            "answer": "A",
-            "authors": "Yu-Hsin Chen, Joel Emer, and Vivienne Sze",
-            "context": "Deep convolutional neural networks (CNNs) are widely used in modern AI systems for their superior accuracy but at the cost of high computational complexity. The complexity comes from the need to simultaneously process hundreds of filters and channels in the high-dimensional convolutions, which involve a significant amount of data movement. Although highly-parallel compute paradigms, such as SIMD/SIMT, effectively address the computation requirement to achieve high throughput, energy consumption still remains high as data movement can be more expensive than computation. Accordingly, finding a dataflow that supports parallel processing with minimal data movement cost is crucial to achieving energy-efficient CNN processing without compromising accuracy. In this paper, we present a novel dataflow, called row-stationary (RS), that minimizes data movement energy consumption on a spatial architecture. This is realized by exploiting local data reuse of filter weights and feature map pixels, i.e., activations, in the high-dimensional convolutions, and minimizing data movement of partial sum accumulations. Unlike dataflows used in existing designs, which only reduce certain types of data movement, the proposed RS dataflow can adapt to different CNN shape configurations and reduces all types of data movement through maximally utilizing the processing engine (PE) local storage, direct inter-PE communication and spatial parallelism. To evaluate the energy efficiency of the different dataflows, we propose an analysis framework that compares energy cost under the same hardware area and processing parallelism constraints. Experiments using the CNN configurations of AlexNet show that the proposed RS dataflow is more energy efficient than existing dataflows in both convolutional (1.4\u00d7 to 2.5\u00d7) and fully-connected layers (at least 1.3\u00d7 for batch size larger than 16). The RS dataflow has also been demonstrated on a fabricated chip, which verifies our energy analysis.",
-            "question": "In AI systems using CNNs, reducing ___ is crucial to achieving energy-efficient processing without compromising accuracy.\nA) data movement cost\nB) processing latency\nC) model complexity\nD) network depth",
-            "gen_model": "gpt-4o",
-            "conference": "ISCA",
-            "val_models": [
-                "gpt-4o",
-                "claude-3_5-sonnet",
-                "gemini-1_5-pro"
+        "reviews": [],
+        "history": [
+          {
+            "id": 56868778,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52161440,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926942,
+            "result": [
+              {
+                "id": "gCUVmmaijE",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "5BXrvbxTL-",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
             ],
-            "models_against_generic": [],
-            "models_in_favor_generic": [
-                "gpt-4o",
-                "claude-3_5-sonnet",
-                "gemini-1_5-pro"
-            ]
-        },
-        "meta": {},
-        "created_at": "2024-12-12T18:19:38.772553Z",
-        "updated_at": "2024-12-18T16:37:35.295887Z",
-        "inner_id": 1,
-        "total_annotations": 2,
-        "cancelled_annotations": 0,
-        "total_predictions": 0,
-        "comment_count": 1,
-        "unresolved_comment_count": 1,
-        "last_comment_updated_at": "2024-12-18T16:37:29.286901Z",
+            "lead_time": 127.666,
+            "action": "submitted",
+            "started_at": "2025-01-07T19:13:54.613000Z",
+            "created_at": "2025-01-07T19:16:02.556876Z",
+            "created_by": 59557,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T19:16:02.431964Z",
+        "updated_at": "2025-01-07T19:16:02.431973Z",
+        "draft_created_at": "2025-01-07T19:14:14.276792Z",
+        "lead_time": 127.666,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "751df419-abc4-4bfb-bb91-76a2ce085184",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141926942,
         "project": 118163,
-        "updated_by": 58327,
-        "comment_authors": [
-            58327
-        ]
+        "updated_by": 59557,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59557,
+        "annotator_email": "cmk91@duke.edu"
+      },
+      {
+        "id": 52155980,
+        "completed_by": 59556,
+        "result": [
+          {
+            "id": "ZBd7qjguUi",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "r_V7I3s1Nn",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56862658,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52155980,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926942,
+            "result": [
+              {
+                "id": "ZBd7qjguUi",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "r_V7I3s1Nn",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 87.842,
+            "action": "submitted",
+            "started_at": "2025-01-07T16:46:00.248000Z",
+            "created_at": "2025-01-07T16:47:25.115952Z",
+            "created_by": 59556,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T16:47:24.931597Z",
+        "updated_at": "2025-01-07T16:47:24.931621Z",
+        "draft_created_at": "2025-01-07T16:46:44.505174Z",
+        "lead_time": 87.842,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "f634ec70-4c50-4021-a960-c8f1fb8ed8b0",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141926942,
+        "project": 118163,
+        "updated_by": 59556,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59556,
+        "annotator_email": "prag79@gmail.com"
+      },
+      {
+        "id": 52121249,
+        "completed_by": 20699,
+        "result": [
+          {
+            "id": "4t5MSFQvNJ",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "mA-rzo7C69",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56807683,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52121249,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926942,
+            "result": [
+              {
+                "id": "4t5MSFQvNJ",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "mA-rzo7C69",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 14.201,
+            "action": "submitted",
+            "started_at": "2025-01-06T19:40:12.049000Z",
+            "created_at": "2025-01-06T19:40:26.597244Z",
+            "created_by": 20699,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-06T19:40:26.473739Z",
+        "updated_at": "2025-01-06T19:40:26.473748Z",
+        "draft_created_at": "2025-01-06T19:40:22.828049Z",
+        "lead_time": 14.201,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "1092bee5-5434-47ae-8438-dc49626f0e5b",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141926942,
+        "project": 118163,
+        "updated_by": 20699,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 20699,
+        "annotator_email": "sprakash@g.harvard.edu"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2016,
+      "title": "Eyeriss: a spatial architecture for energy-efficient dataflow for convolutional neural networks",
+      "answer": "A",
+      "authors": "Yu-Hsin Chen, Joel Emer, and Vivienne Sze",
+      "context": "Deep convolutional neural networks (CNNs) are widely used in modern AI systems for their superior accuracy but at the cost of high computational complexity. The complexity comes from the need to simultaneously process hundreds of filters and channels in the high-dimensional convolutions, which involve a significant amount of data movement. Although highly-parallel compute paradigms, such as SIMD/SIMT, effectively address the computation requirement to achieve high throughput, energy consumption still remains high as data movement can be more expensive than computation. Accordingly, finding a dataflow that supports parallel processing with minimal data movement cost is crucial to achieving energy-efficient CNN processing without compromising accuracy. In this paper, we present a novel dataflow, called row-stationary (RS), that minimizes data movement energy consumption on a spatial architecture. This is realized by exploiting local data reuse of filter weights and feature map pixels, i.e., activations, in the high-dimensional convolutions, and minimizing data movement of partial sum accumulations. Unlike dataflows used in existing designs, which only reduce certain types of data movement, the proposed RS dataflow can adapt to different CNN shape configurations and reduces all types of data movement through maximally utilizing the processing engine (PE) local storage, direct inter-PE communication and spatial parallelism. To evaluate the energy efficiency of the different dataflows, we propose an analysis framework that compares energy cost under the same hardware area and processing parallelism constraints. Experiments using the CNN configurations of AlexNet show that the proposed RS dataflow is more energy efficient than existing dataflows in both convolutional (1.4\u00d7 to 2.5\u00d7) and fully-connected layers (at least 1.3\u00d7 for batch size larger than 16). The RS dataflow has also been demonstrated on a fabricated chip, which verifies our energy analysis.",
+      "question": "In AI systems using CNNs, reducing ___ is crucial to achieving energy-efficient processing without compromising accuracy.\nA) data movement cost\nB) processing latency\nC) model complexity\nD) network depth",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
     },
-    {
-        "id": 141926944,
-        "annotations": [{
-                "id": 51176106,
-                "completed_by": 58327,
-                "result": [{
-                        "id": "uFQOYnJ0EN",
-                        "type": "choices",
-                        "value": {
-                            "choices": [
-                                "B"
-                            ]
-                        },
-                        "origin": "manual",
-                        "to_name": "question",
-                        "from_name": "annotation"
-                    },
-                    {
-                        "id": "hauiJbda-0",
-                        "type": "rating",
-                        "value": {
-                            "rating": 2
-                        },
-                        "origin": "manual",
-                        "to_name": "question",
-                        "from_name": "rating"
-                    }
-                ],
-                "reviews": [],
-                "history": [{
-                    "id": 55596912,
-                    "comment": null,
-                    "organization_id": 10735,
-                    "project_id": 118163,
-                    "annotation_id": 51176106,
-                    "draft_id": null,
-                    "review_id": null,
-                    "task_id": 141926944,
-                    "result": [{
-                            "id": "uFQOYnJ0EN",
-                            "type": "choices",
-                            "value": {
-                                "choices": [
-                                    "B"
-                                ]
-                            },
-                            "origin": "manual",
-                            "to_name": "question",
-                            "from_name": "annotation"
-                        },
-                        {
-                            "id": "hauiJbda-0",
-                            "type": "rating",
-                            "value": {
-                                "rating": 2
-                            },
-                            "origin": "manual",
-                            "to_name": "question",
-                            "from_name": "rating"
-                        }
-                    ],
-                    "lead_time": 68.123,
-                    "action": "submitted",
-                    "started_at": "2024-12-18T16:37:36.391000Z",
-                    "created_at": "2024-12-18T16:38:44.899670Z",
-                    "created_by": 58327,
-                    "comment_id": null
-                }],
-                "was_cancelled": false,
-                "ground_truth": false,
-                "created_at": "2024-12-18T16:38:44.772780Z",
-                "updated_at": "2024-12-18T16:38:44.772788Z",
-                "draft_created_at": "2024-12-18T16:37:56.463403Z",
-                "lead_time": 68.123,
-                "prediction": {},
-                "result_count": 2,
-                "unique_id": "549fbd0e-24dd-4438-8862-1b61d0de3ff7",
-                "import_id": null,
-                "last_action": "submitted",
-                "task": 141926944,
-                "project": 118163,
-                "updated_by": 58327,
-                "parent_prediction": null,
-                "parent_annotation": null,
-                "last_created_by": 58327,
-                "annotator_email": "shreyasgrampurohit@iitb.ac.in"
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.772553Z",
+    "updated_at": "2025-01-07T19:16:02.501472Z",
+    "inner_id": 1,
+    "total_annotations": 3,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59557,
+    "comment_authors": []
+  },
+  {
+    "id": 141926944,
+    "annotations": [
+      {
+        "id": 52154073,
+        "completed_by": 59555,
+        "result": [
+          {
+            "id": "PgPWAnTgaM",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
             },
-            {
-                "id": 51175053,
-                "completed_by": 20699,
-                "result": [{
-                        "id": "QPLFlWkdyH",
-                        "type": "choices",
-                        "value": {
-                            "choices": [
-                                "B"
-                            ]
-                        },
-                        "origin": "manual",
-                        "to_name": "question",
-                        "from_name": "annotation"
-                    },
-                    {
-                        "id": "6hTetMgrK8",
-                        "type": "rating",
-                        "value": {
-                            "rating": 4
-                        },
-                        "origin": "manual",
-                        "to_name": "question",
-                        "from_name": "rating"
-                    }
-                ],
-                "reviews": [],
-                "history": [{
-                    "id": 55595741,
-                    "comment": null,
-                    "organization_id": 10735,
-                    "project_id": 118163,
-                    "annotation_id": 51175053,
-                    "draft_id": null,
-                    "review_id": null,
-                    "task_id": 141926944,
-                    "result": [{
-                            "id": "QPLFlWkdyH",
-                            "type": "choices",
-                            "value": {
-                                "choices": [
-                                    "B"
-                                ]
-                            },
-                            "origin": "manual",
-                            "to_name": "question",
-                            "from_name": "annotation"
-                        },
-                        {
-                            "id": "6hTetMgrK8",
-                            "type": "rating",
-                            "value": {
-                                "rating": 4
-                            },
-                            "origin": "manual",
-                            "to_name": "question",
-                            "from_name": "rating"
-                        }
-                    ],
-                    "lead_time": 22.596,
-                    "action": "submitted",
-                    "started_at": "2024-12-18T16:19:24.907000Z",
-                    "created_at": "2024-12-18T16:19:48.077538Z",
-                    "created_by": 20699,
-                    "comment_id": null
-                }],
-                "was_cancelled": false,
-                "ground_truth": false,
-                "created_at": "2024-12-18T16:19:47.961868Z",
-                "updated_at": "2024-12-18T16:19:47.961882Z",
-                "draft_created_at": "2024-12-18T16:19:35.802018Z",
-                "lead_time": 22.596,
-                "prediction": {},
-                "result_count": 2,
-                "unique_id": "f5e8699a-d657-479d-aa77-2b5b5ab89f04",
-                "import_id": null,
-                "last_action": "submitted",
-                "task": 141926944,
-                "project": 118163,
-                "updated_by": 20699,
-                "parent_prediction": null,
-                "parent_annotation": null,
-                "last_created_by": 20699,
-                "annotator_email": "sprakash@g.harvard.edu"
-            }
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "WVuJ5U2DyZ",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
         ],
-        "drafts": [],
-        "predictions": [],
-        "agreement": 100.0,
-        "data": {
-            "type": "Cloze",
-            "year": 2016,
-            "title": "Eyeriss: a spatial architecture for energy-efficient dataflow for convolutional neural networks",
-            "answer": "B",
-            "authors": "Yu-Hsin Chen, Joel Emer, and Vivienne Sze",
-            "context": "Deep convolutional neural networks (CNNs) are widely used in modern AI systems for their superior accuracy but at the cost of high computational complexity. The complexity comes from the need to simultaneously process hundreds of filters and channels in the high-dimensional convolutions, which involve a significant amount of data movement. Although highly-parallel compute paradigms, such as SIMD/SIMT, effectively address the computation requirement to achieve high throughput, energy consumption still remains high as data movement can be more expensive than computation. Accordingly, finding a dataflow that supports parallel processing with minimal data movement cost is crucial to achieving energy-efficient CNN processing without compromising accuracy. In this paper, we present a novel dataflow, called row-stationary (RS), that minimizes data movement energy consumption on a spatial architecture. This is realized by exploiting local data reuse of filter weights and feature map pixels, i.e., activations, in the high-dimensional convolutions, and minimizing data movement of partial sum accumulations. Unlike dataflows used in existing designs, which only reduce certain types of data movement, the proposed RS dataflow can adapt to different CNN shape configurations and reduces all types of data movement through maximally utilizing the processing engine (PE) local storage, direct inter-PE communication and spatial parallelism. To evaluate the energy efficiency of the different dataflows, we propose an analysis framework that compares energy cost under the same hardware area and processing parallelism constraints. Experiments using the CNN configurations of AlexNet show that the proposed RS dataflow is more energy efficient than existing dataflows in both convolutional (1.4\u00d7 to 2.5\u00d7) and fully-connected layers (at least 1.3\u00d7 for batch size larger than 16). The RS dataflow has also been demonstrated on a fabricated chip, which verifies our energy analysis.",
-            "question": "In deep convolutional neural networks, ____ can be more energy-expensive than computation.\nA) Parallel processing\nB) Data movement\nC) Filter application\nD) Accuracy optimization",
-            "gen_model": "claude-3_5-sonnet",
-            "conference": "ISCA",
-            "val_models": [
-                "gpt-4o",
-                "claude-3_5-sonnet",
-                "gemini-1_5-pro"
+        "reviews": [],
+        "history": [
+          {
+            "id": 56860325,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52154073,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926944,
+            "result": [
+              {
+                "id": "PgPWAnTgaM",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "WVuJ5U2DyZ",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
             ],
-            "models_against_generic": [],
-            "models_in_favor_generic": [
-                "gpt-4o",
-                "claude-3_5-sonnet",
-                "gemini-1_5-pro"
-            ]
-        },
-        "meta": {},
-        "created_at": "2024-12-12T18:19:38.772645Z",
-        "updated_at": "2024-12-18T16:38:44.844141Z",
-        "inner_id": 3,
-        "total_annotations": 2,
-        "cancelled_annotations": 0,
-        "total_predictions": 0,
-        "comment_count": 0,
-        "unresolved_comment_count": 0,
-        "last_comment_updated_at": null,
+            "lead_time": 65.011,
+            "action": "submitted",
+            "started_at": "2025-01-07T16:13:06.355000Z",
+            "created_at": "2025-01-07T16:14:11.668491Z",
+            "created_by": 59555,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T16:14:11.544274Z",
+        "updated_at": "2025-01-07T16:14:11.544285Z",
+        "draft_created_at": "2025-01-07T16:13:44.811079Z",
+        "lead_time": 65.011,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "0771fbd4-0aa6-4bec-8741-19022d2cb4bc",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141926944,
         "project": 118163,
-        "updated_by": 58327,
-        "comment_authors": []
-    }
+        "updated_by": 59555,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59555,
+        "annotator_email": "zishenwan@gmail.com"
+      },
+      {
+        "id": 52150953,
+        "completed_by": 59547,
+        "result": [
+          {
+            "id": "zBjtYqrSD_",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "7Yq3ESjH0O",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56856618,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52150953,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926944,
+            "result": [
+              {
+                "id": "zBjtYqrSD_",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "7Yq3ESjH0O",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 152.366,
+            "action": "submitted",
+            "started_at": "2025-01-07T14:44:31.064000Z",
+            "created_at": "2025-01-07T14:47:03.787357Z",
+            "created_by": 59547,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T14:47:03.647423Z",
+        "updated_at": "2025-01-07T14:47:03.647431Z",
+        "draft_created_at": "2025-01-07T14:45:23.250112Z",
+        "lead_time": 152.366,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "c4243a84-2598-4ac2-9d58-2e05c29ca02b",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141926944,
+        "project": 118163,
+        "updated_by": 59547,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59547,
+        "annotator_email": "andy@maildrop.cc"
+      },
+      {
+        "id": 52121261,
+        "completed_by": 20699,
+        "result": [
+          {
+            "id": "wNtPVZKgK7",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "4BoL5jySLH",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56807698,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52121261,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926944,
+            "result": [
+              {
+                "id": "wNtPVZKgK7",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "4BoL5jySLH",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 14.449,
+            "action": "submitted",
+            "started_at": "2025-01-06T19:40:33.503000Z",
+            "created_at": "2025-01-06T19:40:48.681382Z",
+            "created_by": 20699,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-06T19:40:48.512191Z",
+        "updated_at": "2025-01-06T19:40:48.512207Z",
+        "draft_created_at": "2025-01-06T19:40:41.577015Z",
+        "lead_time": 14.449,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "47502603-ac36-4b42-a095-72bcb5e00f13",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141926944,
+        "project": 118163,
+        "updated_by": 20699,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 20699,
+        "annotator_email": "sprakash@g.harvard.edu"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2016,
+      "title": "Eyeriss: a spatial architecture for energy-efficient dataflow for convolutional neural networks",
+      "answer": "B",
+      "authors": "Yu-Hsin Chen, Joel Emer, and Vivienne Sze",
+      "context": "Deep convolutional neural networks (CNNs) are widely used in modern AI systems for their superior accuracy but at the cost of high computational complexity. The complexity comes from the need to simultaneously process hundreds of filters and channels in the high-dimensional convolutions, which involve a significant amount of data movement. Although highly-parallel compute paradigms, such as SIMD/SIMT, effectively address the computation requirement to achieve high throughput, energy consumption still remains high as data movement can be more expensive than computation. Accordingly, finding a dataflow that supports parallel processing with minimal data movement cost is crucial to achieving energy-efficient CNN processing without compromising accuracy. In this paper, we present a novel dataflow, called row-stationary (RS), that minimizes data movement energy consumption on a spatial architecture. This is realized by exploiting local data reuse of filter weights and feature map pixels, i.e., activations, in the high-dimensional convolutions, and minimizing data movement of partial sum accumulations. Unlike dataflows used in existing designs, which only reduce certain types of data movement, the proposed RS dataflow can adapt to different CNN shape configurations and reduces all types of data movement through maximally utilizing the processing engine (PE) local storage, direct inter-PE communication and spatial parallelism. To evaluate the energy efficiency of the different dataflows, we propose an analysis framework that compares energy cost under the same hardware area and processing parallelism constraints. Experiments using the CNN configurations of AlexNet show that the proposed RS dataflow is more energy efficient than existing dataflows in both convolutional (1.4\u00d7 to 2.5\u00d7) and fully-connected layers (at least 1.3\u00d7 for batch size larger than 16). The RS dataflow has also been demonstrated on a fabricated chip, which verifies our energy analysis.",
+      "question": "In deep convolutional neural networks, ____ can be more energy-expensive than computation.\nA) Parallel processing\nB) Data movement\nC) Filter application\nD) Accuracy optimization",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.772645Z",
+    "updated_at": "2025-01-07T16:14:11.615353Z",
+    "inner_id": 3,
+    "total_annotations": 3,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59555,
+    "comment_authors": []
+  },
+  {
+    "id": 141926970,
+    "annotations": [
+      {
+        "id": 52164814,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "MRgLGNVMeq",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Multiple Answers Exist"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "GarF5QwuEE",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872625,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52164814,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926970,
+            "result": [
+              {
+                "id": "MRgLGNVMeq",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "Multiple Answers Exist"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "GarF5QwuEE",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 434.512,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:43:11.633000Z",
+            "created_at": "2025-01-07T20:50:26.050112Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:50:25.878210Z",
+        "updated_at": "2025-01-07T20:50:25.878226Z",
+        "draft_created_at": "2025-01-07T20:48:18.218403Z",
+        "lead_time": 434.512,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "4b5732bb-f617-432f-8cab-969fc397a979",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141926970,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      },
+      {
+        "id": 52162820,
+        "completed_by": 59558,
+        "result": [
+          {
+            "id": "-VVYCIJ5qa",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Multiple Answers Exist"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "y6kESmOgRR",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56870343,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52162820,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926970,
+            "result": [
+              {
+                "id": "-VVYCIJ5qa",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "Multiple Answers Exist"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "y6kESmOgRR",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 135.733,
+            "action": "submitted",
+            "started_at": "2025-01-07T19:50:03.035000Z",
+            "created_at": "2025-01-07T19:52:19.483395Z",
+            "created_by": 59558,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T19:52:19.365909Z",
+        "updated_at": "2025-01-07T19:52:19.365931Z",
+        "draft_created_at": "2025-01-07T19:51:39.912698Z",
+        "lead_time": 135.733,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "36024f68-c560-4eef-90aa-a689063df623",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141926970,
+        "project": 118163,
+        "updated_by": 59558,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59558,
+        "annotator_email": "leeorp@gmail.com"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 1998,
+      "title": "Memory system characterization of commercial workloads",
+      "answer": "C",
+      "authors": "Luiz Andr\u00e9 Barroso, Kourosh Gharachorloo, and Edouard Bugnion",
+      "context": "Commercial applications such as databases and Web servers constitute the largest and fastest-growing segment of the market for multiprocessor servers. Ongoing innovations in disk subsystems, along with the ever increasing gap between processor and memory speeds, have elevated memory system design as the critical performance factor for such workloads. However, most current server designs have been optimized to perform well on scientific and engineering workloads, potentially leading to design decisions that are non-ideal for commercial applications. The above problem is exacerbated by the lack of information on the performance requirements of commercial workloads, the lack of available applications for widespread study, and the fact that most representative applications are too large and complex to serve as suitable benchmarks for evaluating trade-offs in the design of processors and servers.This paper presents a detailed performance study of three important classes of commercial workloads: online transaction processing (OLTP), decision support systems (DSS), and Web index search. We use the Oracle commercial database engine for our OLTP and DSS workloads, and the AltaVista search engine for our Web index search workload. This study characterizes the memory system behavior of these workloads through a large number of architectural experiments on Alpha multiprocessors augmented with full system simulations to determine the impact of architectural trends. We also identify a set of simplifications that make these workloads more amenable to monitoring and simulation without affecting representative memory system behavior. We observe that systems optimized for OLTP versus DSS and index search workloads may lead to diverging designs, specifically in the size and speed requirements for off-chip caches.",
+      "question": "Optimizing server design for different commercial workloads like OLTP versus DSS and Web search may lead to different design requirements in terms of ____.\nA) Processor core frequency\nB) Interconnect topology\nC) Off-chip cache size and speed\nD) Number of processor cores",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.773165Z",
+    "updated_at": "2025-01-07T20:50:25.975505Z",
+    "inner_id": 29,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927022,
+    "annotations": [
+      {
+        "id": 52165046,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "ldJ9k4nI8f",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "J6qt6E9rze",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872912,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52165046,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927022,
+            "result": [
+              {
+                "id": "ldJ9k4nI8f",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "J6qt6E9rze",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 35.505,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:56:49.281000Z",
+            "created_at": "2025-01-07T20:57:24.539338Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:57:24.441565Z",
+        "updated_at": "2025-01-07T20:57:24.441574Z",
+        "draft_created_at": null,
+        "lead_time": 35.505,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "fbd8e4ed-7761-4dde-9e6d-1de0eac53ef2",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927022,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2008,
+      "title": "Technology-Driven, Highly-Scalable Dragonfly Topology",
+      "answer": "A",
+      "authors": "John Kim, William J. Dally, Steve Scott, and Dennis Abts",
+      "context": "Evolving technology and increasing pin-bandwidth motivate the use of high-radix routers to reduce the diameter, latency, and cost of interconnection networks. High-radix networks, however, require longer cables than their low-radix counterparts. Because cables dominate network cost, the number of cables, and particularly the number of long, global cables should be minimized to realize an efficient network. In this paper, we introduce the dragonfly topology which uses a group of high-radix routers as a virtual router to increase the effective radix of the network. With this organization, each minimally routed packet traverses at most one global channel. By reducing global channels, a dragonfly reduces cost by 20% compared to a flattened butterfly and by 52% compared to a folded Clos network in configurations with \u2265 16K nodes.We also introduce two new variants of global adaptive routing that enable load-balanced routing in the dragonfly. Each router in a dragonfly must make an adaptive routing decision based on the state of a global channel connected to a different router. Because of the indirect nature of this routing decision, conventional adaptive routing algorithms give degraded performance. We introduce the use of selective virtual-channel discrimination and the use of credit round-trip latency to both sense and signal channel congestion. The combination of these two methods gives throughput and latency that approaches that of an ideal adaptive routing algorithm.",
+      "question": "In high-radix networks, ____ tend to dominate the overall network cost.\nA) cables\nB) routers\nC) switches\nD) processors",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ICSA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.774234Z",
+    "updated_at": "2025-01-07T20:57:24.512197Z",
+    "inner_id": 81,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927042,
+    "annotations": [
+      {
+        "id": 52164933,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "JYSvXQFrvn",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "Je3HaOtW3U",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872783,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52164933,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927042,
+            "result": [
+              {
+                "id": "JYSvXQFrvn",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "Je3HaOtW3U",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 76.565,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:52:29.058000Z",
+            "created_at": "2025-01-07T20:53:45.518674Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:53:45.345213Z",
+        "updated_at": "2025-01-07T20:53:45.345230Z",
+        "draft_created_at": "2025-01-07T20:53:22.092559Z",
+        "lead_time": 76.565,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "cd33cf22-8dcf-4d43-a32c-392e67ef19e8",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927042,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2010,
+      "title": "High Performance Cache Replacement Using Re-Reference Interval Prediction (RRIP)",
+      "answer": "C",
+      "authors": "Aamer Jaleel, Kevin B. Theobald, Simon C. Steely, and Joel Emer",
+      "context": "Practical cache replacement policies attempt to emulate optimal replacement by predicting the re-reference interval of a cache block. The commonly used LRU replacement policy always predicts a near-immediate re-reference interval on cache hits and misses. Applications that exhibit a distant re-reference interval perform badly under LRU. Such applications usually have a working-set larger than the cache or have frequent bursts of references to non-temporal data (called scans). To improve the performance of such workloads, this paper proposes cache replacement using Re-reference Interval Prediction (RRIP). We propose Static RRIP (SRRIP) that is scan-resistant and Dynamic RRIP (DRRIP) that is both scan-resistant and thrash-resistant. Both RRIP policies require only 2-bits per cache block and easily integrate into existing LRU approximations found in modern processors. Our evaluations using PC games, multimedia, server and SPEC CPU2006 workloads on a single-core processor with a 2MB last-level cache (LLC) show that both SRRIP and DRRIP outperform LRU replacement on the throughput metric by an average of 4% and 10% respectively. Our evaluations with over 1000 multi-programmed workloads on a 4-core CMP with an 8MB shared LLC show that SRRIP and DRRIP outperform LRU replacement on the throughput metric by an average of 7% and 9% respectively. We also show that RRIP outperforms LFU, the state-of the art scan-resistant replacement algorithm to-date. For the cache configurations under study, RRIP requires 2X less hardware than LRU and 2.5X less hardware than LFU.",
+      "question": "Applications with working sets larger than the cache size or those exhibiting frequent accesses to non-temporal data often experience performance degradation under traditional cache replacement policies like LRU because these policies ____.\nA) prioritize recently used data, potentially evicting data that will be needed soon.\nB) fail to adapt to changing access patterns, leading to unnecessary cache misses.\nC) implicitly assume short re-reference intervals, mispredicting the future reuse of data.\nD) increase the complexity of cache management, leading to higher hardware overhead.",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.774644Z",
+    "updated_at": "2025-01-07T20:53:45.446029Z",
+    "inner_id": 101,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927111,
+    "annotations": [
+      {
+        "id": 52164437,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "WO6NQ5AG8P",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "mIxzm6lhxJ",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872196,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52164437,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927111,
+            "result": [
+              {
+                "id": "WO6NQ5AG8P",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "mIxzm6lhxJ",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 231.091,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:35:34.018000Z",
+            "created_at": "2025-01-07T20:39:24.908869Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:39:24.784827Z",
+        "updated_at": "2025-01-07T20:39:24.784837Z",
+        "draft_created_at": "2025-01-07T20:39:04.638000Z",
+        "lead_time": 231.091,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "f1bee090-3c23-4ab4-ab09-36adb8bee5e9",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927111,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      },
+      {
+        "id": 52162658,
+        "completed_by": 59558,
+        "result": [
+          {
+            "id": "UZ_DtgDO2y",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "24F_bys_SF",
+            "type": "rating",
+            "value": {
+              "rating": 1
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56870179,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52162658,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927111,
+            "result": [
+              {
+                "id": "UZ_DtgDO2y",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "24F_bys_SF",
+                "type": "rating",
+                "value": {
+                  "rating": 1
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 89.892,
+            "action": "submitted",
+            "started_at": "2025-01-07T19:47:22.053000Z",
+            "created_at": "2025-01-07T19:48:00.395233Z",
+            "created_by": 59558,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T19:48:00.203241Z",
+        "updated_at": "2025-01-07T19:48:00.203261Z",
+        "draft_created_at": "2025-01-07T19:47:22.053229Z",
+        "lead_time": 89.892,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "d1ba52ec-0021-4694-8db9-7244752d6b23",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927111,
+        "project": 118163,
+        "updated_by": 59558,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59558,
+        "annotator_email": "leeorp@gmail.com"
+      },
+      {
+        "id": 52161493,
+        "completed_by": 59557,
+        "result": [
+          {
+            "id": "4WAXAcb-QR",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "Puig8PVGsg",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56868844,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52161493,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927111,
+            "result": [
+              {
+                "id": "4WAXAcb-QR",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "Puig8PVGsg",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 27.788,
+            "action": "submitted",
+            "started_at": "2025-01-07T19:17:15.743000Z",
+            "created_at": "2025-01-07T19:17:43.909344Z",
+            "created_by": 59557,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T19:17:43.752432Z",
+        "updated_at": "2025-01-07T19:17:43.752448Z",
+        "draft_created_at": "2025-01-07T19:17:43.216823Z",
+        "lead_time": 27.788,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "d0eccdc1-d1c2-47f7-ab11-46d6ff365818",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927111,
+        "project": 118163,
+        "updated_by": 59557,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59557,
+        "annotator_email": "cmk91@duke.edu"
+      }
+    ],
+    "drafts": [
+      {
+        "id": 14101765,
+        "user": "sgiannuzzi39@gmail.com",
+        "created_username": "sgiannuzzi39@gmail.com, 25953",
+        "created_ago": "3\u00a0weeks, 3\u00a0days",
+        "result": [],
+        "lead_time": 9.629,
+        "was_postponed": false,
+        "import_id": null,
+        "created_at": "2024-12-14T22:55:22.491736Z",
+        "updated_at": "2024-12-14T22:55:22.491745Z",
+        "task": 141927111,
+        "annotation": null
+      }
+    ],
+    "predictions": [],
+    "agreement": 33.33333333333333,
+    "data": {
+      "type": "Cloze",
+      "year": 2004,
+      "title": "A First-Order Superscalar Processor Model",
+      "answer": "A",
+      "authors": "Tejas S. Karkhanis and James E. Smith",
+      "context": "A proposed performance model for superscalar processorsconsists of 1) a component that models the relationshipbetween instructions issued per cycle and the sizeof the instruction window under ideal conditions, and 2)methods for calculating transient performance penaltiesdue to branch mispredictions, instruction cache misses,and data cache misses.Using trace-derived data dependenceinformation, data and instruction cache miss rates,and branch miss-prediction rates as inputs, the model canarrive at performance estimates for a typical superscalarprocessor that are within 5.8% of detailed simulation onaverage and within 13% in the worst case. The modelalso provides insights into the workings of superscalarprocessors and long-term microarchitecture trends such aspipeline depths and issue widths.",
+      "question": "The performance model's predictions for typical superscalar processors are within approximately _____ of detailed simulations in the worst cases.\nA) 13%\nB) 20%\nC) 8%\nD) 5.8%",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.775980Z",
+    "updated_at": "2025-01-07T20:39:24.852879Z",
+    "inner_id": 170,
+    "total_annotations": 3,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927161,
+    "annotations": [
+      {
+        "id": 52164963,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "aYardl5Mnm",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "8b_aLaj_91",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872816,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52164963,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927161,
+            "result": [
+              {
+                "id": "aYardl5Mnm",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "8b_aLaj_91",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 53.735,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:53:47.421000Z",
+            "created_at": "2025-01-07T20:54:40.951015Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:54:40.838827Z",
+        "updated_at": "2025-01-07T20:54:40.838836Z",
+        "draft_created_at": "2025-01-07T20:54:01.468104Z",
+        "lead_time": 53.735,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "0e4fb7e1-e29c-4b34-b93f-b41885c69118",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927161,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 1999,
+      "title": "A performance comparison of contemporary DRAM architectures",
+      "answer": "B",
+      "authors": "Vinodh Cuppu, Bruce Jacob, Brian Davis, and Trevor Mudge",
+      "context": "In response to the growing gap between memory access time and processor speed, DRAM manufacturers have created several new DRAM architectures. This paper presents a simulation-based performance study of a representative group, each evaluated in a small system organization. These small-system organizations correspond to workstation-class computers and use on the order of 10 DRAM chips. The study covers Fast Page Mode, Extended Data Out, Synchronous, Enhanced Synchronous, Synchronous Link, Rambus, and Direct Rambus designs. Our simulations reveal several things: (a) current advanced DRAM technologies are attacking the memory bandwidth problem but not the latency problem; (b) bus transmission speed will soon become a primary factor limiting memory-system performance; (c) the post-L2 address stream still contains significant locality, though it varies from application to application; and (d) as we move to wider buses, row access time becomes more prominent, making it important to investigate techniques to exploit the available locality to decrease access time.",
+      "question": "Current advanced DRAM technologies are primarily addressing the ____ problem rather than the latency problem.\nA) power consumption\nB) memory bandwidth\nC) cache coherence\nD) instruction-level parallelism",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.777330Z",
+    "updated_at": "2025-01-07T20:54:40.900833Z",
+    "inner_id": 220,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927223,
+    "annotations": [
+      {
+        "id": 52164547,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "Qjr08XaasP",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "L_9OP9teWb",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872319,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52164547,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927223,
+            "result": [
+              {
+                "id": "Qjr08XaasP",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "L_9OP9teWb",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 222.979,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:39:26.685000Z",
+            "created_at": "2025-01-07T20:43:09.474416Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:43:09.351851Z",
+        "updated_at": "2025-01-07T20:43:09.351862Z",
+        "draft_created_at": "2025-01-07T20:42:51.023223Z",
+        "lead_time": 222.979,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "967855fd-a3ce-4339-9496-6c6ab036614a",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927223,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      },
+      {
+        "id": 52162937,
+        "completed_by": 59558,
+        "result": [
+          {
+            "id": "6HJZHqIbNj",
+            "type": "rating",
+            "value": {
+              "rating": 1
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56870460,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52162937,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927223,
+            "result": [
+              {
+                "id": "6HJZHqIbNj",
+                "type": "rating",
+                "value": {
+                  "rating": 1
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 88.513,
+            "action": "skipped",
+            "started_at": "2025-01-07T19:53:01.118000Z",
+            "created_at": "2025-01-07T19:54:30.441504Z",
+            "created_by": 59558,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": true,
+        "ground_truth": false,
+        "created_at": "2025-01-07T19:54:30.304009Z",
+        "updated_at": "2025-01-07T19:54:30.304019Z",
+        "draft_created_at": "2025-01-07T19:54:24.012565Z",
+        "lead_time": 88.513,
+        "prediction": {},
+        "result_count": 1,
+        "unique_id": "81c7c985-4a3c-435f-93ed-e99bcf85d5f6",
+        "import_id": null,
+        "last_action": "skipped",
+        "task": 141927223,
+        "project": 118163,
+        "updated_by": 59558,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59558,
+        "annotator_email": "leeorp@gmail.com"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2004,
+      "title": "Evaluation of the Raw Microprocessor: An Exposed-Wire-Delay Architecture for ILP and Streams",
+      "answer": "A",
+      "authors": "Michael Bedford Taylor, Walter Lee, Jason Miller, David Wentzlaff, Ian Bratt, Ben Greenwald, Henry Hoffmann, Paul Johnson, Jason Kim, James Psota, Arvind Saraf, Nathan Shnidman, Volker Strumpen, Matt Frank, Saman Amarasinghe, and Anant Agarwal",
+      "context": "This paper evaluates the Raw microprocessor. Raw addresses thechallenge of building a general-purpose architecture that performswell on a larger class of stream and embedded computing applicationsthan existing microprocessors, while still running existingILP-based sequential programs with reasonable performance in theface of increasing wire delays. Raw approaches this challenge byimplementing plenty of on-chip resources - including logic, wires,and pins - in a tiled arrangement, and exposing them through a newISA, so that the software can take advantage of these resources forparallel applications. Raw supports both ILP and streams by routingoperands between architecturally-exposed functional units overa point-to-point scalar operand network. This network offers lowlatency for scalar data transport. Raw manages the effect of wiredelays by exposing the interconnect and using software to orchestrateboth scalar and stream data transport.We have implemented a prototype Raw microprocessor in IBM's180 nm, 6-layer copper, CMOS 7SF standard-cell ASIC process. Wehave also implemented ILP and stream compilers. Our evaluationattempts to determine the extent to which Raw succeeds in meetingits goal of serving as a more versatile, general-purpose processor.Central to achieving this goal is Raw's ability to exploit all formsof parallelism, including ILP, DLP, TLP, and Stream parallelism.Specifically, we evaluate the performance of Raw on a diverse setof codes including traditional sequential programs, streaming applications,server workloads and bit-level embedded computation.Our experimental methodology makes use of a cycle-accurate simulatorvalidated against our real hardware. Compared to a 180 nmPentium-III, using commodity PC memory system components, Rawperforms within a factor of 2x for sequential applications with a verylow degree of ILP, about 2x to 9x better for higher levels of ILP, and10x-100x better when highly parallel applications are coded in astream language or optimized by hand. The paper also proposes anew versatility metric and uses it to discuss the generality of Raw.",
+      "question": "Exposing on-chip resources like interconnect and allowing software control over data transport can help mitigate the negative impact of ____.\nA) increasing wire delays\nB) limited cache sizes\nC) branch misprediction penalties\nD) context switching overhead",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.778580Z",
+    "updated_at": "2025-01-07T20:43:09.420208Z",
+    "inner_id": 282,
+    "total_annotations": 1,
+    "cancelled_annotations": 1,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927232,
+    "annotations": [
+      {
+        "id": 52164848,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "MS_AdmBVVX",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "HIsvGPM_V2",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872669,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52164848,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927232,
+            "result": [
+              {
+                "id": "MS_AdmBVVX",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "HIsvGPM_V2",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 41.203,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:50:28.032000Z",
+            "created_at": "2025-01-07T20:51:09.030729Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:51:08.903317Z",
+        "updated_at": "2025-01-07T20:51:08.903325Z",
+        "draft_created_at": "2025-01-07T20:51:07.392861Z",
+        "lead_time": 41.203,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "1e99a370-9faa-498e-8f91-a35119659aa9",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927232,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      },
+      {
+        "id": 52162852,
+        "completed_by": 59558,
+        "result": [
+          {
+            "id": "AXtUwbDfmD",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "TLFLHa9O-T",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56870375,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52162852,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927232,
+            "result": [
+              {
+                "id": "AXtUwbDfmD",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "TLFLHa9O-T",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 40.314,
+            "action": "submitted",
+            "started_at": "2025-01-07T19:52:19.785000Z",
+            "created_at": "2025-01-07T19:53:00.845918Z",
+            "created_by": 59558,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T19:53:00.718522Z",
+        "updated_at": "2025-01-07T19:53:00.718530Z",
+        "draft_created_at": "2025-01-07T19:52:44.585735Z",
+        "lead_time": 40.314,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "82f8cf1b-339d-434c-b3f4-712b005ed566",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927232,
+        "project": 118163,
+        "updated_by": 59558,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59558,
+        "annotator_email": "leeorp@gmail.com"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2003,
+      "title": "Exploiting ILP, TLP, and DLP with the polymorphous TRIPS architecture",
+      "answer": "B",
+      "authors": "Karthikeyan Sankaralingam, Ramadass Nagarajan, Haiming Liu, Changkyu Kim, Jaehyuk Huh, Doug Burger, Stephen W. Keckler, and Charles R. Moore",
+      "context": "This paper describes the polymorphous TRIPS architecture which can be configured for different granularities and types of parallelism. TRIPS contains mechanisms that enable the processing cores and the on-chip memory system to be configured and combined in different modes for instruction, data, or thread-level parallelism. To adapt to small and large-grain concurrency, the TRIPS architecture contains four out-of-order, 16-wide-issue Grid Processor cores, which can be partitioned when easily extractable fine-grained parallelism exists. This approach to polymorphism provides better performance across a wide range of application types than an approach in which many small processors are aggregated to run workloads with irregular parallelism. Our results show that high performance can be obtained in each of the three modes--ILP, TLP, and DLP-demonstrating the viability of the polymorphous coarse-grained approach for future microprocessors.",
+      "question": "A ____ architecture allows for adapting to different types and scales of parallelism within a single design.\nA) fixed-function\nB) polymorphous\nC) monolithic\nD) heterogeneous",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.778755Z",
+    "updated_at": "2025-01-07T20:51:08.973261Z",
+    "inner_id": 291,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927278,
+    "annotations": [
+      {
+        "id": 52162539,
+        "completed_by": 59558,
+        "result": [
+          {
+            "id": "3nvEkc7a6q",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "dAYHqzWhc3",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56870060,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52162539,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927278,
+            "result": [
+              {
+                "id": "3nvEkc7a6q",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "dAYHqzWhc3",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 179.463,
+            "action": "submitted",
+            "started_at": "2025-01-07T19:43:04.206000Z",
+            "created_at": "2025-01-07T19:46:04.427683Z",
+            "created_by": 59558,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T19:46:04.294482Z",
+        "updated_at": "2025-01-07T19:46:04.294491Z",
+        "draft_created_at": "2025-01-07T19:44:39.231988Z",
+        "lead_time": 179.463,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "0d7e7dbb-191d-459a-9061-659844727645",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927278,
+        "project": 118163,
+        "updated_by": 59558,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59558,
+        "annotator_email": "leeorp@gmail.com"
+      },
+      {
+        "id": 52161482,
+        "completed_by": 59557,
+        "result": [
+          {
+            "id": "WlQNy6YXXn",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "3otWzYqQm0",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56868828,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52161482,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927278,
+            "result": [
+              {
+                "id": "WlQNy6YXXn",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "3otWzYqQm0",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 71.96,
+            "action": "submitted",
+            "started_at": "2025-01-07T19:16:03.043000Z",
+            "created_at": "2025-01-07T19:17:15.366158Z",
+            "created_by": 59557,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T19:17:15.234096Z",
+        "updated_at": "2025-01-07T19:17:15.234109Z",
+        "draft_created_at": "2025-01-07T19:17:07.894778Z",
+        "lead_time": 71.96,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "033783f8-4faa-46ff-ab8c-0be65ae2c55e",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927278,
+        "project": 118163,
+        "updated_by": 59557,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59557,
+        "annotator_email": "cmk91@duke.edu"
+      },
+      {
+        "id": 52157819,
+        "completed_by": 59556,
+        "result": [
+          {
+            "id": "PjRgbQJQvs",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "OV9kTo7rxX",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56864777,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52157819,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927278,
+            "result": [
+              {
+                "id": "PjRgbQJQvs",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "OV9kTo7rxX",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 1881.356,
+            "action": "submitted",
+            "started_at": "2025-01-07T16:47:29.786000Z",
+            "created_at": "2025-01-07T17:18:48.099820Z",
+            "created_by": 59556,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T17:18:47.969646Z",
+        "updated_at": "2025-01-07T17:18:47.969655Z",
+        "draft_created_at": "2025-01-07T17:18:43.547156Z",
+        "lead_time": 1881.356,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "f414afa5-8046-4c6c-9fbe-0441286e410b",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927278,
+        "project": 118163,
+        "updated_by": 59556,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59556,
+        "annotator_email": "prag79@gmail.com"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2007,
+      "title": "Core Fusion: Accommodating Software Diversity in Chip Multiprocessors",
+      "answer": "A",
+      "authors": "Engin Ipek, Meyrem Kirman, Nevin Kirman, and Jos\u00e9 F. Mart\u00ednez",
+      "context": "This paper presents core fusion, a reconfigurable chip multiprocessor(CMP) architecture where groups of fundamentally independent cores can dynamically morph into a larger CPU, or they can be used as distinct processing elements, as needed at run time by applications. Core fusion gracefully accommodates software diversity and incremental parallelization in CMPs. It provides a single execution model across all configurations, requires no additional programming effort or specialized compiler support, maintains ISA compatibility, and leverages mature micro-architecture technology.",
+      "question": "In a reconfigurable chip multiprocessor (CMP) architecture where independent cores can dynamically become a larger CPU, ______ is an advantage that allows accommodation of varying software needs.\nA) providing a single execution model across all configurations\nB) requiring specialized compiler support\nC) maintaining a fixed core structure regardless of software demands\nD) demanding additional programming efforts",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.779650Z",
+    "updated_at": "2025-01-07T19:46:04.365876Z",
+    "inner_id": 337,
+    "total_annotations": 3,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59558,
+    "comment_authors": []
+  },
+  {
+    "id": 141927394,
+    "annotations": [
+      {
+        "id": 52165028,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "tupSJvFRrS",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "jDiSzWOFXb",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872892,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52165028,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927394,
+            "result": [
+              {
+                "id": "tupSJvFRrS",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "jDiSzWOFXb",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 49.593,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:55:58.497000Z",
+            "created_at": "2025-01-07T20:56:47.869284Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:56:47.747274Z",
+        "updated_at": "2025-01-07T20:56:47.747286Z",
+        "draft_created_at": "2025-01-07T20:56:45.878931Z",
+        "lead_time": 49.593,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "c4a61770-60b9-4e18-a0fe-3ea0a18d1600",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927394,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2014,
+      "title": "General-purpose code acceleration with limited-precision analog computation",
+      "answer": "C",
+      "authors": "Ren\u00e9e St. Amant, Amir Yazdanbakhsh, Jongse Park, Bradley Thwaites, Hadi Esmaeilzadeh, Arjang Hassibi, Luis Ceze, and Doug Burger",
+      "context": "As improvements in per-transistor speed and energy efficiency diminish, radical departures from conventional approaches are becoming critical to improving the performance and energy efficiency of general-purpose processors. We propose a solution--from circuit to compiler-that enables general-purpose use of limited-precision, analog hardwareto accelerate \"approximable\" code---code that can tolerate imprecise execution. We utilize an algorithmic transformation that automatically converts approximable regions of code from a von Neumann model to an \"analog\" neural model. We outline the challenges of taking an analog approach, including restricted-range value encoding, limited precision in computation, circuit inaccuracies, noise, and constraints on supported topologies. We address these limitations with a combination of circuit techniques, a hardware/software interface, neuralnetwork training techniques, and compiler support. Analog neural acceleration provides whole application speedup of 3.7x and energy savings of 6.3x with quality loss less than 10% for all except one benchmark. These results show that using limited-precision analog circuits for code acceleration, through a neural approach, is both feasible and beneficial over a range of approximation-tolerant, emerging applications including financial analysis, signal processing, robotics, 3D gaming, compression, and image processing",
+      "question": "As traditional performance scaling approaches diminish, ____ are becoming increasingly important for improving processor performance and energy efficiency.\nA) larger caches\nB) wider issue widths\nC) radical new architectures\nD) higher clock frequencies",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.781938Z",
+    "updated_at": "2025-01-07T20:56:47.809790Z",
+    "inner_id": 453,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927400,
+    "annotations": [
+      {
+        "id": 52164888,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "wljs-qMz1e",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "ZO3NK73-VR",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872723,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52164888,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927400,
+            "result": [
+              {
+                "id": "wljs-qMz1e",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "ZO3NK73-VR",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 76.212,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:51:10.829000Z",
+            "created_at": "2025-01-07T20:52:26.818472Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:52:26.700675Z",
+        "updated_at": "2025-01-07T20:52:26.700684Z",
+        "draft_created_at": "2025-01-07T20:52:19.800639Z",
+        "lead_time": 76.212,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "c217a1b2-df08-46bb-a687-9e443a9eb421",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927400,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      },
+      {
+        "id": 52162726,
+        "completed_by": 59558,
+        "result": [
+          {
+            "id": "9YqxejmeDD",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "0D2pPcKJWK",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56870248,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52162726,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927400,
+            "result": [
+              {
+                "id": "9YqxejmeDD",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "0D2pPcKJWK",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 120.892,
+            "action": "submitted",
+            "started_at": "2025-01-07T19:48:00.848000Z",
+            "created_at": "2025-01-07T19:50:02.550471Z",
+            "created_by": 59558,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T19:50:02.400572Z",
+        "updated_at": "2025-01-07T19:50:02.400584Z",
+        "draft_created_at": "2025-01-07T19:49:39.230204Z",
+        "lead_time": 120.892,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "4fb354fc-e2a2-4dd8-b8f3-0de3a0b4ce83",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927400,
+        "project": 118163,
+        "updated_by": 59558,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59558,
+        "annotator_email": "leeorp@gmail.com"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2007,
+      "title": "New Cache Designs for Thwarting Software Cache-Based Side Channel Attacks",
+      "answer": "B",
+      "authors": "Zhenghong Wang and Ruby B. Lee",
+      "context": "Software cache-based side channel attacks are a serious new class of threats for computers. Unlike physical side channel attacks that mostly target embedded cryptographic devices, cache-based side channel attacks can also undermine general purpose systems. The attacks are easy to perform, effective on most platforms, and do not require special instruments or excessive computation power. In recently demonstrated attacks on software implementations of ciphers like AES and RSA, the full key can be recovered by an unprivileged user program performing simple timing measurements based on cache misses. We first analyze these attacks, identifying cache interference as the root cause of these attacks. We identify two basic mitigation approaches: the partition-based approach eliminates cache interference whereas the randomization-based approach randomizes cache interference so that zero information can be inferred. We present new security-aware cache designs, the Partition-Locked cache (PLcache) and Random Permutation cache (RPcache), analyze and prove their security, and evaluate their performance. Our results show that our new cache designs with built-in security can defend against cache-based side channel attacks in general-rather than only specific attacks on a given cryptographic algorithm-with very little performance degradation and hardware cost.",
+      "question": "The root cause of cache-based side channel attacks is ____.\nA) excessive computation power\nB) cache interference\nC) special instruments\nD) unprivileged user programs",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.782080Z",
+    "updated_at": "2025-01-07T20:52:26.766248Z",
+    "inner_id": 459,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927455,
+    "annotations": [
+      {
+        "id": 52165002,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "qmNlLvDvDA",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "bkwai3Y8Ge",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56872863,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52165002,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927455,
+            "result": [
+              {
+                "id": "qmNlLvDvDA",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "bkwai3Y8Ge",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 73.873,
+            "action": "submitted",
+            "started_at": "2025-01-07T20:54:42.670000Z",
+            "created_at": "2025-01-07T20:55:56.454440Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-07T20:55:56.282186Z",
+        "updated_at": "2025-01-07T20:55:56.282204Z",
+        "draft_created_at": "2025-01-07T20:55:35.234772Z",
+        "lead_time": 73.873,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "29725f43-9e3b-4726-98bf-4b25fab7f6fb",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927455,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2016,
+      "title": "EIE: efficient inference engine on compressed deep neural network",
+      "answer": "A",
+      "authors": "Song Han, Xingyu Liu, Huizi Mao, Jing Pu, Ardavan Pedram, Mark A. Horowitz, and William J. Dally",
+      "context": "State-of-the-art deep neural networks (DNNs) have hundreds of millions of connections and are both computationally and memory intensive, making them difficult to deploy on embedded systems with limited hardware resources and power budgets. While custom hardware helps the computation, fetching weights from DRAM is two orders of magnitude more expensive than ALU operations, and dominates the required power. Previously proposed 'Deep Compression' makes it possible to fit large DNNs (AlexNet and VGGNet) fully in on-chip SRAM. This compression is achieved by pruning the redundant connections and having multiple connections share the same weight. We propose an energy efficient inference engine (EIE) that performs inference on this compressed network model and accelerates the resulting sparse matrix-vector multiplication with weight sharing. Going from DRAM to SRAM gives EIE 120x energy saving, Exploiting sparsity saves 10x, Weight sharing gives 8x, Skipping zero activations from ReLU saves another 3x. Evaluated on nine DNN benchmarks, EIE is 189x and 13x faster when compared to CPU and GPU implementations of the same DNN without compression. EIE has a processing power of 102 GOPS working directly on a compressed network, corresponding to 3 TOPS on an uncompressed network, and processes FC layers of AlexNet at 1.88x104 frames/sec with a power dissipation of only 600mW. It is 24,000x and 3,400x more energy efficient than a CPU and GPU respectively. Compared with DaDianNao, EIE has 2.9x, 19x and 3x better throughput, energy efficiency and area efficiency.",
+      "question": "To improve the energy efficiency and performance of deep neural network inference on embedded systems, a key strategy is to ____ the network model.\nA) Compress\nB) Expand\nC) Randomize\nD) Reconfigure",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.783160Z",
+    "updated_at": "2025-01-07T20:55:56.379850Z",
+    "inner_id": 514,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  }
 ]
