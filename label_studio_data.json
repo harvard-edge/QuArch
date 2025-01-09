@@ -402,95 +402,6 @@
         "annotator_email": "zishenwan@gmail.com"
       },
       {
-        "id": 52150953,
-        "completed_by": 59547,
-        "result": [
-          {
-            "id": "zBjtYqrSD_",
-            "type": "choices",
-            "value": {
-              "choices": [
-                "B"
-              ]
-            },
-            "origin": "manual",
-            "to_name": "question",
-            "from_name": "annotation"
-          },
-          {
-            "id": "7Yq3ESjH0O",
-            "type": "rating",
-            "value": {
-              "rating": 4
-            },
-            "origin": "manual",
-            "to_name": "question",
-            "from_name": "rating"
-          }
-        ],
-        "reviews": [],
-        "history": [
-          {
-            "id": 56856618,
-            "comment": null,
-            "organization_id": 10735,
-            "project_id": 118163,
-            "annotation_id": 52150953,
-            "draft_id": null,
-            "review_id": null,
-            "task_id": 141926944,
-            "result": [
-              {
-                "id": "zBjtYqrSD_",
-                "type": "choices",
-                "value": {
-                  "choices": [
-                    "B"
-                  ]
-                },
-                "origin": "manual",
-                "to_name": "question",
-                "from_name": "annotation"
-              },
-              {
-                "id": "7Yq3ESjH0O",
-                "type": "rating",
-                "value": {
-                  "rating": 4
-                },
-                "origin": "manual",
-                "to_name": "question",
-                "from_name": "rating"
-              }
-            ],
-            "lead_time": 152.366,
-            "action": "submitted",
-            "started_at": "2025-01-07T14:44:31.064000Z",
-            "created_at": "2025-01-07T14:47:03.787357Z",
-            "created_by": 59547,
-            "comment_id": null
-          }
-        ],
-        "was_cancelled": false,
-        "ground_truth": false,
-        "created_at": "2025-01-07T14:47:03.647423Z",
-        "updated_at": "2025-01-07T14:47:03.647431Z",
-        "draft_created_at": "2025-01-07T14:45:23.250112Z",
-        "lead_time": 152.366,
-        "prediction": {},
-        "result_count": 2,
-        "unique_id": "c4243a84-2598-4ac2-9d58-2e05c29ca02b",
-        "import_id": null,
-        "last_action": "submitted",
-        "task": 141926944,
-        "project": 118163,
-        "updated_by": 59547,
-        "parent_prediction": null,
-        "parent_annotation": null,
-        "last_created_by": 59547,
-        "annotator_email": "andy@maildrop.cc"
-      },
-      {
         "id": 52121261,
         "completed_by": 20699,
         "result": [
@@ -607,21 +518,110 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.772645Z",
-    "updated_at": "2025-01-07T16:14:11.615353Z",
+    "updated_at": "2025-01-09T11:34:06.707103Z",
     "inner_id": 3,
-    "total_annotations": 3,
+    "total_annotations": 2,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59555,
+    "updated_by": 20699,
     "comment_authors": []
   },
   {
     "id": 141926970,
     "annotations": [
+      {
+        "id": 52235382,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "zPMZ-U4AkR",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "UPu0RoHSb-",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56963852,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52235382,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926970,
+            "result": [
+              {
+                "id": "zPMZ-U4AkR",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "UPu0RoHSb-",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 281.152,
+            "action": "submitted",
+            "started_at": "2025-01-08T23:07:14.658000Z",
+            "created_at": "2025-01-08T23:11:56.609407Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T23:11:56.483377Z",
+        "updated_at": "2025-01-08T23:11:56.483389Z",
+        "draft_created_at": "2025-01-08T23:10:24.400595Z",
+        "lead_time": 281.152,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "b132eba1-b723-402c-b986-299194cb065d",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141926970,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
       {
         "id": 52164814,
         "completed_by": 59565,
@@ -803,7 +803,7 @@
     ],
     "drafts": [],
     "predictions": [],
-    "agreement": 100.0,
+    "agreement": 33.33333333333333,
     "data": {
       "type": "Cloze",
       "year": 1998,
@@ -828,9 +828,169 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.773165Z",
-    "updated_at": "2025-01-07T20:50:25.975505Z",
+    "updated_at": "2025-01-08T23:11:56.555196Z",
     "inner_id": 29,
-    "total_annotations": 2,
+    "total_annotations": 3,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927010,
+    "annotations": [
+      {
+        "id": 52221103,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "iqkoq0bGEE",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "-CGo3TBzms",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56949096,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52221103,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927010,
+            "result": [
+              {
+                "id": "iqkoq0bGEE",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "-CGo3TBzms",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 82.278,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:29:04.219000Z",
+            "created_at": "2025-01-08T19:30:26.006419Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:30:25.878848Z",
+        "updated_at": "2025-01-08T19:30:25.878857Z",
+        "draft_created_at": "2025-01-08T19:30:22.370972Z",
+        "lead_time": 82.278,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "765a5b2f-89fa-41fa-a896-9c8b69b179a1",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927010,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [
+      {
+        "id": 14674830,
+        "user": "philipndikumusa@gmail.com",
+        "created_username": "philipndikum philipndikumusa@gmail.com, 59561",
+        "created_ago": "10\u00a0hours, 24\u00a0minutes",
+        "result": [
+          {
+            "id": "XPdu6DkyaA",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          }
+        ],
+        "lead_time": 46.467,
+        "was_postponed": false,
+        "import_id": null,
+        "created_at": "2025-01-09T01:10:18.232320Z",
+        "updated_at": "2025-01-09T01:10:18.232330Z",
+        "task": 141927010,
+        "annotation": null
+      }
+    ],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2015,
+      "title": "Profiling a warehouse-scale computer",
+      "answer": "C",
+      "authors": "Svilen Kanev, Juan Pablo Darago, Kim Hazelwood, Parthasarathy Ranganathan, Tipp Moseley, Gu-Yeon Wei, and David Brooks",
+      "context": "With the increasing prevalence of warehouse-scale (WSC) and cloud computing, understanding the interactions of server applications with the underlying microarchitecture becomes ever more important in order to extract maximum performance out of server hardware. To aid such understanding, this paper presents a detailed microarchitectural analysis of live datacenter jobs, measured on more than 20,000 Google machines over a three year period, and comprising thousands of different applications. We first find that WSC workloads are extremely diverse, breeding the need for architectures that can tolerate application variability without performance loss. However, some patterns emerge, offering opportunities for co-optimization of hardware and software. For example, we identify common building blocks in the lower levels of the software stack. This \"datacenter tax\" can comprise nearly 30% of cycles across jobs running in the fleet, which makes its constituents prime candidates for hardware specialization in future server systems-on-chips. We also uncover opportunities for classic microarchitectural optimizations for server processors, especially in the cache hierarchy. Typical workloads place significant stress on instruction caches and prefer memory latency over bandwidth. They also stall cores often, but compute heavily in bursts. These observations motivate several interesting directions for future warehouse-scale computers.",
+      "question": "In warehouse-scale computers, future server processors should prioritize optimizing ____ over bandwidth in their memory subsystems.\nA) Throughput\nB) Capacity\nC) Latency\nD) Coherence",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.773964Z",
+    "updated_at": "2025-01-08T19:30:25.948007Z",
+    "inner_id": 69,
+    "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
@@ -843,6 +1003,95 @@
   {
     "id": 141927022,
     "annotations": [
+      {
+        "id": 52236508,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "8z5dffMAke",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "ph1NuxEwBR",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56965749,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236508,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927022,
+            "result": [
+              {
+                "id": "8z5dffMAke",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "ph1NuxEwBR",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 62.706,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:43:04.125000Z",
+            "created_at": "2025-01-09T00:44:07.415157Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:44:07.272866Z",
+        "updated_at": "2025-01-09T00:44:07.272876Z",
+        "draft_created_at": "2025-01-09T00:43:21.153466Z",
+        "lead_time": 62.706,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "8f1adfd0-7256-44b5-8be7-6850ffdbee8d",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927022,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
       {
         "id": 52165046,
         "completed_by": 59565,
@@ -960,21 +1209,331 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.774234Z",
-    "updated_at": "2025-01-07T20:57:24.512197Z",
+    "updated_at": "2025-01-09T00:44:07.355770Z",
     "inner_id": 81,
-    "total_annotations": 1,
+    "total_annotations": 2,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927037,
+    "annotations": [
+      {
+        "id": 52236408,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "87F8pl5OJJ",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "5FgKMeFTTW",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56965586,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236408,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927037,
+            "result": [
+              {
+                "id": "87F8pl5OJJ",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "5FgKMeFTTW",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 110.233,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:38:18.715000Z",
+            "created_at": "2025-01-09T00:40:09.520018Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:40:09.393375Z",
+        "updated_at": "2025-01-09T00:40:09.393385Z",
+        "draft_created_at": "2025-01-09T00:39:12.249220Z",
+        "lead_time": 110.233,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "fafb4561-3035-4969-94e8-51082e847e30",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927037,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
+      {
+        "id": 52220741,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "y9HMpWEKv-",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "gfl-HF5AsN",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56948727,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52220741,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927037,
+            "result": [
+              {
+                "id": "y9HMpWEKv-",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "gfl-HF5AsN",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 198.238,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:18:04.717000Z",
+            "created_at": "2025-01-08T19:21:22.474941Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:21:22.348488Z",
+        "updated_at": "2025-01-08T19:21:22.348499Z",
+        "draft_created_at": "2025-01-08T19:19:01.246001Z",
+        "lead_time": 198.238,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "3cdc3bf8-f386-4576-b9d2-8639e34c89a2",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927037,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 0.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2014,
+      "title": "A reconfigurable fabric for accelerating large-scale datacenter services",
+      "answer": "D",
+      "authors": "Andrew Putnam, Adrian Caulfield, Eric Chung, Derek Chiou, Kypros Constantinides, John Demme, Hadi Esmaeilzadeh, Jeremy Fowers, Jan Gray, Michael Haselman, Scott Hauck, Stephen Heil, Amir Hormati, Joo-Young Kim, Sitaram Lanka, Eric Peterson, Aaron Smith, Jason Thong, Phillip Yi Xiao, Doug Burger, Jim Larus, Gopi Prashanth Gopal, and Simon Pope",
+      "context": "Datacenter workloads demand high computational capabilities, flexibility, power efficiency, and low cost. It is challenging to improve all of these factors simultaneously. To advance datacenter capabilities beyond what commodity server designs can provide, we have designed and built a composable, reconfigurablefabric to accelerate portions of large-scale software services. Each instantiation of the fabric consists of a 6x8 2-D torus of high-end Stratix V FPGAs embedded into a half-rack of 48 machines. One FPGA is placed into each server, accessible through PCIe, and wired directly to other FPGAs with pairs of 10 Gb SAS cables. In this paper, we describe a medium-scale deployment of this fabric on a bed of 1,632 servers, and measure its efficacy in accelerating the Bing web search engine. We describe the requirements and architecture of the system, detail the critical engineering challenges and solutions needed to make the system robust in the presence of failures, and measure the performance, power, and resilience of the system when ranking candidate documents. Under high load, the largescale reconfigurable fabric improves the ranking throughput of each server by a factor of 95% for a fixed latency distribution--- or, while maintaining equivalent throughput, reduces the tail latency by 29%.",
+      "question": "When accelerating specific portions of a large application, rather than the entire application, a key design consideration is ____.\nA) ensuring the accelerated portions do not bottleneck the overall application performance.\nB) selecting portions of the application that are most computationally intensive.\nC) minimizing the communication overhead between the accelerated and non-accelerated portions.\nD) carefully analyzing the application to choose the portions whose acceleration provides the greatest overall benefit while managing added complexity.",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.774537Z",
+    "updated_at": "2025-01-09T00:40:09.463331Z",
+    "inner_id": 96,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
     "comment_authors": []
   },
   {
     "id": 141927042,
     "annotations": [
+      {
+        "id": 52236482,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "vNlsg_sbOt",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "w5xVbN6mP0",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56965709,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236482,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927042,
+            "result": [
+              {
+                "id": "vNlsg_sbOt",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "w5xVbN6mP0",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 173.534,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:40:09.754000Z",
+            "created_at": "2025-01-09T00:43:03.874948Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:43:03.738374Z",
+        "updated_at": "2025-01-09T00:43:03.738386Z",
+        "draft_created_at": "2025-01-09T00:42:49.618731Z",
+        "lead_time": 173.534,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "45ff0b5d-4435-49dc-8147-4fd4b1f90aa9",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927042,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
       {
         "id": 52164933,
         "completed_by": 59565,
@@ -1067,7 +1626,7 @@
     ],
     "drafts": [],
     "predictions": [],
-    "agreement": 100.0,
+    "agreement": 0.0,
     "data": {
       "type": "Cloze",
       "year": 2010,
@@ -1092,16 +1651,237 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.774644Z",
-    "updated_at": "2025-01-07T20:53:45.446029Z",
+    "updated_at": "2025-01-09T00:43:03.813872Z",
     "inner_id": 101,
-    "total_annotations": 1,
+    "total_annotations": 2,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927048,
+    "annotations": [
+      {
+        "id": 52236633,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "_L4vfn3HUd",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "zkDlwONgBA",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56965982,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236633,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927048,
+            "result": [
+              {
+                "id": "_L4vfn3HUd",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "zkDlwONgBA",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 117.128,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:47:27.663000Z",
+            "created_at": "2025-01-09T00:49:25.361272Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:49:25.240519Z",
+        "updated_at": "2025-01-09T00:49:25.240529Z",
+        "draft_created_at": "2025-01-09T00:48:23.260078Z",
+        "lead_time": 117.128,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "fc054201-c2db-41ce-a9f1-e1ec61d24653",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927048,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
+      {
+        "id": 52221044,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "hkJiUt3QZt",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Multiple Answers Exist"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "zNqMcegQmV",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56949037,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52221044,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927048,
+            "result": [
+              {
+                "id": "hkJiUt3QZt",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "Multiple Answers Exist"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "zNqMcegQmV",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 184.252,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:25:58.556000Z",
+            "created_at": "2025-01-08T19:29:02.297733Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:29:02.195287Z",
+        "updated_at": "2025-01-08T19:29:02.195298Z",
+        "draft_created_at": null,
+        "lead_time": 184.252,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "ad7e1ec6-a3e1-47ff-b3a8-cc0ca6b9e471",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927048,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 0.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2010,
+      "title": "A Dynamically Configurable Coprocessor for Convolutional Neural Networks",
+      "answer": "B",
+      "authors": "Srimat Chakradhar, Murugan Sankaradas, Venkata Jakkula, and Srihari Cadambi",
+      "context": "Convolutional neural networks (CNN) applications range from recognition and reasoning (such as handwriting recognition, facial expression recognition and video surveillance) to intelligent text applications such as semantic text analysis and natural language processing applications. Two key observations drive the design of a new architecture for CNN. First, CNN workloads exhibit a widely varying mix of three types of parallelism: parallelism within a convolution operation, intra-output parallelism where multiple input sources (features) are combined to create a single output, and inter-output parallelism where multiple, independent outputs (features) are computed simultaneously. Workloads differ significantly across different CNN applications, and across different layers of a CNN. Second, the number of processing elements in an architecture continues to scale (as per Moore's law) much faster than off-chip memory bandwidth (or pin-count) of chips. Based on these two observations, we show that for a given number of processing elements and off-chip memory bandwidth, a new CNN hardware architecture that dynamically configures the hardware on-the-fly to match the specific mix of parallelism in a given workload gives the best throughput performance. Our CNN compiler automatically translates high abstraction network specification into a parallel microprogram (a sequence of low-level VLIW instructions) that is mapped, scheduled and executed by the coprocessor. Compared to a 2.3 GHz quad-core, dual socket Intel Xeon, 1.35 GHz C870 GPU, and a 200 MHz FPGA implementation, our 120 MHz dynamically configurable architecture is 4x to 8x faster. This is the first CNN architecture to achieve real-time video stream processing (25 to 30 frames per second) on a wide range of object detection and recognition tasks.",
+      "question": "Given the observation that processing element counts scale faster than off-chip memory bandwidth, which design principle becomes increasingly important for CNN accelerator architectures?\nA) Maximizing clock frequency to increase the number of operations per second.\nB) Optimizing data reuse and minimizing off-chip memory accesses.\nC) Employing a fixed architecture optimized for a specific type of CNN parallelism.\nD) Prioritizing the use of large on-chip caches to store entire CNN models.",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.774759Z",
+    "updated_at": "2025-01-09T00:49:25.309344Z",
+    "inner_id": 107,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
     "comment_authors": []
   },
   {
@@ -1380,7 +2160,7 @@
         "id": 14101765,
         "user": "sgiannuzzi39@gmail.com",
         "created_username": "sgiannuzzi39@gmail.com, 25953",
-        "created_ago": "3\u00a0weeks, 3\u00a0days",
+        "created_ago": "3\u00a0weeks, 4\u00a0days",
         "result": [],
         "lead_time": 9.629,
         "was_postponed": false,
@@ -1430,8 +2210,318 @@
     "comment_authors": []
   },
   {
+    "id": 141927153,
+    "annotations": [
+      {
+        "id": 52236916,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "ZSqPSx4mwM",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "QF1tJtOhEk",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56966540,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236916,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927153,
+            "result": [
+              {
+                "id": "ZSqPSx4mwM",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "QF1tJtOhEk",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 27.042,
+            "action": "submitted",
+            "started_at": "2025-01-09T01:07:02.626000Z",
+            "created_at": "2025-01-09T01:07:30.219216Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T01:07:30.098874Z",
+        "updated_at": "2025-01-09T01:07:30.098885Z",
+        "draft_created_at": "2025-01-09T01:07:22.481177Z",
+        "lead_time": 27.042,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "9ffa4562-a753-4abb-933d-2b02d7da2f2b",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927153,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
+      {
+        "id": 52220769,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "D8uhUCsOCl",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "XzalkURVEz",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56948755,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52220769,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927153,
+            "result": [
+              {
+                "id": "D8uhUCsOCl",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "XzalkURVEz",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 47.041,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:21:24.775000Z",
+            "created_at": "2025-01-08T19:22:11.319226Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:22:11.198000Z",
+        "updated_at": "2025-01-08T19:22:11.198011Z",
+        "draft_created_at": "2025-01-08T19:22:06.275511Z",
+        "lead_time": 47.041,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "5f33f604-2674-4509-b8fb-e20ab72d033c",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927153,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2006,
+      "title": "Bulk Disambiguation of Speculative Threads in Multiprocessors",
+      "answer": "B",
+      "authors": "Luis Ceze, James Tuck, Josep Torrellas, and Calin Cascaval",
+      "context": "Transactional Memory (TM), Thread-Level Speculation (TLS), and Checkpointed multiprocessors are three popular architectural techniques based on the execution of multiple, cooperating speculative threads. In these environments, correctly maintaining data dependences across threads requires mechanisms for disambiguating addresses across threads, invalidating stale cache state, and making committed state visible. These mechanisms are both conceptually involved and hard to implement. In this paper, we present Bulk, a novel approach to simplify these mechanisms. The idea is to hash-encode a thread\u2019s access information in a concise signature, and then support in hardware signature operations that efficiently process sets of addresses. Such operations implement the mechanisms described. Bulk operations are inexact but correct, and provide substantial conceptual and implementation simplicity. We evaluate Bulk in the context of TLS using SPECint2000 codes and TM using multithreaded Java workloads. Despite its simplicity, Bulk has competitive performance with more complex schemes. We also find that signature configuration is a key design parameter.",
+      "question": "The mechanisms needed to maintain thread cooperation in speculative execution environments are often both ____ and hard to implement.\nA) efficient\nB) conceptually involved\nC) reliable\nD) scalable",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.777177Z",
+    "updated_at": "2025-01-09T01:07:30.166027Z",
+    "inner_id": 212,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
     "id": 141927161,
     "annotations": [
+      {
+        "id": 52236377,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "IW6Smu6-B9",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "IOhUHWhQhc",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56965521,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236377,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927161,
+            "result": [
+              {
+                "id": "IW6Smu6-B9",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "IOhUHWhQhc",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 80.074,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:36:57.482000Z",
+            "created_at": "2025-01-09T00:38:18.408338Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:38:18.273897Z",
+        "updated_at": "2025-01-09T00:38:18.273907Z",
+        "draft_created_at": "2025-01-09T00:37:50.378958Z",
+        "lead_time": 80.074,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "db1c89ea-f40a-450c-a9e7-e5d4141ab343",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927161,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
       {
         "id": 52164963,
         "completed_by": 59565,
@@ -1549,21 +2639,553 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.777330Z",
-    "updated_at": "2025-01-07T20:54:40.900833Z",
+    "updated_at": "2025-01-09T00:38:18.349095Z",
     "inner_id": 220,
-    "total_annotations": 1,
+    "total_annotations": 2,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927185,
+    "annotations": [
+      {
+        "id": 52236936,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "2dc-GjizL3",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "twknTOOdpQ",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56966585,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236936,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927185,
+            "result": [
+              {
+                "id": "2dc-GjizL3",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "twknTOOdpQ",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 95.252,
+            "action": "submitted",
+            "started_at": "2025-01-09T01:07:54.756000Z",
+            "created_at": "2025-01-09T01:09:30.844713Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T01:09:30.730455Z",
+        "updated_at": "2025-01-09T01:09:30.730463Z",
+        "draft_created_at": "2025-01-09T01:08:47.015693Z",
+        "lead_time": 95.252,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "993b1b03-5963-4296-968a-ccf5e61b669e",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927185,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
+      {
+        "id": 52220592,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "nP4cFnBrQI",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "vTHjZtgQoP",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56948571,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52220592,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927185,
+            "result": [
+              {
+                "id": "nP4cFnBrQI",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "vTHjZtgQoP",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 102.244,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:15:14.826000Z",
+            "created_at": "2025-01-08T19:16:56.607976Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:16:56.479167Z",
+        "updated_at": "2025-01-08T19:16:56.479176Z",
+        "draft_created_at": "2025-01-08T19:16:10.597487Z",
+        "lead_time": 102.244,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "03359fcc-37a4-4755-8da9-7f3dbe6f971f",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927185,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2004,
+      "title": "Transactional Memory Coherence and Consistency",
+      "answer": "B",
+      "authors": "Lance Hammond, Vicky Wong, Mike Chen, Brian D. Carlstrom, John D. Davis, Ben Hertzberg, Manohar K. Prabhu, Honggo Wijaya, Christos Kozyrakis, and Kunle Olukotun",
+      "context": "In this paper, we propos a new shared memory model: Transactionalmemory Coherence and Consistency (TCC).TCC providesa model in which atomic transactions are always the basicunit of parallel work, communication, memory coherence, andmemory reference consistency.TCC greatly simplifies parallelsoftware by eliminating the need for synchronization using conventionallocks and semaphores, along with their complexities.TCC hardware must combine all writes from each transaction regionin a program into a single packet and broadcast this packetto the permanent shared memory state atomically as a large block.This simplifies the coherence hardware because it reduces theneed for small, low-latency messages and completely eliminatesthe need for conventional snoopy cache coherence protocols, asmultiple speculatively written versions of a cache line may safelycoexist within the system.Meanwhile, automatic, hardware-controlledrollback of speculative transactions resolves any correctnessviolations that may occur when several processors attemptto read and write the same data simultaneously.The cost of thissimplified scheme is higher interprocessor bandwidth.To explore the costs and benefits of TCC, we study the characterisitcsof an optimal transaction-based memory system, and examinehow different design parameters could affect the performanceof real systems.Across a spectrum of applications, the TCC modelitself did not limit available parallelism.Most applications areeasily divided into transactions requiring only small write buffers,on the order of 4-8 KB.The broadcast requirements of TCCare high, but are well within the capabilities of CMPs and small-scaleSMPs with high-speed interconnects.",
+      "question": "When using atomic transactions as the basic unit of parallel work, the primary trade-off for simplifying coherence hardware is likely to be increased ____.\nA) Processor complexity\nB) Interprocessor bandwidth\nC) Memory latency\nD) Power consumption",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.777796Z",
+    "updated_at": "2025-01-09T01:09:30.794343Z",
+    "inner_id": 244,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927191,
+    "annotations": [
+      {
+        "id": 52236698,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "9I6ce6CjuN",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "ZBw-mXeCUI",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56966093,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236698,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927191,
+            "result": [
+              {
+                "id": "9I6ce6CjuN",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "ZBw-mXeCUI",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 43.6,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:50:52.616000Z",
+            "created_at": "2025-01-09T00:51:36.727893Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:51:36.620513Z",
+        "updated_at": "2025-01-09T00:51:36.620521Z",
+        "draft_created_at": "2025-01-09T00:51:13.851230Z",
+        "lead_time": 43.6,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "431b0bc4-fde8-44fc-9eaa-e37313739e09",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927191,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
+      {
+        "id": 52220625,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "kZQARzebYr",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "io8FVN9buP",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56948607,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52220625,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927191,
+            "result": [
+              {
+                "id": "kZQARzebYr",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "io8FVN9buP",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 64.577,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:16:58.689000Z",
+            "created_at": "2025-01-08T19:18:02.797025Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:18:02.661083Z",
+        "updated_at": "2025-01-08T19:18:02.661092Z",
+        "draft_created_at": "2025-01-08T19:17:59.740884Z",
+        "lead_time": 64.577,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "bb918d22-7607-4eb1-a7c7-ad8a40e63c4b",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927191,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 0.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2002,
+      "title": "Detailed design and evaluation of redundant multithreading alternatives",
+      "answer": "A",
+      "authors": "Shubhendu Mukherjee, Michael Kontz, and Steven K. Reinhardt",
+      "context": "Exponential growth in the number of on-chip transistors, coupled with reductions in voltage levels, makes each generation of microprocessors increasingly vulnerable to transient faults. In a multithreaded environment, we can detect these faults by running two copies of the same program as separate threads, feeding them identical inputs, and comparing their outputs, a technique we call Redundant Multithreading (RMT).This paper studies RMT techniques in the context of both single- and dual-processor simultaneous multithreaded (SMT) single-chip devices. Using a detailed, commercial-grade, SMT processor design we uncover subtle RMT implementation complexities, and find that RMT can be a more significant burden for single-processor devices than prior studies indicate. However, a novel application of RMT techniques in a dual-processor device, which we term chip-level redundant threading (CRT), shows higher performance than lockstepping the two cores, especially on multithreaded workloads.",
+      "question": "In multithreaded environments, running identical copies of a program as separate threads and comparing their outputs is a technique for ____ transient faults.\nA) detecting\nB) preventing\nC) correcting\nD) inducing",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.777912Z",
+    "updated_at": "2025-01-09T00:51:36.679974Z",
+    "inner_id": 250,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
     "comment_authors": []
   },
   {
     "id": 141927223,
     "annotations": [
+      {
+        "id": 52235468,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "zjrqU3xA3F",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "sUq4Zq8X3E",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56963951,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52235468,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927223,
+            "result": [
+              {
+                "id": "zjrqU3xA3F",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "sUq4Zq8X3E",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 274.566,
+            "action": "submitted",
+            "started_at": "2025-01-08T23:11:57.026000Z",
+            "created_at": "2025-01-08T23:16:32.444628Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T23:16:32.320532Z",
+        "updated_at": "2025-01-08T23:16:32.320542Z",
+        "draft_created_at": "2025-01-08T23:12:27.538401Z",
+        "lead_time": 274.566,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "6b928aa2-67e3-4874-b54f-12588fbd78f9",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927223,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
       {
         "id": 52164547,
         "completed_by": 59565,
@@ -1719,7 +3341,35 @@
         "annotator_email": "leeorp@gmail.com"
       }
     ],
-    "drafts": [],
+    "drafts": [
+      {
+        "id": 14674272,
+        "user": "devesh.s171@gmail.com",
+        "created_username": "devesh.s171@gmail.com, 59593",
+        "created_ago": "11\u00a0hours, 26\u00a0minutes",
+        "result": [
+          {
+            "id": "Cwxl3FTwMd",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          }
+        ],
+        "lead_time": 54.753,
+        "was_postponed": false,
+        "import_id": null,
+        "created_at": "2025-01-09T00:07:57.938852Z",
+        "updated_at": "2025-01-09T00:07:57.938860Z",
+        "task": 141927223,
+        "annotation": null
+      }
+    ],
     "predictions": [],
     "agreement": 100.0,
     "data": {
@@ -1747,21 +3397,110 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.778580Z",
-    "updated_at": "2025-01-07T20:43:09.420208Z",
+    "updated_at": "2025-01-08T23:16:32.390038Z",
     "inner_id": 282,
-    "total_annotations": 1,
+    "total_annotations": 2,
     "cancelled_annotations": 1,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 59561,
     "comment_authors": []
   },
   {
     "id": 141927232,
     "annotations": [
+      {
+        "id": 52234393,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "p2Kr6t1CZT",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "-NNHplItwM",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56962816,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52234393,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927232,
+            "result": [
+              {
+                "id": "p2Kr6t1CZT",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "-NNHplItwM",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 186.903,
+            "action": "submitted",
+            "started_at": "2025-01-08T22:49:26.652000Z",
+            "created_at": "2025-01-08T22:52:34.252869Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T22:52:34.166106Z",
+        "updated_at": "2025-01-08T22:52:34.166113Z",
+        "draft_created_at": null,
+        "lead_time": 186.903,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "fe410823-35bb-4551-8033-dd6d6f51c756",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927232,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
       {
         "id": 52164848,
         "completed_by": 59565,
@@ -1968,8 +3707,230 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.778755Z",
-    "updated_at": "2025-01-07T20:51:08.973261Z",
+    "updated_at": "2025-01-08T22:52:34.227763Z",
     "inner_id": 291,
+    "total_annotations": 3,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927257,
+    "annotations": [
+      {
+        "id": 52236914,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "-LUthSNRDJ",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "-xE31i_lXX",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56966531,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236914,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927257,
+            "result": [
+              {
+                "id": "-LUthSNRDJ",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "-xE31i_lXX",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 924.156,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:51:36.982000Z",
+            "created_at": "2025-01-09T01:07:02.014900Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T01:07:01.874773Z",
+        "updated_at": "2025-01-09T01:07:01.874783Z",
+        "draft_created_at": "2025-01-09T00:58:11.860105Z",
+        "lead_time": 924.156,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "ed3e4c1b-98b1-4f7b-b8c4-d888e92c1161",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927257,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
+      {
+        "id": 52220825,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "KPVUpDzAGF",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "883wX7aC9D",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56948813,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52220825,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927257,
+            "result": [
+              {
+                "id": "KPVUpDzAGF",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "883wX7aC9D",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 60.666,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:22:13.245000Z",
+            "created_at": "2025-01-08T19:23:13.420956Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:23:13.292978Z",
+        "updated_at": "2025-01-08T19:23:13.292986Z",
+        "draft_created_at": "2025-01-08T19:22:45.840230Z",
+        "lead_time": 60.666,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "e87b5e40-1619-402c-b3d4-e802de1f4886",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927257,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2001,
+      "title": "Cache decay: exploiting generational behavior to reduce cache leakage power",
+      "answer": "B",
+      "authors": "Stefanos Kaxiras, Zhigang Hu, and Margaret Martonosi",
+      "context": "Power dissipation is increasingly important in CPUs ranging from those intended for mobile use, all the way up to high performance processors for high-end servers. While the bulk of the power dissipated is dynamic switching power leakage power is also beginning to be a concern. Chipmakers expect that in future chip generations, leakage's proportion of total chip power will increase significantly. This paper examines methods for reducing leakage power within the cache memories of the CPU. Because caches comprise much of a CPU chip's area and transistor counts, they are reasonable targets for attacking leakage. We discuss policies and implementations for reducing cache leakage by invalidating and \"turning off\" cache lines when they hold data not likely to be reused. In particular our approach is targeted at the generational nature of cache line usage. That is, cache lines typically have a flurry of frequent use when first brought into the cache, and then have a period of \"dead time\" before they are evicted. By devising effective, low-power ways of deducing dead time, our results show that in many cases we can reduce Ll cache leakage energy by 4/spl times/ in SPEC2000 applications without impacting performance. Because our decay-based techniques have notions of competitive on-line algorithms at their roots, their energy usage can be theoretically bounded at within a factor of two of the optimal oracle-based policy. We also examine adaptive decay-based policies that make energy-minimizing policy choices on a per-application basis by choosing appropriate decay intervals individually, for each cache line. Our proposed adaptive policies effectively reduce Ll cache leakage energy by 5/spl times/ for the SPEC2000 with only negligible degradations in performance.",
+      "question": "Cache lines typically experience a period of ____ after their initial frequent use and before being evicted.\nA) Constant access\nB) Dead time\nC) Increased usage\nD) Revalidation",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "claude-3_5-sonnet"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.779242Z",
+    "updated_at": "2025-01-09T01:07:01.953094Z",
+    "inner_id": 316,
     "total_annotations": 2,
     "cancelled_annotations": 0,
     "total_predictions": 0,
@@ -1977,7 +3938,228 @@
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927272,
+    "annotations": [
+      {
+        "id": 52236676,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "TxQhA_a-TO",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "gGcEwQWGgm",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56966057,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236676,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927272,
+            "result": [
+              {
+                "id": "TxQhA_a-TO",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "gGcEwQWGgm",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 85.875,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:49:25.641000Z",
+            "created_at": "2025-01-09T00:50:52.064138Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:50:51.937869Z",
+        "updated_at": "2025-01-09T00:50:51.937880Z",
+        "draft_created_at": "2025-01-09T00:50:48.235879Z",
+        "lead_time": 85.875,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "7ff9f81e-26de-4c3f-bde4-e641e3e1b89c",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927272,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
+      {
+        "id": 52220908,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "eTtaAG8fAC",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Multiple Answers Exist"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "YP3Fwjrvc5",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56948899,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52220908,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927272,
+            "result": [
+              {
+                "id": "eTtaAG8fAC",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "Multiple Answers Exist"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "YP3Fwjrvc5",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 161.506,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:23:15.404000Z",
+            "created_at": "2025-01-08T19:25:56.422670Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:25:56.297959Z",
+        "updated_at": "2025-01-08T19:25:56.297969Z",
+        "draft_created_at": "2025-01-08T19:23:51.436118Z",
+        "lead_time": 161.506,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "891ee491-a97e-4e4d-951e-ee44bb1f2643",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927272,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 0.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2010,
+      "title": "Use ECP, not ECC, for hard failures in resistive memories",
+      "answer": "B",
+      "authors": "Stuart Schechter, Gabriel H. Loh, Karin Strauss, and Doug Burger",
+      "context": "As leakage and other charge storage limitations begin to impair the scalability of DRAM, non-volatile resistive memories are being developed as a potential replacement. Unfortunately, current error correction techniques are poorly suited to this emerging class of memory technologies. Unlike DRAM, PCM and other resistive memories have wear lifetimes, measured in writes, that are sufficiently short to make cell failures common during a system's lifetime. However, resistive memories are much less susceptible to transient faults than DRAM. The Hamming-based ECC codes used in DRAM are designed to handle transient faults with no effective lifetime limits, but ECC codes applied to resistive memories would wear out faster than the cells they are designed to repair. This paper evaluates Error-Correcting Pointers (ECP), a new approach to error correction optimized for memories in which errors are the result of permanent cell failures that occur, and are immediately detectable, at write time. ECP corrects errors by permanently encoding the locations of failed cells into a table and assigning cells to replace them. ECP provides longer lifetimes than previously proposed solutions with equivalent overhead. What's more, as the level of variance in cell lifetimes increases -- a likely consequence of further scalaing -- ECP's margin of improvement over existing schemes increases.",
+      "question": "A major limitation of non-volatile resistive memories compared to DRAM is ____.\nA) they have high susceptibility to transient faults\nB) their wear lifetimes are short and measured in writes\nC) they offer less storage density\nD) their cost per byte is significantly higher",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.779535Z",
+    "updated_at": "2025-01-09T00:50:52.009236Z",
+    "inner_id": 331,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
     "comment_authors": []
   },
   {
@@ -2292,8 +4474,673 @@
     "comment_authors": []
   },
   {
+    "id": 141927297,
+    "annotations": [
+      {
+        "id": 52236565,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "szJZ3am5t9",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "QNj26N0ptW",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56965864,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236565,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927297,
+            "result": [
+              {
+                "id": "szJZ3am5t9",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "QNj26N0ptW",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 134.776,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:45:11.693000Z",
+            "created_at": "2025-01-09T00:47:27.423357Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:47:27.297174Z",
+        "updated_at": "2025-01-09T00:47:27.297185Z",
+        "draft_created_at": "2025-01-09T00:46:55.228901Z",
+        "lead_time": 134.776,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "3404d254-9c8a-47ee-ba64-c17b0b6be7f0",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927297,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
+      {
+        "id": 52220481,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "Oz2WXaG7fB",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "ZMpPiOnHnq",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56948456,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52220481,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927297,
+            "result": [
+              {
+                "id": "Oz2WXaG7fB",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "ZMpPiOnHnq",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 66.499,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:12:24.861000Z",
+            "created_at": "2025-01-08T19:13:30.861269Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:13:30.756320Z",
+        "updated_at": "2025-01-08T19:13:30.756330Z",
+        "draft_created_at": null,
+        "lead_time": 66.499,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "15c6d7d1-2a3e-4b2c-a178-6e6befda0e6f",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927297,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 1996,
+      "title": "Missing the Memory Wall: The Case for Processor/Memory Integration",
+      "answer": "B",
+      "authors": "Ashley Saulsbury, Fong Pong, Andreas Nowatzyk",
+      "context": "Current high performance computer systems use complex, large superscalar CPUs that interface to the main memory through a hierarchy of caches and interconnect systems. These CPU-centric designs invest a lot of power and chip area to bridge the widening gap between CPU and main memory speeds. Yet, many large applications do not operate well on these systems and are limited by the memory subsystem performance.This paper argues for an integrated system approach that uses less-powerful CPUs that are tightly integrated with advanced memory technologies to build competitive systems with greatly reduced cost and complexity. Based on a design study using the next generation 0.25&micro;m, 256Mbit dynamic random-access memory (DRAM) process and on the analysis of existing machines, we show that processor memory integration can be used to build competitive, scalable and cost-effective MP systems.We present results from execution driven uni- and multi-processor simulations showing that the benefits of lower latency and higher bandwidth can compensate for the restrictions on the size and complexity of the integrated processor. In this system, small direct mapped instruction caches with long lines are very effective, as are column buffer data caches augmented with a victim cache.",
+      "question": "In systems with integrated memory technologies, lower latency and higher bandwidth are essential because they ____.\nA) increase the complexity of the CPU\nB) compensate for restrictions on the size and complexity of the integrated processor\nC) reduce memory technology advancements\nD) require larger direct mapped caches",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.780022Z",
+    "updated_at": "2025-01-09T00:47:27.367153Z",
+    "inner_id": 356,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927326,
+    "annotations": [
+      {
+        "id": 52236359,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "Ydy5MPBKh7",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "cjKdutGf5B",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56965476,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236359,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927326,
+            "result": [
+              {
+                "id": "Ydy5MPBKh7",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "cjKdutGf5B",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 4823.472,
+            "action": "submitted",
+            "started_at": "2025-01-08T23:16:32.711000Z",
+            "created_at": "2025-01-09T00:36:57.236958Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:36:57.011998Z",
+        "updated_at": "2025-01-09T00:36:57.012014Z",
+        "draft_created_at": "2025-01-09T00:36:34.135260Z",
+        "lead_time": 4823.472,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "056d7bee-b91d-4f44-bf7a-0b2e13ed8b44",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927326,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
+      {
+        "id": 52220430,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "tO63X7jaRy",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "54tBUI4Ip1",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56948405,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52220430,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927326,
+            "result": [
+              {
+                "id": "tO63X7jaRy",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "54tBUI4Ip1",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 485.495,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:04:17.884000Z",
+            "created_at": "2025-01-08T19:12:22.923599Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:12:22.783752Z",
+        "updated_at": "2025-01-08T19:12:22.783760Z",
+        "draft_created_at": "2025-01-08T19:12:10.107506Z",
+        "lead_time": 485.495,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "d5dd32f3-85cc-42f3-ac13-c2de7338d8ef",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927326,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2014,
+      "title": "Flipping bits in memory without accessing them: an experimental study of DRAM disturbance errors",
+      "answer": "A",
+      "authors": "Yoongu Kim, Ross Daly, Jeremie Kim, Chris Fallin, Ji Hye Lee, Donghyuk Lee, Chris Wilkerson, Konrad Lai, and Onur Mutlu",
+      "context": "Memory isolation is a key property of a reliable and secure computing system--an access to one memory address should not have unintended side effects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more difficult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row's wordline, which stresses inter-cell coupling effects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance errors and their behavior using an FPGA-based testing platform. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining various potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors",
+      "question": "In modern DRAM chips, _____ can occur as DRAM process technology scales down, leading to unintended data corruption in nearby addresses.\nA) disturbance errors\nB) fragmentation\nC) stack overflow\nD) paging errors",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.780584Z",
+    "updated_at": "2025-01-09T00:36:57.143042Z",
+    "inner_id": 385,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927336,
+    "annotations": [
+      {
+        "id": 52220538,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "7E59yzFRWt",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "erH4aE-OXn",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56948516,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52220538,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927336,
+            "result": [
+              {
+                "id": "7E59yzFRWt",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "erH4aE-OXn",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 100.64,
+            "action": "submitted",
+            "started_at": "2025-01-08T19:13:32.725000Z",
+            "created_at": "2025-01-08T19:15:12.893267Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T19:15:12.759427Z",
+        "updated_at": "2025-01-08T19:15:12.759437Z",
+        "draft_created_at": "2025-01-08T19:14:07.869682Z",
+        "lead_time": 100.64,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "fad1700f-afee-412f-b446-8cdd35ef8b91",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927336,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2007,
+      "title": "Anton, a special-purpose machine for molecular dynamics simulation",
+      "answer": "B",
+      "authors": "David E. Shaw, Martin M. Deneroff, Ron O. Dror, Jeffrey Kuskin, Richard H. Larson, John K. Salmon, Cliff Young, Brannon Batson, Kevin J. Bowers, Jack C. Chao, Michael P. Eastwood, Joseph Gagliardo, J. P. Grossman, C. Richard Ho, Doug Ierardi, Istv\u00e1n Kolossv\u00e1ry, John L. Klepeis, Timothy Layman, Christine McLeavey, Mark A. Moraes, Rolf Mueller, Edward C. Priest, Yibing Shan, Jochen Spengler, Michael Theobald, Brian Towles, and Stanley C. Wang",
+      "context": "The ability to perform long, accurate molecular dynamics (MD) simulations involving proteins and other biological macro-molecules could in principle provide answers to some of the most important currently outstanding questions in the fields of biology, chemistry and medicine. A wide range of biologically interesting phenomena, however, occur over time scales on the order of a millisecond--about three orders of magnitude beyond the duration of the longest current MD simulations. In this paper, we describe a massively parallel machine called Anton, which should be capable of executing millisecond-scale classical MD simulations of such biomolecular systems. The machine, which is scheduled for completion by the end of 2008, is based on 512 identical MD-specific ASICs that interact in a tightly coupled manner using a specialized high-speed communication network. Anton has been designed to use both novel parallel algorithms and special-purpose logic to dramatically accelerate those calculations that dominate the time required for a typical MD simulation. The remainder of the simulation algorithm is executed by a programmable portion of each chip that achieves a substantial degree of parallelism while preserving the flexibility necessary to accommodate anticipated advances in physical models and simulation methods.",
+      "question": "When tackling computationally intensive scientific problems with specialized hardware, a key design consideration is the balance between ____ and ____.\nA) cost, power efficiency\nB) specialization, programmability\nC) clock speed, memory bandwidth\nD) cache size, instruction-level parallelism",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.780778Z",
+    "updated_at": "2025-01-08T19:15:12.835013Z",
+    "inner_id": 395,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927394,
     "annotations": [
+      {
+        "id": 52236530,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "54cicoVlv4",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "1hGmxV_u4I",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56965788,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236530,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927394,
+            "result": [
+              {
+                "id": "54cicoVlv4",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "1hGmxV_u4I",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 63.008,
+            "action": "submitted",
+            "started_at": "2025-01-09T00:44:07.904000Z",
+            "created_at": "2025-01-09T00:45:11.462857Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T00:45:11.347435Z",
+        "updated_at": "2025-01-09T00:45:11.347444Z",
+        "draft_created_at": "2025-01-09T00:44:57.861317Z",
+        "lead_time": 63.008,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "fccf6849-1bbd-4218-8bdb-19881d31d9b7",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927394,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
       {
         "id": 52165028,
         "completed_by": 59565,
@@ -2411,21 +5258,110 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.781938Z",
-    "updated_at": "2025-01-07T20:56:47.809790Z",
+    "updated_at": "2025-01-09T00:45:11.411601Z",
     "inner_id": 453,
-    "total_annotations": 1,
+    "total_annotations": 2,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 59561,
     "comment_authors": []
   },
   {
     "id": 141927400,
     "annotations": [
+      {
+        "id": 52235099,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "77xQda-jR-",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "3vdOsLKDgC",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56963555,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52235099,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927400,
+            "result": [
+              {
+                "id": "77xQda-jR-",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "3vdOsLKDgC",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 878.907,
+            "action": "submitted",
+            "started_at": "2025-01-08T22:52:34.580000Z",
+            "created_at": "2025-01-08T23:07:14.002801Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-08T23:07:13.869646Z",
+        "updated_at": "2025-01-08T23:07:13.869658Z",
+        "draft_created_at": "2025-01-08T22:54:54.818154Z",
+        "lead_time": 878.907,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "81a7560b-aa00-412c-9334-1453f235f55c",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927400,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
       {
         "id": 52164888,
         "completed_by": 59565,
@@ -2633,21 +5569,110 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.782080Z",
-    "updated_at": "2025-01-07T20:52:26.766248Z",
+    "updated_at": "2025-01-08T23:07:13.944289Z",
     "inner_id": 459,
-    "total_annotations": 2,
+    "total_annotations": 3,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 59561,
     "comment_authors": []
   },
   {
     "id": 141927455,
     "annotations": [
+      {
+        "id": 52236917,
+        "completed_by": 59561,
+        "result": [
+          {
+            "id": "zirEjOAQ0-",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "7sDVjDSvv3",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 56966545,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52236917,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927455,
+            "result": [
+              {
+                "id": "zirEjOAQ0-",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "7sDVjDSvv3",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 21.379,
+            "action": "submitted",
+            "started_at": "2025-01-09T01:07:46.875000Z",
+            "created_at": "2025-01-09T01:07:54.527668Z",
+            "created_by": 59561,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-09T01:07:54.392632Z",
+        "updated_at": "2025-01-09T01:07:54.392641Z",
+        "draft_created_at": "2025-01-09T01:07:37.989884Z",
+        "lead_time": 21.379,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "abc8718f-02e0-42cb-99be-7dac85325e21",
+        "import_id": null,
+        "last_action": "submitted",
+        "task": 141927455,
+        "project": 118163,
+        "updated_by": 59561,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59561,
+        "annotator_email": "philipndikumusa@gmail.com"
+      },
       {
         "id": 52165002,
         "completed_by": 59565,
@@ -2766,16 +5791,16 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.783160Z",
-    "updated_at": "2025-01-07T20:55:56.379850Z",
+    "updated_at": "2025-01-09T01:07:54.466955Z",
     "inner_id": 514,
-    "total_annotations": 1,
+    "total_annotations": 2,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 59561,
     "comment_authors": []
   }
 ]
