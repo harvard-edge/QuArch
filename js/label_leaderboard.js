@@ -124,6 +124,8 @@
             'sprakash': 'Harvard University',
             'vjreddi': 'Harvard University',
             'shreyasgrampurohit': 'IIT Bombay',
+            'npadilla': 'Univ. Nac. de Tucuman',
+            'zishenwan': 'Georgia Tech',
             'Unknown User': 'N/A'
         };
     
@@ -133,16 +135,16 @@
     function getBadges(contributionCount) {
         const badges = [];
 
-        if (contributionCount > 1000) {
+        if (contributionCount >= 1000) {
             badges.push('<i class="fas fa-medal" style="color: gold;" title="Gold Contributor"></i>');
         }
-        else if (contributionCount > 100) {
+        else if (contributionCount >= 100) {
             badges.push('<i class="fas fa-award" style="color: silver;" title="Silver Contributor"></i>');
         }
-        else if (contributionCount > 10) {
+        else if (contributionCount >= 10) {
             badges.push('<i class="fas fa-trophy" style="color: bronze;" title="Bronze Contributor"></i>');
         }
-        else if (contributionCount > 1) {
+        else if (contributionCount >= 1) {
             badges.push('<i class="fas fa-star" style="color: green;" title="First-Time Contributor"></i>');
         }
 
@@ -157,9 +159,9 @@
 
         legend.innerHTML = `
             <div style="display: flex; justify-content: center; gap: 20px;">
-                <span><i class="fas fa-medal" style="color: gold;"></i> Gold Contributor (>1000 Labels) </span>
-                <span><i class="fas fa-award" style="color: silver;"></i> Silver Contributor (>100 Labels) </span>
-                <span><i class="fas fa-trophy" style="color: bronze;"></i> Bronze Contributor (>10 Labels) </span>
+                <span><i class="fas fa-medal" style="color: gold;"></i> Gold Contributor (1000+ Labels) </span>
+                <span><i class="fas fa-award" style="color: silver;"></i> Silver Contributor (100+ Labels) </span>
+                <span><i class="fas fa-trophy" style="color: bronze;"></i> Bronze Contributor (10+ Labels) </span>
                 <span><i class="fas fa-star" style="color: green;"></i> First-Time Contributor! </span>
             </div>
         `;
