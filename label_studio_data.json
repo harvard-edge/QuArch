@@ -477,7 +477,7 @@
         "id": 14819164,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "1\u00a0day, 3\u00a0hours",
+        "created_ago": "5\u00a0days, 2\u00a0hours",
         "result": [],
         "lead_time": 4.71,
         "was_postponed": true,
@@ -3669,7 +3669,7 @@
         "id": 14819175,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "1\u00a0day, 3\u00a0hours",
+        "created_ago": "5\u00a0days, 2\u00a0hours",
         "result": [],
         "lead_time": 35.036,
         "was_postponed": true,
@@ -6010,7 +6010,7 @@
         "id": 14819370,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "1\u00a0day, 3\u00a0hours",
+        "created_ago": "5\u00a0days, 2\u00a0hours",
         "result": [],
         "lead_time": 3.803,
         "was_postponed": true,
@@ -8167,7 +8167,7 @@
         "id": 14819287,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "1\u00a0day, 3\u00a0hours",
+        "created_ago": "5\u00a0days, 2\u00a0hours",
         "result": [],
         "lead_time": 1.057,
         "was_postponed": true,
@@ -8360,7 +8360,7 @@
         "id": 14819162,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "1\u00a0day, 3\u00a0hours",
+        "created_ago": "5\u00a0days, 2\u00a0hours",
         "result": [],
         "lead_time": 6.712,
         "was_postponed": true,
@@ -12836,6 +12836,139 @@
     "comment_authors": []
   },
   {
+    "id": 141927006,
+    "annotations": [
+      {
+        "id": 52660130,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "mJ7caYs8tl",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "x4hoL0Pjpy",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509509,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52660130,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927006,
+            "result": [
+              {
+                "id": "mJ7caYs8tl",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "x4hoL0Pjpy",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 34.71,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:29:13.552000Z",
+            "created_at": "2025-01-16T19:29:47.943214Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:29:47.820853Z",
+        "updated_at": "2025-01-16T19:29:47.820863Z",
+        "draft_created_at": "2025-01-16T19:29:38.252715Z",
+        "lead_time": 34.71,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "bdf4bf3c-26cb-46d9-b7b6-ce817f861d5b",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927006,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2015,
+      "title": "ShiDianNao: shifting vision processing closer to the sensor",
+      "answer": "A",
+      "authors": "Zidong Du, Robert Fasthuber, Tianshi Chen, Paolo Ienne, Ling Li, Tao Luo, Xiaobing Feng, Yunji Chen, and Olivier Temam",
+      "context": "In recent years, neural network accelerators have been shown to achieve both high energy efficiency and high performance for a broad application scope within the important category of recognition and mining applications. Still, both the energy efficiency and performance of such accelerators remain limited by memory accesses. In this paper, we focus on image applications, arguably the most important category among recognition and mining applications. The neural networks which are state-of-the-art for these applications are Convolutional Neural Networks (CNN), and they have an important property: weights are shared among many neurons, considerably reducing the neural network memory footprint. This property allows to entirely map a CNN within an SRAM, eliminating all DRAM accesses for weights. By further hoisting this accelerator next to the image sensor, it is possible to eliminate all remaining DRAM accesses, i.e., for inputs and outputs. In this paper, we propose such a CNN accelerator, placed next to a CMOS or CCD sensor. The absence of DRAM accesses combined with a careful exploitation of the specific data access patterns within CNNs allows us to design an accelerator which is 60&times more energy efficient than the previous state-of-the-art neural network accelerator. We present a full design down to the layout at 65 nm, with a modest footprint of 4.86mm2 and consuming only 320mW, but still about 30\u00d7 faster than high-end GPUs.",
+      "question": "The dominant performance and energy bottleneck for neural network accelerators, particularly in recognition and mining applications, is frequently ____.\nA) memory accesses\nB) compute unit utilization\nC) inter-core communication latency\nD) power delivery network limitations",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.773885Z",
+    "updated_at": "2025-01-16T19:29:47.889589Z",
+    "inner_id": 65,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927010,
     "annotations": [
       {
@@ -12934,7 +13067,7 @@
         "id": 14674830,
         "user": "philipndikumusa@gmail.com",
         "created_username": "philipndikum philipndikumusa@gmail.com, 59561",
-        "created_ago": "1\u00a0week",
+        "created_ago": "1\u00a0week, 4\u00a0days",
         "result": [
           {
             "id": "XPdu6DkyaA",
@@ -13451,7 +13584,7 @@
         "id": 14708307,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "6\u00a0days, 3\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [
           {
             "id": "dmz2WmLwcE",
@@ -14541,6 +14674,273 @@
     "comment_authors": []
   },
   {
+    "id": 141927087,
+    "annotations": [
+      {
+        "id": 52659888,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "U_M4CkFl9f",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "uBnLa2JNKR",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509263,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52659888,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927087,
+            "result": [
+              {
+                "id": "U_M4CkFl9f",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "uBnLa2JNKR",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 52.687,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:22:59.994000Z",
+            "created_at": "2025-01-16T19:23:52.311420Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:23:52.190453Z",
+        "updated_at": "2025-01-16T19:23:52.190461Z",
+        "draft_created_at": "2025-01-16T19:23:23.026923Z",
+        "lead_time": 52.687,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "e6d91b5f-5778-40f2-8131-0a4dce034799",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927087,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2015,
+      "title": "A scalable processing-in-memory accelerator for parallel graph processing",
+      "answer": "A",
+      "authors": "Junwhan Ahn, Sungpack Hong, Sungjoo Yoo, Onur Mutlu, and Kiyoung Choi",
+      "context": "The explosion of digital data and the ever-growing need for fast data analysis have made in-memory big-data processing in computer systems increasingly important. In particular, large-scale graph processing is gaining attention due to its broad applicability from social science to machine learning. However, scalable hardware design that can efficiently process large graphs in main memory is still an open problem. Ideally, cost-effective and scalable graph processing systems can be realized by building a system whose performance increases proportionally with the sizes of graphs that can be stored in the system, which is extremely challenging in conventional systems due to severe memory bandwidth limitations. In this work, we argue that the conventional concept of processing-in-memory (PIM) can be a viable solution to achieve such an objective. The key modern enabler for PIM is the recent advancement of the 3D integration technology that facilitates stacking logic and memory dies in a single package, which was not available when the PIM concept was originally examined. In order to take advantage of such a new technology to enable memory-capacity-proportional performance, we design a programmable PIM accelerator for large-scale graph processing called Tesseract. Tesseract is composed of (1) a new hardware architecture that fully utilizes the available memory bandwidth, (2) an efficient method of communication between different memory partitions, and (3) a programming interface that reflects and exploits the unique hardware design. It also includes two hardware prefetchers specialized for memory access patterns of graph processing, which operate based on the hints provided by our programming model. Our comprehensive evaluations using five state-of-the-art graph processing workloads with large real-world graphs show that the proposed architecture improves average system performance by a factor of ten and achieves 87% average energy reduction over conventional systems.",
+      "question": "The recent technological advancement that has enabled the reconsideration of processing-in-memory (PIM) as a viable solution is ____.\nA) 3D integration technology\nB) advanced multicore CPUs\nC) quantum computing advancements\nD) improved network protocols",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.775515Z",
+    "updated_at": "2025-01-16T19:23:52.258180Z",
+    "inner_id": 146,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927101,
+    "annotations": [
+      {
+        "id": 52660000,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "7qlqABIV7b",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "buI9oVaqfw",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509379,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52660000,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927101,
+            "result": [
+              {
+                "id": "7qlqABIV7b",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "buI9oVaqfw",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 68.821,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:25:20.843000Z",
+            "created_at": "2025-01-16T19:26:29.295189Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:26:29.168121Z",
+        "updated_at": "2025-01-16T19:26:29.168132Z",
+        "draft_created_at": "2025-01-16T19:25:52.383527Z",
+        "lead_time": 68.821,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "609cfb76-a587-4231-80ff-c55c1d3d7208",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927101,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2000,
+      "title": "Smart Memories: a modular reconfigurable architecture",
+      "answer": "D",
+      "authors": "Ken Mai, Tim Paaske, Nuwan Jayasena, Ron Ho, William J. Dally, and Mark Horowitz",
+      "context": "Trends in VLSI technology scaling demand that future computing devices be narrowly focused to achieve high performance and high efficiency, yet also target the high volumes and low costs of widely applicable general purpose designs. To address these conflicting requirements, we propose a modular reconfigurable architecture called Smart Memories, targeted at computing needs in the 0.1 /spl mu/m technology generation. A Smart Memories chip is made up of many processing tiles, each containing local memory, local interconnect, and a processor core. For efficient computation under a wide class of possible applications, the memories, the wires, and the computational model can all be altered to match the applications. To show the applicability of this design, two very different machines at opposite ends of the architectural spectrum, the Imagine stream processor and the Hydra speculative multiprocessor, are mapped onto the Smart Memories computing substrate. Simulations of the mappings show that the Smart Memories architecture can successfully map these architectures with only modest performance degradation.",
+      "question": "In future computing architectures, to efficiently support a wide range of applications, ____ should be adaptable.\nA) only the processor core\nB) only the memory hierarchy\nC) only the interconnect\nD) memories, interconnect, and computational model",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.775785Z",
+    "updated_at": "2025-01-16T19:26:29.240846Z",
+    "inner_id": 160,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927111,
     "annotations": [
       {
@@ -14869,6 +15269,140 @@
     "comment_authors": []
   },
   {
+    "id": 141927126,
+    "annotations": [
+      {
+        "id": 52659488,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "H2d5VDcPjG",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "HMwEtS4fwM",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57508860,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52659488,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927126,
+            "result": [
+              {
+                "id": "H2d5VDcPjG",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "HMwEtS4fwM",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 79.85,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:15:07.962000Z",
+            "created_at": "2025-01-16T19:16:27.436738Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:16:27.331613Z",
+        "updated_at": "2025-01-16T19:16:27.331621Z",
+        "draft_created_at": null,
+        "lead_time": 79.85,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "0d3b89d2-a569-4bc6-a9c9-8af5a2708826",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927126,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2000,
+      "title": "Wattch: A Framework for Architectural-Level Power Analysis and Optimizations",
+      "answer": "A",
+      "authors": "David Brooks, Vivek Tiwari, and Margaret Martonosi",
+      "context": "Power dissipation and thermal issues are increasingly significant in modern processors. As a result, it is crucial that power/performance tradeoffs be made more visible to chip architects and even compiler writers, in addition to circuit designers. Most existing power analysis tools achieve high accuracy by calculating power estimates for designs only after layout or floorplanning are complete. In addition to being available only late in the design process, such tools are often quite slow, which compounds the difficulty of running them for a large space of design possibilities. This paper presents Wattch, a framework for analyzing and optimizing microprocessor power dissipation at the architecture-level. Wattch is 1000X or more faster than existing layout-level power tools, and yet maintains accuracy within 10% of their estimates as verified using industry tools on leading-edge designs. This paper presents several validations of Wattch's accuracy. In addition, we present three examples that demonstrate how architects or compiler writers might use Wattch to evaluate power consumption in their design process. We see Wattch as a complement to existing lower-level tools; it allows architects to explore and cull the design space early on, using faster, higher-level tools. It also opens up the field of power-efficient computing to a wider range of researchers by providing a power evaluation methodology within the portable and familiar SimpleScalar framework.",
+      "question": "Early evaluation of power consumption in microprocessor design allows for ____.\nA) exploration and culling of the design space using faster, higher-level tools.\nB) precise power measurements at the transistor level.\nC) eliminating the need for lower-level power analysis tools.\nD) guaranteeing optimal power efficiency in the final design.",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.776268Z",
+    "updated_at": "2025-01-16T19:16:27.404963Z",
+    "inner_id": 185,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927153,
     "annotations": [
       {
@@ -15057,7 +15591,7 @@
         "id": 14708269,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "6\u00a0days, 3\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [
           {
             "id": "VGeKGMFPWs",
@@ -15308,7 +15842,7 @@
         "id": 14708186,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "6\u00a0days, 3\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [],
         "lead_time": 10.495,
         "was_postponed": true,
@@ -15322,7 +15856,7 @@
         "id": 14701797,
         "user": "santosh.pandey@rutgers.edu",
         "created_username": "Santosh Pandey santosh.pandey@rutgers.edu, 59601",
-        "created_ago": "6\u00a0days, 12\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [
           {
             "id": "aKRoQExeky",
@@ -15573,7 +16107,7 @@
         "id": 14708283,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "6\u00a0days, 3\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [
           {
             "id": "TZGa2GNhjP",
@@ -15824,7 +16358,7 @@
         "id": 14708184,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "6\u00a0days, 3\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [],
         "lead_time": 3.281,
         "was_postponed": true,
@@ -16141,6 +16675,272 @@
     "comment_authors": []
   },
   {
+    "id": 141927204,
+    "annotations": [
+      {
+        "id": 52660318,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "Qpdg6k0AJB",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "o_Zek8zc7y",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509699,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52660318,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927204,
+            "result": [
+              {
+                "id": "Qpdg6k0AJB",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "o_Zek8zc7y",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 146.914,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:31:34.229000Z",
+            "created_at": "2025-01-16T19:34:00.746975Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:34:00.643444Z",
+        "updated_at": "2025-01-16T19:34:00.643454Z",
+        "draft_created_at": "2025-01-16T19:32:14.603496Z",
+        "lead_time": 146.914,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "5811db0b-b116-4736-97aa-61be682ece30",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927204,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2005,
+      "title": "Interconnections in Multi-Core Architectures: Understanding Mechanisms, Overheads and Scaling",
+      "answer": "D",
+      "authors": "Rakesh Kumar, Victor V. Zyuban, and Dean M. Tullsen",
+      "context": "This paper examines the area, power, performance, and design issues for the on-chip interconnects on a chip multiprocessor, attempting to present a comprehensive view of a class of interconnect architectures. It shows that the design choices for the interconnect have significant effect on the rest of the chip, potentially consuming a significant fraction of the real estate and power budget. This research shows that designs that treat interconnect as an entity that can be independently architected and optimized would not arrive at the best multi-core design. Several examples are presented showing the need for careful co-design. For instance, increasing interconnect bandwidth requires area that then constrains the number of cores or cache sizes, and does not necessarily increase performance. Also, shared level-2 caches become significantly less attractive when the overhead of the resulting crossbar is accounted for. A hierarchical bus structure is examined which negates some of the performance costs of the assumed base-line architecture.",
+      "question": "When designing on-chip interconnects for a chip multiprocessor, a critical consideration to maximize overall system performance is to ____.\nA) maximize interconnect bandwidth as the primary design goal.\nB) design the interconnect independently and then integrate it into the chip.\nC) prioritize minimizing the area consumed by the interconnect above all else.\nD) carefully co-design the interconnect with other chip components like caches and cores.",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.778197Z",
+    "updated_at": "2025-01-16T19:34:00.701544Z",
+    "inner_id": 263,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927208,
+    "annotations": [
+      {
+        "id": 52659516,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "1lcMOcteaj",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "KNmFPLZPgy",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57508888,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52659516,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927208,
+            "result": [
+              {
+                "id": "1lcMOcteaj",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "KNmFPLZPgy",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 28.747,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:16:28.839000Z",
+            "created_at": "2025-01-16T19:16:57.202803Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:16:57.088297Z",
+        "updated_at": "2025-01-16T19:16:57.088308Z",
+        "draft_created_at": "2025-01-16T19:16:44.946984Z",
+        "lead_time": 28.747,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "1131cce8-8572-40fa-95ac-578a84f221d8",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927208,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2002,
+      "title": "Drowsy Caches: Simple Techniques for Reducing Leakage Power",
+      "answer": "B",
+      "authors": "Kriszti\u00e1n Flautner, Nam Sung Kim, Steve Martin, David Blaauw, and Trevor Mudge",
+      "context": "On-chip caches represent a sizable fraction of the total power consumption of microprocessors. Although large caches can significantly improve performance, they have the potential to increase power consumption. As feature sizes shrink, the dominant component of this power loss will be leakage. However, during a fixed period of time the activity in a cache is only centered on a small subset of the lines. This behavior can be exploited to cut the leakage power of large caches by putting the cold cache lines into a state preserving, low-power drowsy mode. Moving lines into and out of drowsy state incurs a slight performance loss. In this paper we investigate policies and circuit techniques for implementing drowsy caches. We show that with simple architectural techniques, about 80%-90% of the cache lines can be maintained in a drowsy state without affecting performance by more than 1%. According to our projections, in a 0.07um CMOS process, drowsy caches will be able to reduce the total energy (static and dynamic) consumed in the caches by 50%-75%. We also argue that the use of drowsy caches can simplify the design and control of low-leakage caches, and avoid the need to completely turn off selected cache lines and lose their state.",
+      "question": "The dominant component of power loss in caches as feature sizes shrink is expected to be ____.\nA) dynamic power\nB) leakage power\nC) switching power\nD) short-circuit power",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.778274Z",
+    "updated_at": "2025-01-16T19:16:57.150486Z",
+    "inner_id": 267,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927214,
     "annotations": [
       {
@@ -16263,6 +17063,139 @@
     "created_at": "2024-12-12T18:19:38.778394Z",
     "updated_at": "2025-01-09T21:30:41.311817Z",
     "inner_id": 273,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927218,
+    "annotations": [
+      {
+        "id": 52659849,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "sIQZBffiWp",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "Q7rGRE_r5m",
+            "type": "rating",
+            "value": {
+              "rating": 1
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509224,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52659849,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927218,
+            "result": [
+              {
+                "id": "sIQZBffiWp",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "Q7rGRE_r5m",
+                "type": "rating",
+                "value": {
+                  "rating": 1
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 137.649,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:20:40.848000Z",
+            "created_at": "2025-01-16T19:22:58.080276Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:22:57.999337Z",
+        "updated_at": "2025-01-16T19:22:57.999346Z",
+        "draft_created_at": null,
+        "lead_time": 137.649,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "aca52aaf-4a86-47c8-bf2b-43ec5e0b953f",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927218,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2004,
+      "title": "Evaluation of the Raw Microprocessor: An Exposed-Wire-Delay Architecture for ILP and Streams",
+      "answer": "C",
+      "authors": "Michael Bedford Taylor, Walter Lee, Jason Miller, David Wentzlaff, Ian Bratt, Ben Greenwald, Henry Hoffmann, Paul Johnson, Jason Kim, James Psota, Arvind Saraf, Nathan Shnidman, Volker Strumpen, Matt Frank, Saman Amarasinghe, and Anant Agarwal",
+      "context": "This paper evaluates the Raw microprocessor. Raw addresses thechallenge of building a general-purpose architecture that performswell on a larger class of stream and embedded computing applicationsthan existing microprocessors, while still running existingILP-based sequential programs with reasonable performance in theface of increasing wire delays. Raw approaches this challenge byimplementing plenty of on-chip resources - including logic, wires,and pins - in a tiled arrangement, and exposing them through a newISA, so that the software can take advantage of these resources forparallel applications. Raw supports both ILP and streams by routingoperands between architecturally-exposed functional units overa point-to-point scalar operand network. This network offers lowlatency for scalar data transport. Raw manages the effect of wiredelays by exposing the interconnect and using software to orchestrateboth scalar and stream data transport.We have implemented a prototype Raw microprocessor in IBM's180 nm, 6-layer copper, CMOS 7SF standard-cell ASIC process. Wehave also implemented ILP and stream compilers. Our evaluationattempts to determine the extent to which Raw succeeds in meetingits goal of serving as a more versatile, general-purpose processor.Central to achieving this goal is Raw's ability to exploit all formsof parallelism, including ILP, DLP, TLP, and Stream parallelism.Specifically, we evaluate the performance of Raw on a diverse setof codes including traditional sequential programs, streaming applications,server workloads and bit-level embedded computation.Our experimental methodology makes use of a cycle-accurate simulatorvalidated against our real hardware. Compared to a 180 nmPentium-III, using commodity PC memory system components, Rawperforms within a factor of 2x for sequential applications with a verylow degree of ILP, about 2x to 9x better for higher levels of ILP, and10x-100x better when highly parallel applications are coded in astream language or optimized by hand. The paper also proposes anew versatility metric and uses it to discuss the generality of Raw.",
+      "question": "An emerging architectural strategy that adapts to the increasing delay of wires by exposing interconnects and relying on software orchestration is ____.\nA) traditionally monolithic designs\nB) purely ILP-focused architectures\nC) architecturally-exposed network designs\nD) pure stream processing units",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.778470Z",
+    "updated_at": "2025-01-16T19:22:58.057772Z",
+    "inner_id": 277,
     "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
@@ -16618,7 +17551,7 @@
         "id": 14701710,
         "user": "santosh.pandey@rutgers.edu",
         "created_username": "Santosh Pandey santosh.pandey@rutgers.edu, 59601",
-        "created_ago": "6\u00a0days, 12\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [],
         "lead_time": 165.542,
         "was_postponed": true,
@@ -16632,7 +17565,7 @@
         "id": 14674272,
         "user": "devesh.s171@gmail.com",
         "created_username": "devesh.s171@gmail.com, 59593",
-        "created_ago": "1\u00a0week",
+        "created_ago": "1\u00a0week, 4\u00a0days",
         "result": [
           {
             "id": "Cwxl3FTwMd",
@@ -17197,7 +18130,7 @@
         "id": 14708182,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "6\u00a0days, 3\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [],
         "lead_time": 5.228,
         "was_postponed": true,
@@ -17211,7 +18144,7 @@
         "id": 14701783,
         "user": "santosh.pandey@rutgers.edu",
         "created_username": "Santosh Pandey santosh.pandey@rutgers.edu, 59601",
-        "created_ago": "6\u00a0days, 12\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [],
         "lead_time": 251.178,
         "was_postponed": true,
@@ -17259,6 +18192,140 @@
     "last_comment_updated_at": null,
     "project": 118163,
     "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927258,
+    "annotations": [
+      {
+        "id": 52659428,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "wr9Uf_NZW1",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "72WUO8WDQd",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57508799,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52659428,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927258,
+            "result": [
+              {
+                "id": "wr9Uf_NZW1",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "72WUO8WDQd",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 176.734,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:12:09.429000Z",
+            "created_at": "2025-01-16T19:15:05.775277Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:15:05.666452Z",
+        "updated_at": "2025-01-16T19:15:05.666462Z",
+        "draft_created_at": null,
+        "lead_time": 176.734,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "3f99c209-8552-4752-9eb9-8ba148d53d2c",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927258,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2001,
+      "title": "Cache decay: exploiting generational behavior to reduce cache leakage power",
+      "answer": "C",
+      "authors": "Stefanos Kaxiras, Zhigang Hu, and Margaret Martonosi",
+      "context": "Power dissipation is increasingly important in CPUs ranging from those intended for mobile use, all the way up to high performance processors for high-end servers. While the bulk of the power dissipated is dynamic switching power leakage power is also beginning to be a concern. Chipmakers expect that in future chip generations, leakage's proportion of total chip power will increase significantly. This paper examines methods for reducing leakage power within the cache memories of the CPU. Because caches comprise much of a CPU chip's area and transistor counts, they are reasonable targets for attacking leakage. We discuss policies and implementations for reducing cache leakage by invalidating and \"turning off\" cache lines when they hold data not likely to be reused. In particular our approach is targeted at the generational nature of cache line usage. That is, cache lines typically have a flurry of frequent use when first brought into the cache, and then have a period of \"dead time\" before they are evicted. By devising effective, low-power ways of deducing dead time, our results show that in many cases we can reduce Ll cache leakage energy by 4/spl times/ in SPEC2000 applications without impacting performance. Because our decay-based techniques have notions of competitive on-line algorithms at their roots, their energy usage can be theoretically bounded at within a factor of two of the optimal oracle-based policy. We also examine adaptive decay-based policies that make energy-minimizing policy choices on a per-application basis by choosing appropriate decay intervals individually, for each cache line. Our proposed adaptive policies effectively reduce Ll cache leakage energy by 5/spl times/ for the SPEC2000 with only negligible degradations in performance.",
+      "question": "Exploiting the ____ nature of cache line usage can lead to significant energy savings, particularly in ____ intensive applications.\nA) random, memory\nB) predictable, compute\nC) generational, memory\nD) uniform, compute",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.779261Z",
+    "updated_at": "2025-01-16T19:15:05.745464Z",
+    "inner_id": 317,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
     "comment_authors": []
   },
   {
@@ -17450,7 +18517,7 @@
         "id": 14708365,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "6\u00a0days, 3\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [
           {
             "id": "BD2OOD0Cqu",
@@ -18281,7 +19348,7 @@
         "id": 14708297,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "6\u00a0days, 3\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [
           {
             "id": "-Hf4G2-nSa",
@@ -18342,6 +19409,140 @@
     "last_comment_updated_at": null,
     "project": 118163,
     "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927301,
+    "annotations": [
+      {
+        "id": 52660110,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "DkR1qpcveB",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "XXTDJxzvZ2",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509489,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52660110,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927301,
+            "result": [
+              {
+                "id": "DkR1qpcveB",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "XXTDJxzvZ2",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 160.832,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:26:31.178000Z",
+            "created_at": "2025-01-16T19:29:11.637570Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:29:11.515298Z",
+        "updated_at": "2025-01-16T19:29:11.515307Z",
+        "draft_created_at": "2025-01-16T19:29:02.519490Z",
+        "lead_time": 160.832,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "b84ee04f-3d57-4b8d-8844-d543260886cf",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927301,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 1996,
+      "title": "Missing the Memory Wall: The Case for Processor/Memory Integration",
+      "answer": "D",
+      "authors": "Ashley Saulsbury, Fong Pong, Andreas Nowatzyk",
+      "context": "Current high performance computer systems use complex, large superscalar CPUs that interface to the main memory through a hierarchy of caches and interconnect systems. These CPU-centric designs invest a lot of power and chip area to bridge the widening gap between CPU and main memory speeds. Yet, many large applications do not operate well on these systems and are limited by the memory subsystem performance.This paper argues for an integrated system approach that uses less-powerful CPUs that are tightly integrated with advanced memory technologies to build competitive systems with greatly reduced cost and complexity. Based on a design study using the next generation 0.25&micro;m, 256Mbit dynamic random-access memory (DRAM) process and on the analysis of existing machines, we show that processor memory integration can be used to build competitive, scalable and cost-effective MP systems.We present results from execution driven uni- and multi-processor simulations showing that the benefits of lower latency and higher bandwidth can compensate for the restrictions on the size and complexity of the integrated processor. In this system, small direct mapped instruction caches with long lines are very effective, as are column buffer data caches augmented with a victim cache.",
+      "question": "When memory latency is significantly reduced, which of the following cache design strategies becomes more effective?\nA) Large, highly associative caches with short cache lines.\nB) Complex prefetching mechanisms coupled with large, set-associative caches.\nC) Multi-level cache hierarchies with inclusive policies.\nD) Small, direct-mapped caches with long cache lines.",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.780099Z",
+    "updated_at": "2025-01-16T19:29:11.582678Z",
+    "inner_id": 360,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
     "comment_authors": []
   },
   {
@@ -18792,6 +19993,140 @@
     "comment_authors": []
   },
   {
+    "id": 141927346,
+    "annotations": [
+      {
+        "id": 52659610,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "A1DYSYlZJQ",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "g_frQihXmN",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57508982,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52659610,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927346,
+            "result": [
+              {
+                "id": "A1DYSYlZJQ",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "g_frQihXmN",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 90.018,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:16:58.684000Z",
+            "created_at": "2025-01-16T19:18:28.332134Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:18:28.225997Z",
+        "updated_at": "2025-01-16T19:18:28.226005Z",
+        "draft_created_at": null,
+        "lead_time": 90.018,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "26d771e2-7f52-42ce-a511-8207503a4931",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927346,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2017,
+      "title": "In-Datacenter Performance Analysis of a Tensor Processing Unit",
+      "answer": "C",
+      "authors": "Norman P. Jouppi, Cliff Young, Nishant Patil, David Patterson, Gaurav Agrawal,Raminder Bajwa, Sarah Bates, Suresh Bhatia, Nan Boden, Al Borchers, Rick Boyle, Pierre-luc Cantin,Clifford Chao, Chris Clark, Jeremy Coriell, Mike Daley, Matt Dau, Jeffrey Dean, Ben Gelb,Tara Vazir Ghaemmaghami, Rajendra Gottipati, William Gulland, Robert Hagmann, C. Richard Ho,Doug Hogberg, John Hu, Robert Hundt, Dan Hurt, Julian Ibarz, Aaron Jaffey, Alek Jaworski,Alexander Kaplan, Harshit Khaitan, Daniel Killebrew, Andy Koch, Naveen Kumar, Steve Lacy,James Laudon, James Law, Diemthu Le, Chris Leary, Zhuyuan Liu, Kyle Lucke, Alan Lundin,Gordon MacKean, Adriana Maggiore, Maire Mahony, Kieran Miller, Rahul Nagarajan, Ravi Narayanaswami,Ray Ni, Kathy Nix, Thomas Norrie, Mark Omernick, Narayana Penukonda, Andy Phelps,Jonathan Ross, Matt Ross, Amir Salek, Emad Samadiani, Chris Severn, Gregory Sizikov,Matthew Snelham, Jed Souter, Dan Steinberg, Andy Swing, Mercedes Tan, Gregory Thorson, Bo Tian,Horia Toma, Erick Tuttle, Vijay Vasudevan, Richard Walter, Walter Wang, Eric Wilcox, and Doe Hyun Yoon",
+      "context": "Many architects believe that major improvements in cost-energy-performance must now come from domain-specific hardware. This paper evaluates a custom ASIC---called a Tensor Processing Unit (TPU) --- deployed in datacenters since 2015 that accelerates the inference phase of neural networks (NN). The heart of the TPU is a 65,536 8-bit MAC matrix multiply unit that offers a peak throughput of 92 TeraOps/second (TOPS) and a large (28 MiB) software-managed on-chip memory. The TPU's deterministic execution model is a better match to the 99th-percentile response-time requirement of our NN applications than are the time-varying optimizations of CPUs and GPUs that help average throughput more than guaranteed latency. The lack of such features helps explain why, despite having myriad MACs and a big memory, the TPU is relatively small and low power. We compare the TPU to a server-class Intel Haswell CPU and an Nvidia K80 GPU, which are contemporaries deployed in the same datacenters. Our workload, written in the high-level TensorFlow framework, uses production NN applications (MLPs, CNNs, and LSTMs) that represent 95% of our datacenters' NN inference demand. Despite low utilization for some applications, the TPU is on average about 15X -- 30X faster than its contemporary GPU or CPU, with TOPS/Watt about 30X -- 80X higher. Moreover, using the CPU's GDDR5 memory in the TPU would triple achieved TOPS and raise TOPS/Watt to nearly 70X the GPU and 200X the CPU.",
+      "question": "To meet strict latency requirements in datacenter applications, ____ is generally more important than average throughput.\nA) Multithreading capability\nB) Cache size\nC) Deterministic execution\nD) Clock frequency",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.780969Z",
+    "updated_at": "2025-01-16T19:18:28.303253Z",
+    "inner_id": 405,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927360,
     "annotations": [
       {
@@ -19047,6 +20382,140 @@
     "created_at": "2024-12-12T18:19:38.781391Z",
     "updated_at": "2025-01-15T20:03:38.268948Z",
     "inner_id": 425,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927387,
+    "annotations": [
+      {
+        "id": 52659713,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "cK-XEAw68N",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "Nq2Gm0xDWH",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509087,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52659713,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927387,
+            "result": [
+              {
+                "id": "cK-XEAw68N",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "Nq2Gm0xDWH",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 129.659,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:18:30.123000Z",
+            "created_at": "2025-01-16T19:20:39.455418Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:20:39.324306Z",
+        "updated_at": "2025-01-16T19:20:39.324315Z",
+        "draft_created_at": "2025-01-16T19:19:15.527069Z",
+        "lead_time": 129.659,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "65ced2cc-6c66-4c2b-9f03-17dcd8399059",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927387,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2006,
+      "title": "Techniques for Multicore Thermal Management: Classification and New Exploration",
+      "answer": "C",
+      "authors": "James Donald and Margaret Martonosi",
+      "context": "Power density continues to increase exponentially with each new technology generation, posing a major challenge for thermal management in modern processors. Much past work has examined microarchitectural policies for reducing total chip power, but these techniques alone are insufficient if not aimed at mitigating individual hotspots. The industry's trend has been toward multicore architectures, which provide additional opportunities for dynamic thermal management. This paper explores various thermal management techniques that exploit the distributed nature of multicore processors. We classify these techniques in terms of core throttling policy, whether that policy is applied locally to a core or to the processor as a whole, and process migration policies. We use Turandot and a HotSpot-based thermal simulator to simulate a variety of workloads under thermal duress on a 4-core PowerPCtrade processor. Using benchmarks from the SPEC 2000 suite we characterize workloads in terms of instruction throughput as well as their effective duty cycles. Among a variety of options we find that distributed control-theoretic DVFS alone improves throughput by 2.5times under our test conditions. Our final design involves a PI-based core thermal controller and an outer control loop to decide process migrations. This policy avoids all thermal emergencies and yields an average of 2.6times speedup over the baseline across all workloads",
+      "question": "A key advantage of distributed control-theoretic DVFS in multicore processors is the ability to ____ compared to baseline configurations.\nA) reduce energy consumption\nB) increase thermal emergencies\nC) improve throughput\nD) decrease complexity",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.781797Z",
+    "updated_at": "2025-01-16T19:20:39.397335Z",
+    "inner_id": 446,
     "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
@@ -19368,6 +20837,139 @@
     "last_comment_updated_at": null,
     "project": 118163,
     "updated_by": 59731,
+    "comment_authors": []
+  },
+  {
+    "id": 141927398,
+    "annotations": [
+      {
+        "id": 52660444,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "8p3zozZwfi",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "BjeMh6p48D",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509831,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52660444,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927398,
+            "result": [
+              {
+                "id": "8p3zozZwfi",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "BjeMh6p48D",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 39.061,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:36:20.358000Z",
+            "created_at": "2025-01-16T19:36:59.043400Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:36:58.926998Z",
+        "updated_at": "2025-01-16T19:36:58.927006Z",
+        "draft_created_at": "2025-01-16T19:36:50.638862Z",
+        "lead_time": 39.061,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "31545af1-e12e-45c8-9490-61b00807f922",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927398,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2007,
+      "title": "New Cache Designs for Thwarting Software Cache-Based Side Channel Attacks",
+      "answer": "A",
+      "authors": "Zhenghong Wang and Ruby B. Lee",
+      "context": "Software cache-based side channel attacks are a serious new class of threats for computers. Unlike physical side channel attacks that mostly target embedded cryptographic devices, cache-based side channel attacks can also undermine general purpose systems. The attacks are easy to perform, effective on most platforms, and do not require special instruments or excessive computation power. In recently demonstrated attacks on software implementations of ciphers like AES and RSA, the full key can be recovered by an unprivileged user program performing simple timing measurements based on cache misses. We first analyze these attacks, identifying cache interference as the root cause of these attacks. We identify two basic mitigation approaches: the partition-based approach eliminates cache interference whereas the randomization-based approach randomizes cache interference so that zero information can be inferred. We present new security-aware cache designs, the Partition-Locked cache (PLcache) and Random Permutation cache (RPcache), analyze and prove their security, and evaluate their performance. Our results show that our new cache designs with built-in security can defend against cache-based side channel attacks in general-rather than only specific attacks on a given cryptographic algorithm-with very little performance degradation and hardware cost.",
+      "question": "The fundamental issue leading to cache-based side channel attacks is primarily due to ____.\nA) cache interference\nB) memory bandwidth\nC) power consumption\nD) disk access speed",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.782040Z",
+    "updated_at": "2025-01-16T19:36:58.990309Z",
+    "inner_id": 457,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
     "comment_authors": []
   },
   {
@@ -19819,6 +21421,273 @@
     "comment_authors": []
   },
   {
+    "id": 141927401,
+    "annotations": [
+      {
+        "id": 52660222,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "8MrJDfvXEu",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "laO65t82L4",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509603,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52660222,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927401,
+            "result": [
+              {
+                "id": "8MrJDfvXEu",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "laO65t82L4",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 102.353,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:29:49.956000Z",
+            "created_at": "2025-01-16T19:31:31.941131Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:31:31.836503Z",
+        "updated_at": "2025-01-16T19:31:31.836515Z",
+        "draft_created_at": "2025-01-16T19:31:07.327847Z",
+        "lead_time": 102.353,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "5da5ffa2-3de7-42a5-aa05-9b930ebc9b9a",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927401,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2007,
+      "title": "New Cache Designs for Thwarting Software Cache-Based Side Channel Attacks",
+      "answer": "B",
+      "authors": "Zhenghong Wang and Ruby B. Lee",
+      "context": "Software cache-based side channel attacks are a serious new class of threats for computers. Unlike physical side channel attacks that mostly target embedded cryptographic devices, cache-based side channel attacks can also undermine general purpose systems. The attacks are easy to perform, effective on most platforms, and do not require special instruments or excessive computation power. In recently demonstrated attacks on software implementations of ciphers like AES and RSA, the full key can be recovered by an unprivileged user program performing simple timing measurements based on cache misses. We first analyze these attacks, identifying cache interference as the root cause of these attacks. We identify two basic mitigation approaches: the partition-based approach eliminates cache interference whereas the randomization-based approach randomizes cache interference so that zero information can be inferred. We present new security-aware cache designs, the Partition-Locked cache (PLcache) and Random Permutation cache (RPcache), analyze and prove their security, and evaluate their performance. Our results show that our new cache designs with built-in security can defend against cache-based side channel attacks in general-rather than only specific attacks on a given cryptographic algorithm-with very little performance degradation and hardware cost.",
+      "question": "To mitigate cache-based side channel attacks, two basic approaches are eliminating cache interference and ____.\nA) increasing cache size\nB) randomizing cache interference\nC) reducing cache miss rates\nD) isolating cryptographic processes",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.782099Z",
+    "updated_at": "2025-01-16T19:31:31.895426Z",
+    "inner_id": 460,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927402,
+    "annotations": [
+      {
+        "id": 52660410,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "r5Eg68cNil",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "VYqX1TO64k",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509797,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52660410,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927402,
+            "result": [
+              {
+                "id": "r5Eg68cNil",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "VYqX1TO64k",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 136.211,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:34:02.865000Z",
+            "created_at": "2025-01-16T19:36:18.702842Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:36:18.579660Z",
+        "updated_at": "2025-01-16T19:36:18.579669Z",
+        "draft_created_at": "2025-01-16T19:34:21.700775Z",
+        "lead_time": 136.211,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "20f502ea-dd42-40af-a5c9-70f51d1866c8",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927402,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2007,
+      "title": "New Cache Designs for Thwarting Software Cache-Based Side Channel Attacks",
+      "answer": "C",
+      "authors": "Zhenghong Wang and Ruby B. Lee",
+      "context": "Software cache-based side channel attacks are a serious new class of threats for computers. Unlike physical side channel attacks that mostly target embedded cryptographic devices, cache-based side channel attacks can also undermine general purpose systems. The attacks are easy to perform, effective on most platforms, and do not require special instruments or excessive computation power. In recently demonstrated attacks on software implementations of ciphers like AES and RSA, the full key can be recovered by an unprivileged user program performing simple timing measurements based on cache misses. We first analyze these attacks, identifying cache interference as the root cause of these attacks. We identify two basic mitigation approaches: the partition-based approach eliminates cache interference whereas the randomization-based approach randomizes cache interference so that zero information can be inferred. We present new security-aware cache designs, the Partition-Locked cache (PLcache) and Random Permutation cache (RPcache), analyze and prove their security, and evaluate their performance. Our results show that our new cache designs with built-in security can defend against cache-based side channel attacks in general-rather than only specific attacks on a given cryptographic algorithm-with very little performance degradation and hardware cost.",
+      "question": "A key architectural challenge highlighted by software cache-based side channel attacks is the need to manage ____ between different processes or security domains.\nA) cache capacity\nB) cache associativity\nC) cache interference\nD) cache coherence",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.782118Z",
+    "updated_at": "2025-01-16T19:36:18.649116Z",
+    "inner_id": 461,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927409,
     "annotations": [
       {
@@ -19942,6 +21811,140 @@
     "created_at": "2024-12-12T18:19:38.782256Z",
     "updated_at": "2025-01-15T20:04:25.944233Z",
     "inner_id": 468,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927426,
+    "annotations": [
+      {
+        "id": 52659958,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "p6QTJ8xSWy",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "W84mlr3l1O",
+            "type": "rating",
+            "value": {
+              "rating": 1
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 57509335,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 52659958,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927426,
+            "result": [
+              {
+                "id": "p6QTJ8xSWy",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "W84mlr3l1O",
+                "type": "rating",
+                "value": {
+                  "rating": 1
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 85.528,
+            "action": "submitted",
+            "started_at": "2025-01-16T19:23:54.185000Z",
+            "created_at": "2025-01-16T19:25:19.337064Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-01-16T19:25:19.215326Z",
+        "updated_at": "2025-01-16T19:25:19.215333Z",
+        "draft_created_at": "2025-01-16T19:25:06.786057Z",
+        "lead_time": 85.528,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "14c964b6-c0c8-4558-a8a6-71579b530365",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927426,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2019,
+      "title": "Sparse ReRAM engine: joint exploration of activation and weight sparsity in compressed neural networks",
+      "answer": "C",
+      "authors": "Tzu-Hsien Yang, Hsiang-Yun Cheng, Chia-Lin Yang, I-Ching Tseng, Han-Wen Hu, Hung-Sheng Chang, and Hsiang-Pang Li",
+      "context": "Exploiting model sparsity to reduce ineffectual computation is a commonly used approach to achieve energy efficiency for DNN inference accelerators. However, due to the tightly coupled crossbar structure, exploiting sparsity for ReRAM-based NN accelerator is a less explored area. Existing architectural studies on ReRAM-based NN accelerators assume that an entire crossbar array can be activated in a single cycle. However, due to inference accuracy considerations, matrix-vector computation must be conducted in a smaller granularity in practice, called Operation Unit (OU). An OU-based architecture creates a new opportunity to exploit DNN sparsity. In this paper, we propose the first practical Sparse ReRAM Engine that exploits both weight and activation sparsity. Our evaluation shows that the proposed method is effective in eliminating ineffectual computation, and delivers significant performance improvement and energy savings.",
+      "question": "For ReRAM-based neural network accelerators, focusing solely on exploiting sparsity at the ____ level can lead to suboptimal energy efficiency gains.\nA) chip\nB) full crossbar array\nC) smaller operational unit (e.g., within a crossbar)\nD) device",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gpt-4o"
+      ],
+      "models_in_favor_generic": [
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.782596Z",
+    "updated_at": "2025-01-16T19:25:19.282394Z",
+    "inner_id": 485,
     "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
@@ -20141,7 +22144,7 @@
         "id": 14708257,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
-        "created_ago": "6\u00a0days, 3\u00a0hours",
+        "created_ago": "1\u00a0week, 3\u00a0days",
         "result": [
           {
             "id": "wpzDD7q0_p",
