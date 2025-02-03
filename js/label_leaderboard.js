@@ -126,6 +126,7 @@
             'shreyasgrampurohit': 'IIT Bombay',
             'npadilla': 'Univ. Nac. de Tucuman',
             'zishenwan': 'Georgia Tech',
+            'jennyhuang': 'NVIDIA',
             'Unknown User': 'N/A'
         };
     
