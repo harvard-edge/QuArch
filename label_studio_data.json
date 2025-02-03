@@ -844,6 +844,96 @@
     "id": 141926945,
     "annotations": [
       {
+        "id": 53772964,
+        "completed_by": 61825,
+        "result": [
+          {
+            "id": "e1CfQv5vcp",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "75lYhNP9wl",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58849803,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53772964,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926945,
+            "result": [
+              {
+                "id": "e1CfQv5vcp",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "75lYhNP9wl",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 54.663,
+            "action": "submitted",
+            "started_at": "2025-02-03T14:28:15.831000Z",
+            "created_at": "2025-02-03T14:29:10.902058Z",
+            "created_by": 61825,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T14:29:10.766907Z",
+        "updated_at": "2025-02-03T14:29:10.766917Z",
+        "draft_created_at": "2025-02-03T14:28:49.574939Z",
+        "lead_time": 54.663,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "3ea714d0-42da-4c7e-ae46-895bfad1a520",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141926945,
+        "project": 118163,
+        "updated_by": 61825,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 61825,
+        "annotator_email": "noah.martin@tufts.edu"
+      },
+      {
         "id": 52543072,
         "completed_by": 59565,
         "result": [
@@ -1026,7 +1116,7 @@
     ],
     "drafts": [],
     "predictions": [],
-    "agreement": 0.0,
+    "agreement": 33.33333333333333,
     "data": {
       "type": "Cloze",
       "year": 2016,
@@ -1052,16 +1142,16 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.772668Z",
-    "updated_at": "2025-01-14T20:28:26.913941Z",
+    "updated_at": "2025-02-03T14:29:10.843308Z",
     "inner_id": 4,
-    "total_annotations": 2,
+    "total_annotations": 3,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 61825,
     "comment_authors": []
   },
   {
@@ -1291,6 +1381,50 @@
     "id": 141926947,
     "annotations": [
       {
+        "id": 53772975,
+        "completed_by": 61826,
+        "result": [],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58849816,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53772975,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926947,
+            "result": [],
+            "lead_time": 3.342,
+            "action": "skipped",
+            "started_at": "2025-02-03T14:29:21.047000Z",
+            "created_at": "2025-02-03T14:29:25.179991Z",
+            "created_by": 61826,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": true,
+        "ground_truth": false,
+        "created_at": "2025-02-03T14:29:25.034719Z",
+        "updated_at": "2025-02-03T14:29:25.034740Z",
+        "draft_created_at": null,
+        "lead_time": 3.342,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "975d4a91-c8b6-4be0-91af-427344287878",
+        "import_id": null,
+        "last_action": "skipped",
+        "bulk_created": false,
+        "task": 141926947,
+        "project": 118163,
+        "updated_by": 61826,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 61826,
+        "annotator_email": "j.shin@northeastern.edu"
+      },
+      {
         "id": 52480561,
         "completed_by": 59565,
         "result": [
@@ -1498,16 +1632,16 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.772712Z",
-    "updated_at": "2025-01-13T19:29:14.171388Z",
+    "updated_at": "2025-02-03T14:29:25.144548Z",
     "inner_id": 6,
     "total_annotations": 2,
-    "cancelled_annotations": 0,
+    "cancelled_annotations": 1,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 61826,
     "comment_authors": []
   },
   {
@@ -2993,7 +3127,33 @@
         "annotator_email": "anjana.rajendran@gmail.com"
       }
     ],
-    "drafts": [],
+    "drafts": [
+      {
+        "id": 15183369,
+        "user": "gautam.aa@northeastern.edu",
+        "created_username": "gautam.aa@northeastern.edu, 61828",
+        "created_ago": "8\u00a0minutes",
+        "result": [
+          {
+            "id": "p-PHhXWAzw",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "lead_time": 19.78,
+        "was_postponed": false,
+        "import_id": null,
+        "created_at": "2025-02-03T14:28:57.268515Z",
+        "updated_at": "2025-02-03T14:28:57.268525Z",
+        "task": 141926953,
+        "annotation": null
+      }
+    ],
     "predictions": [],
     "agreement": 100.0,
     "data": {
@@ -3484,6 +3644,96 @@
     "id": 141926956,
     "annotations": [
       {
+        "id": 53772976,
+        "completed_by": 61827,
+        "result": [
+          {
+            "id": "MCG9rNerBS",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "JJosTbFO0U",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58849817,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53772976,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926956,
+            "result": [
+              {
+                "id": "MCG9rNerBS",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "JJosTbFO0U",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 74.959,
+            "action": "submitted",
+            "started_at": "2025-02-03T14:30:46.795000Z",
+            "created_at": "2025-02-03T14:29:25.208711Z",
+            "created_by": 61827,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T14:29:25.056787Z",
+        "updated_at": "2025-02-03T14:29:25.056811Z",
+        "draft_created_at": null,
+        "lead_time": 74.959,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "707c8be5-e977-410d-b0dd-72698f6dbe2c",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141926956,
+        "project": 118163,
+        "updated_by": 61827,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 61827,
+        "annotator_email": "justus@brown.edu"
+      },
+      {
         "id": 52480525,
         "completed_by": 59565,
         "result": [
@@ -3707,16 +3957,16 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.772894Z",
-    "updated_at": "2025-01-13T19:27:58.822661Z",
+    "updated_at": "2025-02-03T14:29:25.167845Z",
     "inner_id": 15,
-    "total_annotations": 2,
+    "total_annotations": 3,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 61827,
     "comment_authors": []
   },
   {
@@ -4170,6 +4420,50 @@
     "id": 141926959,
     "annotations": [
       {
+        "id": 53772973,
+        "completed_by": 61826,
+        "result": [],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58849814,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53772973,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926959,
+            "result": [],
+            "lead_time": 46.794,
+            "action": "skipped",
+            "started_at": "2025-02-03T14:28:33.378000Z",
+            "created_at": "2025-02-03T14:29:20.857118Z",
+            "created_by": 61826,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": true,
+        "ground_truth": false,
+        "created_at": "2025-02-03T14:29:20.759216Z",
+        "updated_at": "2025-02-03T14:29:20.759225Z",
+        "draft_created_at": null,
+        "lead_time": 46.794,
+        "prediction": {},
+        "result_count": 0,
+        "unique_id": "261559b1-3540-4f83-b264-cb5511723f5b",
+        "import_id": null,
+        "last_action": "skipped",
+        "bulk_created": false,
+        "task": 141926959,
+        "project": 118163,
+        "updated_by": 61826,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 61826,
+        "annotator_email": "j.shin@northeastern.edu"
+      },
+      {
         "id": 52480376,
         "completed_by": 59565,
         "result": [
@@ -4378,16 +4672,16 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.772951Z",
-    "updated_at": "2025-01-13T19:22:24.316946Z",
+    "updated_at": "2025-02-03T14:29:20.827030Z",
     "inner_id": 18,
     "total_annotations": 2,
-    "cancelled_annotations": 0,
+    "cancelled_annotations": 1,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 61826,
     "comment_authors": []
   },
   {
@@ -7626,6 +7920,96 @@
     "id": 141926973,
     "annotations": [
       {
+        "id": 53772966,
+        "completed_by": 61829,
+        "result": [
+          {
+            "id": "_z6fH_MGQx",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "hxj8xwFmV5",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58849805,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53772966,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926973,
+            "result": [
+              {
+                "id": "_z6fH_MGQx",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "hxj8xwFmV5",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 64.294,
+            "action": "submitted",
+            "started_at": "2025-02-03T14:28:08.391000Z",
+            "created_at": "2025-02-03T14:29:12.981515Z",
+            "created_by": 61829,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T14:29:12.847389Z",
+        "updated_at": "2025-02-03T14:29:12.847401Z",
+        "draft_created_at": "2025-02-03T14:28:48.556400Z",
+        "lead_time": 64.294,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "afe48b56-e28b-4bcb-a19b-738c46ea3460",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141926973,
+        "project": 118163,
+        "updated_by": 61829,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 61829,
+        "annotator_email": "zhao.yibo@northeastern.edu"
+      },
+      {
         "id": 52600733,
         "completed_by": 59565,
         "result": [
@@ -7808,7 +8192,7 @@
     ],
     "drafts": [],
     "predictions": [],
-    "agreement": 100.0,
+    "agreement": 33.33333333333333,
     "data": {
       "type": "Cloze",
       "year": 2018,
@@ -7833,16 +8217,16 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.773224Z",
-    "updated_at": "2025-01-15T19:53:07.070918Z",
+    "updated_at": "2025-02-03T14:29:12.923216Z",
     "inner_id": 32,
-    "total_annotations": 2,
+    "total_annotations": 3,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 61829,
     "comment_authors": []
   },
   {
@@ -8729,6 +9113,96 @@
     "id": 141926978,
     "annotations": [
       {
+        "id": 53772905,
+        "completed_by": 61831,
+        "result": [
+          {
+            "id": "yhE9ZoTxII",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "9saJrnC3jB",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58849723,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53772905,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926978,
+            "result": [
+              {
+                "id": "yhE9ZoTxII",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "9saJrnC3jB",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 228.011,
+            "action": "submitted",
+            "started_at": "2025-02-03T14:22:55.845000Z",
+            "created_at": "2025-02-03T14:26:44.257077Z",
+            "created_by": 61831,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T14:26:44.165278Z",
+        "updated_at": "2025-02-03T14:26:44.165289Z",
+        "draft_created_at": null,
+        "lead_time": 228.011,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "759a681f-acfc-40ea-8a2e-5fabd9baf73b",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141926978,
+        "project": 118163,
+        "updated_by": 61831,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 61831,
+        "annotator_email": "khor.i@northeastern.edu"
+      },
+      {
         "id": 52542839,
         "completed_by": 59565,
         "result": [
@@ -8936,16 +9410,16 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.773323Z",
-    "updated_at": "2025-01-14T20:19:59.571723Z",
+    "updated_at": "2025-02-03T14:26:44.231244Z",
     "inner_id": 37,
-    "total_annotations": 2,
+    "total_annotations": 3,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 61831,
     "comment_authors": []
   },
   {
@@ -9623,6 +10097,96 @@
     "id": 141926982,
     "annotations": [
       {
+        "id": 53772959,
+        "completed_by": 61834,
+        "result": [
+          {
+            "id": "j6jZzHbya3",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "2NfEPZdXN7",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58849794,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53772959,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141926982,
+            "result": [
+              {
+                "id": "j6jZzHbya3",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "2NfEPZdXN7",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 52.736,
+            "action": "submitted",
+            "started_at": "2025-02-03T14:28:08.299000Z",
+            "created_at": "2025-02-03T14:29:01.291823Z",
+            "created_by": 61834,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T14:29:01.191669Z",
+        "updated_at": "2025-02-03T14:29:01.191679Z",
+        "draft_created_at": null,
+        "lead_time": 52.736,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "0cb4d1d5-1fa6-4727-9258-23918c8d2972",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141926982,
+        "project": 118163,
+        "updated_by": 61834,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 61834,
+        "annotator_email": "c.tan@northeastern.edu"
+      },
+      {
         "id": 52480314,
         "completed_by": 59565,
         "result": [
@@ -9805,7 +10369,7 @@
     ],
     "drafts": [],
     "predictions": [],
-    "agreement": 100.0,
+    "agreement": 33.33333333333333,
     "data": {
       "type": "Cloze",
       "year": 2012,
@@ -9830,16 +10394,16 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.773418Z",
-    "updated_at": "2025-01-13T19:20:03.256544Z",
+    "updated_at": "2025-02-03T14:29:01.261661Z",
     "inner_id": 41,
-    "total_annotations": 2,
+    "total_annotations": 3,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59565,
+    "updated_by": 61834,
     "comment_authors": []
   },
   {
@@ -13887,6 +14451,139 @@
     "comment_authors": []
   },
   {
+    "id": 141927016,
+    "annotations": [
+      {
+        "id": 53767271,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "15gAe-u95b",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "wQcUu9eMG7",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58843097,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767271,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927016,
+            "result": [
+              {
+                "id": "15gAe-u95b",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "wQcUu9eMG7",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 46.891,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:11:05.987000Z",
+            "created_at": "2025-02-03T12:11:52.638718Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:11:52.499389Z",
+        "updated_at": "2025-02-03T12:11:52.499404Z",
+        "draft_created_at": "2025-02-03T12:11:19.099001Z",
+        "lead_time": 46.891,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "0ddb62f6-f807-4af8-a410-38c6d402df5e",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927016,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2011,
+      "title": "Dark silicon and the end of multicore scaling",
+      "answer": "B",
+      "authors": "Hadi Esmaeilzadeh, Emily Blem, Renee St. Amant, Karthikeyan Sankaralingam, and Doug Burger",
+      "context": "Since 2005, processor designers have increased core counts to exploit Moore's Law scaling, rather than focusing on single-core performance. The failure of Dennard scaling, to which the shift to multicore parts is partially a response, may soon limit multicore scaling just as single-core scaling has been curtailed. This paper models multicore scaling limits by combining device scaling, single-core scaling, and multicore scaling to measure the speedup potential for a set of parallel workloads for the next five technology generations. For device scaling, we use both the ITRS projections and a set of more conservative device scaling parameters. To model single-core scaling, we combine measurements from over 150 processors to derive Pareto-optimal frontiers for area/performance and power/performance. Finally, to model multicore scaling, we build a detailed performance model of upper-bound performance and lower-bound core power. The multicore designs we study include single-threaded CPU-like and massively threaded GPU-like multicore chip organizations with symmetric, asymmetric, dynamic, and composed topologies. The study shows that regardless of chip organization and topology, multicore scaling is power limited to a degree not widely appreciated by the computing community. Even at 22 nm (just one year from now), 21% of a fixed-size chip must be powered off, and at 8 nm, this number grows to more than 50%. Through 2024, only 7.9\u00d7 average speedup is possible across commonly used parallel workloads, leaving a nearly 24-fold gap from a target of doubled performance per generation.",
+      "question": "The primary limiting factor for multicore scaling in future processor generations is likely to be ____.\nA) transistor density\nB) power consumption\nC) memory bandwidth\nD) manufacturing costs",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.774118Z",
+    "updated_at": "2025-02-03T12:11:52.583150Z",
+    "inner_id": 75,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927017,
     "annotations": [
       {
@@ -16364,6 +17061,139 @@
     "comment_authors": []
   },
   {
+    "id": 141927064,
+    "annotations": [
+      {
+        "id": 53767410,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "IqS8s5PTOC",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "r-WPpimNco",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58843325,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767410,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927064,
+            "result": [
+              {
+                "id": "IqS8s5PTOC",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "r-WPpimNco",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 23.646,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:15:30.142000Z",
+            "created_at": "2025-02-03T12:15:53.758189Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:15:53.524397Z",
+        "updated_at": "2025-02-03T12:15:53.524413Z",
+        "draft_created_at": "2025-02-03T12:15:42.677656Z",
+        "lead_time": 23.646,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "8e493d16-a732-42e8-9027-f18847ad0ec8",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927064,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2014,
+      "title": "Aladdin: a Pre-RTL, power-performance accelerator simulator enabling large design space exploration of customized architectures",
+      "answer": "B",
+      "authors": "Yakun Sophia Shao, Brandon Reagen, Gu-Yeon Wei, and David Brooks",
+      "context": "Hardware specialization, in the form of accelerators that provide custom datapath and control for specific algorithms and applications, promises impressive performance and energy advantages compared to traditional architectures. Current research in accelerator analysis relies on RTL-based synthesis flows to produce accurate timing, power, and area estimates. Such techniques not only require significant effort and expertise but are also slow and tedious to use, making large design space exploration infeasible. To overcome this problem, we present Aladdin, a pre-RTL, power-performance accelerator modeling framework and demonstrate its application to system-on-chip (SoC) simulation. Aladdin estimates performance, power, and area of accelerators within 0.9%, 4.9%, and 6.6% with respect to RTL implementations. Integrated with architecture-level core and memory hierarchy simulators, Aladdin provides researchers an approach to model the power and performance of accelerators in an SoC environment.",
+      "question": "The primary advantage of hardware specialization through accelerators is ____ compared to traditional architectures.\nA) improved programmability\nB) impressive performance and energy efficiency\nC) reduced design complexity\nD) increased flexibility",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.775069Z",
+    "updated_at": "2025-02-03T12:15:53.660292Z",
+    "inner_id": 123,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927065,
     "annotations": [
       {
@@ -17157,6 +17987,140 @@
     "created_at": "2024-12-12T18:19:38.775457Z",
     "updated_at": "2025-01-20T18:28:22.923374Z",
     "inner_id": 143,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927085,
+    "annotations": [
+      {
+        "id": 53767115,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "LP8IDRBHsw",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "4jutVi5kML",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58842858,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767115,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927085,
+            "result": [
+              {
+                "id": "LP8IDRBHsw",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "4jutVi5kML",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 87.032,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:05:53.152000Z",
+            "created_at": "2025-02-03T12:07:20.053239Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:07:19.871217Z",
+        "updated_at": "2025-02-03T12:07:19.871234Z",
+        "draft_created_at": "2025-02-03T12:07:14.485855Z",
+        "lead_time": 87.032,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "0faa0d2b-bf3a-4093-8534-28a6c9d71d2f",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927085,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2013,
+      "title": "DNA-based molecular architecture with spatially localized components",
+      "answer": "D",
+      "authors": "Richard A. Muscat, Karin Strauss, Luis Ceze, and Georg Seelig",
+      "context": "Performing computation inside living cells offers life-changing applications, from improved medical diagnostics to better cancer therapy to intelligent drugs. Due to its bio-compatibility and ease of engineering, one promising approach for performing in-vivo computation is DNA strand displacement. This paper introduces computer architects to DNA strand displacement \"circuits\", discusses associated architectural challenges, and proposes a new organization that provides practical composability. In particular, prior approaches rely mostly on stochastic interaction of freely diffusing components. This paper proposes practical spatial isolation of components, leading to more easily designed DNA-based circuits. DNA nanotechnology is currently at a turning point, with many proposed applications being realized [20, 9]. We believe that it is time for the computer architecture community to take notice and contribute.",
+      "question": "Compared to traditional silicon-based computing, in-vivo molecular computing architectures face a significant challenge in managing ____.\nA) Power consumption\nB) Clock speed\nC) Memory density\nD) Component interactions and interference",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.775476Z",
+    "updated_at": "2025-02-03T12:07:19.973987Z",
+    "inner_id": 144,
     "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
@@ -18358,6 +19322,140 @@
     "created_at": "2024-12-12T18:19:38.775785Z",
     "updated_at": "2025-01-16T19:26:29.240846Z",
     "inner_id": 160,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927105,
+    "annotations": [
+      {
+        "id": 53767078,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "Ire4rmqKZy",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "EFu3vM9A3X",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58842796,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767078,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927105,
+            "result": [
+              {
+                "id": "Ire4rmqKZy",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "EFu3vM9A3X",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 12.762,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:05:38.814000Z",
+            "created_at": "2025-02-03T12:05:51.514392Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:05:51.309750Z",
+        "updated_at": "2025-02-03T12:05:51.309769Z",
+        "draft_created_at": "2025-02-03T12:05:50.726405Z",
+        "lead_time": 12.762,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "c2dc46be-0509-4fce-baf0-90c0d72a101e",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927105,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2000,
+      "title": "Memory access scheduling",
+      "answer": "B",
+      "authors": "Scott Rixner, William J. Dally, Ujval J. Kapasi, Peter Mattson, and John D. Owens",
+      "context": "The bandwidth and latency of a memory system are strongly dependent on the manner in which accesses interact with the \u201c3-D\u201d structure of banks, rows, and columns characteristic of contemporary DRAM chips. There is nearly an order of magnitude difference in bandwidth between successive references to different columns within a row and different rows within a bank. This paper introduces memory access scheduling, a technique that improves the performance of a memory system by reordering memory references to exploit locality within the 3-D memory structure. Conservative reordering, in which the first ready reference in a sequence is performed, improves bandwidth by 40% for traces from five media benchmarks. Aggressive reordering, in which operations are scheduled to optimize memory bandwidth, improves bandwidth by 93% for the same set of applications. Memory access scheduling is particularly important for media processors where it enables the processor to make the most efficient use of scarce memory bandwidth.",
+      "question": "In media processors, optimizing ____ within the 3-D structure of memory is crucial for utilizing limited memory bandwidth effectively.\nA) instruction coding\nB) memory access scheduling\nC) cycle counting\nD) processor clock speed",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.775862Z",
+    "updated_at": "2025-02-03T12:05:51.434229Z",
+    "inner_id": 164,
     "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
@@ -21486,6 +22584,140 @@
     "comment_authors": []
   },
   {
+    "id": 141927167,
+    "annotations": [
+      {
+        "id": 53767397,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "QAClytSp4A",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "dGA44NmXsZ",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58843302,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767397,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927167,
+            "result": [
+              {
+                "id": "QAClytSp4A",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "dGA44NmXsZ",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 64.265,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:14:24.747000Z",
+            "created_at": "2025-02-03T12:15:28.758829Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:15:28.629488Z",
+        "updated_at": "2025-02-03T12:15:28.629497Z",
+        "draft_created_at": "2025-02-03T12:15:23.447014Z",
+        "lead_time": 64.265,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "32d548f3-40c2-4ee4-a78a-181c0fb1461b",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927167,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2005,
+      "title": "BugNet: Continuously Recording Program Execution for Deterministic Replay Debugging",
+      "answer": "A",
+      "authors": "Satish Narayanasamy, Gilles Pokam, and Brad Calder",
+      "context": "Significant time is spent by companies trying to reproduce and fix the bugs that occur for released code. To assist developers, we propose the BugNet architecture to continuously record information on production runs. The information collected before the crash of a program can be used by the developers working in their execution environment to deterministically replay the last several million instructions executed before the crash. BugNet is based on the insight that recording the register file contents at any point in time, and then recording the load values that occur after that point can enable deterministic replaying of a program's execution. BugNet focuses on being able to replay the application's execution and the libraries it uses, but not the operating system. But our approach provides the ability to replay an application's execution across context switches and interrupts. Hence, BugNet obviates the need for tracking program I/O, interrupts and DMA transfers, which would have otherwise required more complex hardware support. In addition, BugNet does not require a final core dump of the system state for replaying, which significantly reduces the amount of data that must be sent back to the developer.",
+      "question": "In debugging systems that focus on replaying application execution, it is not necessary to track ____ to achieve effective replay capabilities.\nA) program I/O\nB) register values\nC) function calls\nD) memory allocations",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gpt-4o",
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.777448Z",
+    "updated_at": "2025-02-03T12:15:28.702484Z",
+    "inner_id": 226,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927171,
     "annotations": [
       {
@@ -22403,6 +23635,140 @@
     "last_comment_updated_at": null,
     "project": 118163,
     "updated_by": 59561,
+    "comment_authors": []
+  },
+  {
+    "id": 141927187,
+    "annotations": [
+      {
+        "id": 53767166,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "WaBv2EOotM",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "MCuhLJTXqM",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58842936,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767166,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927187,
+            "result": [
+              {
+                "id": "WaBv2EOotM",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "MCuhLJTXqM",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 29.802,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:08:30.613000Z",
+            "created_at": "2025-02-03T12:09:00.307655Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:09:00.107507Z",
+        "updated_at": "2025-02-03T12:09:00.107522Z",
+        "draft_created_at": "2025-02-03T12:08:50.721277Z",
+        "lead_time": 29.802,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "6bf5d9ef-253f-4ebb-9d2a-026b9761cfe0",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927187,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2004,
+      "title": "Transactional Memory Coherence and Consistency",
+      "answer": "C",
+      "authors": "Lance Hammond, Vicky Wong, Mike Chen, Brian D. Carlstrom, John D. Davis, Ben Hertzberg, Manohar K. Prabhu, Honggo Wijaya, Christos Kozyrakis, and Kunle Olukotun",
+      "context": "In this paper, we propos a new shared memory model: Transactionalmemory Coherence and Consistency (TCC).TCC providesa model in which atomic transactions are always the basicunit of parallel work, communication, memory coherence, andmemory reference consistency.TCC greatly simplifies parallelsoftware by eliminating the need for synchronization using conventionallocks and semaphores, along with their complexities.TCC hardware must combine all writes from each transaction regionin a program into a single packet and broadcast this packetto the permanent shared memory state atomically as a large block.This simplifies the coherence hardware because it reduces theneed for small, low-latency messages and completely eliminatesthe need for conventional snoopy cache coherence protocols, asmultiple speculatively written versions of a cache line may safelycoexist within the system.Meanwhile, automatic, hardware-controlledrollback of speculative transactions resolves any correctnessviolations that may occur when several processors attemptto read and write the same data simultaneously.The cost of thissimplified scheme is higher interprocessor bandwidth.To explore the costs and benefits of TCC, we study the characterisitcsof an optimal transaction-based memory system, and examinehow different design parameters could affect the performanceof real systems.Across a spectrum of applications, the TCC modelitself did not limit available parallelism.Most applications areeasily divided into transactions requiring only small write buffers,on the order of 4-8 KB.The broadcast requirements of TCCare high, but are well within the capabilities of CMPs and small-scaleSMPs with high-speed interconnects.",
+      "question": "Eliminating fine-grained coherence management through the use of atomic transaction blocks can potentially reduce the need for ____.\nA) large register files\nB) complex branch prediction\nC) low-latency inter-core messages\nD) high-bandwidth memory",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.777835Z",
+    "updated_at": "2025-02-03T12:09:00.224036Z",
+    "inner_id": 246,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
     "comment_authors": []
   },
   {
@@ -25468,6 +26834,140 @@
     "comment_authors": []
   },
   {
+    "id": 141927225,
+    "annotations": [
+      {
+        "id": 53767141,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "xJ7MvJFYDo",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "B"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "ULUn6iCXTB",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58842891,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767141,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927225,
+            "result": [
+              {
+                "id": "xJ7MvJFYDo",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "B"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "ULUn6iCXTB",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 34.631,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:07:21.504000Z",
+            "created_at": "2025-02-03T12:07:55.886694Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:07:55.754044Z",
+        "updated_at": "2025-02-03T12:07:55.754052Z",
+        "draft_created_at": "2025-02-03T12:07:41.783003Z",
+        "lead_time": 34.631,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "f4d4f8c0-664e-43b1-9f07-3e1926f0c401",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927225,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2004,
+      "title": "Single-ISA Heterogeneous Multi-Core Architectures for Multithreaded Workload Performance",
+      "answer": "B",
+      "authors": "Rakesh Kumar, Dean M. Tullsen, Parthasarathy Ranganathan, Norman P. Jouppi, and Keith I. Farkas",
+      "context": "A single-ISA heterogeneous multi-core architecture is achip multiprocessor composed of cores of varying size, performance,and complexity. This paper demonstrates that thisarchitecture can provide significantly higher performance inthe same area than a conventional chip multiprocessor. It doesso by matching the various jobs of a diverse workload to thevarious cores. This type of architecture covers a spectrum ofworkloads particularly well, providing high single-thread performancewhen thread parallelism is low, and high throughputwhen thread parallelism is high.This paper examines two such architectures in detail,demonstrating dynamic core assignment policies that providesignificant performance gains over naive assignment, andeven outperform the best static assignment. It examines policiesfor heterogeneous architectures both with and withoutmultithreading cores. One heterogeneous architecture we examineoutperforms the comparable-area homogeneous architectureby up to 63%, and our best core assignment strategyachieves up to 31% speedup over a naive policy.",
+      "question": "The advantage of employing dynamic core assignment policies in heterogeneous architectures is that they can ____, compared to static assignments.\nA) reduce the complexity of core design\nB) achieve higher performance gains\nC) eliminate the need for multithreading\nD) simplify workload management",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.778619Z",
+    "updated_at": "2025-02-03T12:07:55.827654Z",
+    "inner_id": 284,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927229,
     "annotations": [
       {
@@ -26449,6 +27949,139 @@
     "comment_authors": []
   },
   {
+    "id": 141927248,
+    "annotations": [
+      {
+        "id": 53767238,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "bSmXF4SVeb",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "Multiple Answers Exist"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "6VuiufTwG9",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58843045,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767238,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927248,
+            "result": [
+              {
+                "id": "bSmXF4SVeb",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "Multiple Answers Exist"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "6VuiufTwG9",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 107.038,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:09:16.977000Z",
+            "created_at": "2025-02-03T12:11:04.068487Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:11:03.775155Z",
+        "updated_at": "2025-02-03T12:11:03.775174Z",
+        "draft_created_at": "2025-02-03T12:09:39.745749Z",
+        "lead_time": 107.038,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "074572e1-c10b-456f-8f06-24bf1f1c9716",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927248,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2001,
+      "title": "NanoFabrics: spatial computing using molecular electronics",
+      "answer": "B",
+      "authors": "Seth Copen Goldstein and Mihai Budiu",
+      "context": "The continuation of the remarkable exponential increases in processing power over the recent past faces imminent challenges due in part to the physics of deep-submicron CMOS devices and the costs of both chip masks and future fabrication plants. A promising solution to these problems is offered by an alternative to CMOS-based computing, chemically assembled electronic nanotechnology (CAEN). In this paper we outline how CAEN-based computing can become a reality. We briefly describe recent work in CAEN and how CAEN will affect computer architecture. We show how the inherently reconfigurable nature of CAEN devices can be exploited to provide high-density chips with defect tolerance at significantly reduced manufacturing costs. We develop a layered abstract architecture for CAEN-based computing devices and we present preliminary results which indicate that such devices will be competitive with CMOS circuits.",
+      "question": "A primary architectural advantage of reconfigurable hardware in the context of novel computing technologies is its ability to _____ even when faced with manufacturing defects.\nA) reduce power consumption\nB) maintain functionality\nC) improve performance\nD) enhance connectivity",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.779068Z",
+    "updated_at": "2025-02-03T12:11:03.911326Z",
+    "inner_id": 307,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927255,
     "annotations": [
       {
@@ -26901,6 +28534,20 @@
     ],
     "drafts": [
       {
+        "id": 15183371,
+        "user": "lnu.swa@northeastern.edu",
+        "created_username": "lnu.swa@northeastern.edu, 61832",
+        "created_ago": "8\u00a0minutes",
+        "result": [],
+        "lead_time": 27.23,
+        "was_postponed": true,
+        "import_id": null,
+        "created_at": "2025-02-03T14:29:00.354380Z",
+        "updated_at": "2025-02-03T14:29:00.354399Z",
+        "task": 141927257,
+        "annotation": null
+      },
+      {
         "id": 14708182,
         "user": "ankitan@stanford.edu",
         "created_username": "ankitan@stanford.edu, 44519",
@@ -27226,6 +28873,139 @@
     "created_at": "2024-12-12T18:19:38.779280Z",
     "updated_at": "2025-01-24T15:59:42.201999Z",
     "inner_id": 318,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927260,
+    "annotations": [
+      {
+        "id": 53767173,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "fvzD0lzBmd",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "6ZlHRucL3o",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58842952,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767173,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927260,
+            "result": [
+              {
+                "id": "fvzD0lzBmd",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "6ZlHRucL3o",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 14.093,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:09:01.807000Z",
+            "created_at": "2025-02-03T12:09:15.620772Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:09:15.514944Z",
+        "updated_at": "2025-02-03T12:09:15.514956Z",
+        "draft_created_at": null,
+        "lead_time": 14.093,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "5ad0925f-bfb6-4ec9-b05d-0a481a92143c",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927260,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2003,
+      "title": "DRPM: dynamic speed control for power management in server class disks",
+      "answer": "D",
+      "authors": "Sudhanva Gurumurthi, Anand Sivasubramaniam, Mahmut Kandemir, and Hubertus Franke",
+      "context": "A large portion of the power budget in server environments goes into the I/O subsystem - the disk array in particular. Traditional approaches to disk power management involve completely stopping the disk rotation, which can take a considerable amount of time, making them less useful in cases where idle times between disk requests may not be long enough to outweigh the overheads. We present a new approach called DRPM to modulate disk speed (RPM) dynamically, and gives a practical implementation to exploit this mechanism. Extensive simulations with different workload and hardware parameters show that DRPM can provide significant energy savings without compromising much on performance. We also discuss practical issues when implementing DRPM on server disks.",
+      "question": "In server environments, significant energy efficiency gains often depend on improving the management of ____.\nA) CPU cache\nB) network throughput\nC) GPU utilization\nD) I/O subsystems",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.779299Z",
+    "updated_at": "2025-02-03T12:09:15.589524Z",
+    "inner_id": 319,
     "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
@@ -30457,6 +32237,139 @@
     "comment_authors": []
   },
   {
+    "id": 141927324,
+    "annotations": [
+      {
+        "id": 53767154,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "pOhp-54nRA",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "R8JtIpuEnY",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58842914,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767154,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927324,
+            "result": [
+              {
+                "id": "pOhp-54nRA",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "R8JtIpuEnY",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 31.932,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:07:57.252000Z",
+            "created_at": "2025-02-03T12:08:29.114012Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:08:28.909211Z",
+        "updated_at": "2025-02-03T12:08:28.909226Z",
+        "draft_created_at": "2025-02-03T12:08:25.236599Z",
+        "lead_time": 31.932,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "12092e35-90c1-4e66-821d-5185760a11b1",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927324,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2010,
+      "title": "Energy Proportional Datacenter Networks",
+      "answer": "D",
+      "authors": "Dennis Abts, Mike Marty, Philip Wells, Peter Klausler, and Hong Liu",
+      "context": "Numerous studies have shown that datacenter computers rarely operate at full utilization, leading to a number of proposals for creating servers that are energy proportional with respect to the computation that they are performing. In this paper, we show that as servers themselves become more energy proportional, the datacenter network can become a significant fraction (up to 50%) of cluster power. In this paper we propose several ways to design a high-performance datacenter network whose power consumption is more proportional to the amount of traffic it is moving -- that is, we propose energy proportional datacenter networks. We first show that a flattened butterfly topology itself is inherently more power efficient than the other commonly proposed topology for high-performance datacenter networks. We then exploit the characteristics of modern plesiochronous links to adjust their power and performance envelopes dynamically. Using a network simulator, driven by both synthetic workloads and production datacenter traces, we characterize and understand design tradeoffs, and demonstrate an 85% reduction in power --- which approaches the ideal energy-proportionality of the network. Our results also demonstrate two challenges for the designers of future network switches: 1) We show that there is a significant power advantage to having independent control of each unidirectional channel comprising a network link, since many traffic patterns show very asymmetric use, and 2) system designers should work to optimize the high-speed channel designs to be more energy efficient by choosing optimal data rate and equalization technology. Given these assumptions, we demonstrate that energy proportional datacenter communication is indeed possible.",
+      "question": "As servers become more energy-proportional, the importance of ____ in overall datacenter power consumption increases.\nA) memory access latency\nB) CPU pipeline depth\nC) disk I/O performance\nD) network interconnect power",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.780544Z",
+    "updated_at": "2025-02-03T12:08:29.026110Z",
+    "inner_id": 383,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
     "id": 141927325,
     "annotations": [
       {
@@ -30902,6 +32815,139 @@
     "last_comment_updated_at": null,
     "project": 118163,
     "updated_by": 44519,
+    "comment_authors": []
+  },
+  {
+    "id": 141927330,
+    "annotations": [
+      {
+        "id": 53767308,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "We1u4v1TmQ",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "fEehHgayZR",
+            "type": "rating",
+            "value": {
+              "rating": 3
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58843165,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767308,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927330,
+            "result": [
+              {
+                "id": "We1u4v1TmQ",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "fEehHgayZR",
+                "type": "rating",
+                "value": {
+                  "rating": 3
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 74.914,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:11:54.012000Z",
+            "created_at": "2025-02-03T12:13:08.654939Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:13:08.536152Z",
+        "updated_at": "2025-02-03T12:13:08.536161Z",
+        "draft_created_at": "2025-02-03T12:12:38.516627Z",
+        "lead_time": 74.914,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "112461b3-64f2-40ea-b30b-720f56407cfd",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927330,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2014,
+      "title": "Flipping bits in memory without accessing them: an experimental study of DRAM disturbance errors",
+      "answer": "C",
+      "authors": "Yoongu Kim, Ross Daly, Jeremie Kim, Chris Fallin, Ji Hye Lee, Donghyuk Lee, Chris Wilkerson, Konrad Lai, and Onur Mutlu",
+      "context": "Memory isolation is a key property of a reliable and secure computing system--an access to one memory address should not have unintended side effects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more difficult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row's wordline, which stresses inter-cell coupling effects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance errors and their behavior using an FPGA-based testing platform. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining various potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors",
+      "question": "The vulnerability described in the abstract highlights a growing concern in DRAM design related to the trade-off between ____ and reliability.\nA) memory density and access speed\nB) power consumption and heat dissipation\nC) cell size and noise immunity\nD) cost and performance",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.780661Z",
+    "updated_at": "2025-02-03T12:13:08.601483Z",
+    "inner_id": 389,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
     "comment_authors": []
   },
   {
@@ -32098,6 +34144,139 @@
     "created_at": "2024-12-12T18:19:38.781046Z",
     "updated_at": "2025-01-24T15:50:35.116681Z",
     "inner_id": 409,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927351,
+    "annotations": [
+      {
+        "id": 53767041,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "i3IHsIWGb-",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "RVGLdn_TmF",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58842742,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767041,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927351,
+            "result": [
+              {
+                "id": "i3IHsIWGb-",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "RVGLdn_TmF",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 34.06,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:04:06.561000Z",
+            "created_at": "2025-02-03T12:04:40.583123Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:04:40.331071Z",
+        "updated_at": "2025-02-03T12:04:40.331088Z",
+        "draft_created_at": "2025-02-03T12:04:23.203981Z",
+        "lead_time": 34.06,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "fd611708-b4f5-471f-bdf5-e1cfb152826b",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927351,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2020,
+      "title": "Genesis: a hardware acceleration framework for genomic data analysis",
+      "answer": "A",
+      "authors": "Tae Jun Ham, David Bruns-Smith, Brendan Sweeney, Yejin Lee, Seong Hoon Seo, U Gyeong Song, Young H. Oh, Krste Asanovic, Jae W. Lee, and Lisa Wu Wills",
+      "context": "In this paper, we describe our vision to accelerate algorithms in the domain of genomic data analysis by proposing a framework called Genesis (genome analysis) that contains an interface and an implementation of a system that processes genomic data efficiently. This framework can be deployed in the cloud and exploit the FPGAs-as-a-service paradigm to provide cost-efficient secondary DNA analysis. We propose conceptualizing genomic reads and associated read attributes as a very large relational database and using extended SQL as a domain-specific language to construct queries that form various data manipulation operations. To accelerate such queries, we design a Genesis hardware library which consists of primitive hardware modules that can be composed to construct a dataflow architecture specialized for those queries. As a proof of concept for the Genesis framework, we present the architecture and the hardware implementation of several genomic analysis stages in the secondary analysis pipeline corresponding to the best known software analysis toolkit, GATK4 workflow proposed by the Broad Institute. We walk through the construction of genomic data analysis operations using a sequence of SQL-style queries and show how Genesis hardware library modules can be utilized to construct the hardware pipelines designed to accelerate such queries. We exploit parallelism and data reuse by utilizing a dataflow architecture along with the use of on-chip scratchpads as well as non-blocking APIs to manage the accelerators, allowing concurrent execution of the accelerator and the host. Our accelerated system deployed on the cloud FPGA performs up to 19.3\u00d7 better than GATK4 running on a commodity multi-core Xeon server and obtains up to 15\u00d7 better cost savings. We believe that if a software algorithm can be mapped onto a hardware library to utilize the underlying accelerator(s) using an already-standardized software interface such as SQL, while allowing the efficient mapping of such interface to primitive hardware modules as we have demonstrated here, it will expedite the acceleration of domain specific algorithms and allow the easy adaptation of algorithm changes.",
+      "question": "Deploying accelerators in the ____ can lead to significant performance and cost benefits compared to traditional server setups.\nA) cloud\nB) data center rack\nC) edge device\nD) local desktop",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.781067Z",
+    "updated_at": "2025-02-03T12:04:40.478295Z",
+    "inner_id": 410,
     "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
@@ -34144,6 +36323,139 @@
     "created_at": "2024-12-12T18:19:38.781957Z",
     "updated_at": "2025-01-27T14:30:39.482820Z",
     "inner_id": 454,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927397,
+    "annotations": [
+      {
+        "id": 53767324,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "hOtYa0kh0w",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "-oc5QwWjCH",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58843188,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767324,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927397,
+            "result": [
+              {
+                "id": "hOtYa0kh0w",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "-oc5QwWjCH",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 20.38,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:13:10.216000Z",
+            "created_at": "2025-02-03T12:13:30.320868Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:13:30.209445Z",
+        "updated_at": "2025-02-03T12:13:30.209456Z",
+        "draft_created_at": "2025-02-03T12:13:27.470229Z",
+        "lead_time": 20.38,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "6740a640-b985-46be-a4bb-1185160739fa",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927397,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2014,
+      "title": "General-purpose code acceleration with limited-precision analog computation",
+      "answer": "D",
+      "authors": "Ren\u00e9e St. Amant, Amir Yazdanbakhsh, Jongse Park, Bradley Thwaites, Hadi Esmaeilzadeh, Arjang Hassibi, Luis Ceze, and Doug Burger",
+      "context": "As improvements in per-transistor speed and energy efficiency diminish, radical departures from conventional approaches are becoming critical to improving the performance and energy efficiency of general-purpose processors. We propose a solution--from circuit to compiler-that enables general-purpose use of limited-precision, analog hardwareto accelerate \"approximable\" code---code that can tolerate imprecise execution. We utilize an algorithmic transformation that automatically converts approximable regions of code from a von Neumann model to an \"analog\" neural model. We outline the challenges of taking an analog approach, including restricted-range value encoding, limited precision in computation, circuit inaccuracies, noise, and constraints on supported topologies. We address these limitations with a combination of circuit techniques, a hardware/software interface, neuralnetwork training techniques, and compiler support. Analog neural acceleration provides whole application speedup of 3.7x and energy savings of 6.3x with quality loss less than 10% for all except one benchmark. These results show that using limited-precision analog circuits for code acceleration, through a neural approach, is both feasible and beneficial over a range of approximation-tolerant, emerging applications including financial analysis, signal processing, robotics, 3D gaming, compression, and image processing",
+      "question": "One potential avenue for future performance gains lies in leveraging the inherent tolerance of certain applications to _____.\nA) Reduced instruction set architectures.\nB) Lower memory access latencies.\nC) Simplified branch prediction mechanisms.\nD) Approximate computations and imprecise execution.",
+      "gen_model": "gemini-1_5-pro",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.782018Z",
+    "updated_at": "2025-02-03T12:13:30.272282Z",
+    "inner_id": 456,
     "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
@@ -36877,6 +39189,96 @@
     "id": 141927455,
     "annotations": [
       {
+        "id": 53772960,
+        "completed_by": 61833,
+        "result": [
+          {
+            "id": "0hFTs5IjcV",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "A"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "_IfnbNmMXw",
+            "type": "rating",
+            "value": {
+              "rating": 5
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58849796,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53772960,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927455,
+            "result": [
+              {
+                "id": "0hFTs5IjcV",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "A"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "_IfnbNmMXw",
+                "type": "rating",
+                "value": {
+                  "rating": 5
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 51.297,
+            "action": "submitted",
+            "started_at": "2025-02-03T14:28:11.319000Z",
+            "created_at": "2025-02-03T14:29:02.903928Z",
+            "created_by": 61833,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T14:29:02.769581Z",
+        "updated_at": "2025-02-03T14:29:02.769593Z",
+        "draft_created_at": "2025-02-03T14:28:36.511893Z",
+        "lead_time": 51.297,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "cc31d2ee-c51b-4db0-b506-d9c7bdc218cf",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927455,
+        "project": 118163,
+        "updated_by": 61833,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 61833,
+        "annotator_email": "haseebluminite@gmail.com"
+      },
+      {
         "id": 52236917,
         "completed_by": 59561,
         "result": [
@@ -37113,16 +39515,150 @@
     },
     "meta": {},
     "created_at": "2024-12-12T18:19:38.783160Z",
-    "updated_at": "2025-01-09T01:07:54.466955Z",
+    "updated_at": "2025-02-03T14:29:02.847081Z",
     "inner_id": 514,
-    "total_annotations": 2,
+    "total_annotations": 3,
     "cancelled_annotations": 0,
     "total_predictions": 0,
     "comment_count": 0,
     "unresolved_comment_count": 0,
     "last_comment_updated_at": null,
     "project": 118163,
-    "updated_by": 59561,
+    "updated_by": 61833,
+    "comment_authors": []
+  },
+  {
+    "id": 141927458,
+    "annotations": [
+      {
+        "id": 53767355,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "ta8DcHziAh",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "C"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "VZC0Z5hgG_",
+            "type": "rating",
+            "value": {
+              "rating": 4
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58843238,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767355,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927458,
+            "result": [
+              {
+                "id": "ta8DcHziAh",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "C"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "VZC0Z5hgG_",
+                "type": "rating",
+                "value": {
+                  "rating": 4
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 51.74,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:13:31.672000Z",
+            "created_at": "2025-02-03T12:14:23.292158Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:14:23.087849Z",
+        "updated_at": "2025-02-03T12:14:23.087864Z",
+        "draft_created_at": "2025-02-03T12:13:56.353783Z",
+        "lead_time": 51.74,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "75893158-541c-4dde-af7e-c1978453f9b2",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927458,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2009,
+      "title": "Thread criticality predictors for dynamic performance, power, and resource management in chip multiprocessors",
+      "answer": "C",
+      "authors": "Abhishek Bhattacharjee and Margaret Martonosi",
+      "context": "With the shift towards chip multiprocessors (CMPs), exploiting and managing parallelism has become a central problem in computing systems. Many issues of parallelism management boil down to discerning which running threads or processes are critical, or slowest, versus which are non-critical. If one can accurately predict critical threads in a parallel program, then one can respond in a variety of ways. Possibilities include running the critical thread at a faster clock rate, performing load balancing techniques to offload work onto currently non-critical threads, or giving the critical thread more on-chip resources to execute faster. This paper proposes and evaluates simple but effective thread criticality predictors for parallel applications. We show that accurate predictors can be built using counters that are typically already available on-chip. Our predictor, based on memory hierarchy statistics, identifies thread criticality with an average accuracy of 93% across a range of architectures. We also demonstrate two applications of our predictor. First, we show how Intel's Threading Building Blocks (TBB) parallel runtime system can benefit from task stealing techniques that use our criticality predictor to reduce load imbalance. Using criticality prediction to guide TBB's task-stealing decisions improves performance by 13-32% for TBB-based PARSEC benchmarks running on a 32-core CMP. As a second application, criticality prediction guides dynamic energy optimizations in barrier-based applications. By running the predicted critical thread at the full clock rate and frequency-scaling non-critical threads, this approach achieves average energy savings of 15% while negligibly degrading performance for SPLASH-2 and PARSEC benchmarks.",
+      "question": "Accurate prediction of critical threads in chip multiprocessors primarily benefits ____.\nA) disk scheduling algorithms to minimize I/O wait time\nB) instruction-level parallelism within a single core\nC) load balancing and resource allocation decisions\nD) memory footprint reduction in data-intensive applications",
+      "gen_model": "gpt-4o",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.783217Z",
+    "updated_at": "2025-02-03T12:14:23.196701Z",
+    "inner_id": 517,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
     "comment_authors": []
   },
   {
@@ -39655,6 +42191,140 @@
     "created_at": "2024-12-12T18:19:38.784073Z",
     "updated_at": "2025-01-27T14:17:23.697255Z",
     "inner_id": 561,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 118163,
+    "updated_by": 59565,
+    "comment_authors": []
+  },
+  {
+    "id": 141927534,
+    "annotations": [
+      {
+        "id": 53767070,
+        "completed_by": 59565,
+        "result": [
+          {
+            "id": "HCdEQI-YX1",
+            "type": "choices",
+            "value": {
+              "choices": [
+                "D"
+              ]
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "annotation"
+          },
+          {
+            "id": "iyxGWPZqhx",
+            "type": "rating",
+            "value": {
+              "rating": 2
+            },
+            "origin": "manual",
+            "to_name": "question",
+            "from_name": "rating"
+          }
+        ],
+        "reviews": [],
+        "history": [
+          {
+            "id": 58842784,
+            "comment": null,
+            "organization_id": 10735,
+            "project_id": 118163,
+            "annotation_id": 53767070,
+            "draft_id": null,
+            "review_id": null,
+            "task_id": 141927534,
+            "result": [
+              {
+                "id": "HCdEQI-YX1",
+                "type": "choices",
+                "value": {
+                  "choices": [
+                    "D"
+                  ]
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "annotation"
+              },
+              {
+                "id": "iyxGWPZqhx",
+                "type": "rating",
+                "value": {
+                  "rating": 2
+                },
+                "origin": "manual",
+                "to_name": "question",
+                "from_name": "rating"
+              }
+            ],
+            "lead_time": 54.85,
+            "action": "submitted",
+            "started_at": "2025-02-03T12:04:42.200000Z",
+            "created_at": "2025-02-03T12:05:37.207674Z",
+            "created_by": 59565,
+            "comment_id": null
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2025-02-03T12:05:36.860643Z",
+        "updated_at": "2025-02-03T12:05:36.860665Z",
+        "draft_created_at": "2025-02-03T12:04:57.715854Z",
+        "lead_time": 54.85,
+        "prediction": {},
+        "result_count": 2,
+        "unique_id": "baacf383-74fc-45c4-98d3-b4bcd0ef4a81",
+        "import_id": null,
+        "last_action": "submitted",
+        "bulk_created": false,
+        "task": 141927534,
+        "project": 118163,
+        "updated_by": 59565,
+        "parent_prediction": null,
+        "parent_annotation": null,
+        "last_created_by": 59565,
+        "annotator_email": "npadilla@herrera.unt.edu.ar"
+      }
+    ],
+    "drafts": [],
+    "predictions": [],
+    "agreement": 100.0,
+    "data": {
+      "type": "Cloze",
+      "year": 2017,
+      "title": "Clank: Architectural Support for Intermittent Computation",
+      "answer": "D",
+      "authors": "Matthew Hicks",
+      "context": "The processors that drive embedded systems are getting smaller; meanwhile, the batteries used to provide power to those systems have stagnated. If we are to realize the dream of ubiquitous computing promised by the Internet of Things, processors must shed large, heavy, expensive, and high maintenance batteries and, instead, harvest energy from their environment. One challenge with this transition is that harvested energy is insufficient for continuous operation. Unfortunately, existing programs fail miserably when executed intermittently. This paper presents Clank: lightweight architectural support for correct and efficient execution of long-running applications on harvested energy---without programmer intervention or extreme hardware modifications. Clank is a set of hardware buffers and memory-access monitors that dynamically maintain idempotency. Essentially, Clank dynamically decomposes program execution into a stream of restartable sub-executions connected via lightweight checkpoints. To validate Clank's ability to correctly stretch program execution across frequent, random power cycles, and to explore the associated hardware and software overheads, we implement Clank in Verilog, formally verify it, and then add it to an ARM Cortex M0+ processor which we use to run a set of 23 embedded systems benchmarks. Experiments show run-time overheads as low as 2.5%, with run-time overheads of 6% for a version of Clank that adds 1.7% hardware. Clank minimizes checkpoints so much that re-execution time becomes the dominate contributor to run-time overhead.",
+      "question": "To enable efficient execution of programs on intermittently-powered systems, a key architectural approach is to ____.\nA) Increase processor speed\nB) Expand battery capacity\nC) Implement continuous checkpointing\nD) Support restartable sub-executions",
+      "gen_model": "claude-3_5-sonnet",
+      "conference": "ISCA",
+      "val_models": [
+        "gpt-4o",
+        "claude-3_5-sonnet",
+        "gemini-1_5-pro"
+      ],
+      "models_against_generic": [
+        "gemini-1_5-pro"
+      ],
+      "models_in_favor_generic": [
+        "gpt-4o",
+        "claude-3_5-sonnet"
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-12-12T18:19:38.784208Z",
+    "updated_at": "2025-02-03T12:05:37.061803Z",
+    "inner_id": 568,
     "total_annotations": 1,
     "cancelled_annotations": 0,
     "total_predictions": 0,
