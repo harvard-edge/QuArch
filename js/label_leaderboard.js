@@ -53,15 +53,22 @@
         table.appendChild(thead);
 
         const tbody = document.createElement('tbody');
+        let currentRank = 0;
+        let previousCount = null;
         sortedUsers.forEach(function(user, index) {
             const username = user[0];
             const count = user[1];
             const affiliation = getAffiliation(username);
             const badges = getBadges(count);
 
+            if (count !== previousCount) {
+                currentRank = index + 1;
+            }
+            previousCount = count;
+
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td class="text-center">${index + 1}</td>
+                <td class="text-center">${currentRank}</td>
                 <td class="text-center">${username}</td>
                 <td class="text-center">${affiliation}</td>
                 <td class="text-center">${badges}</td>
