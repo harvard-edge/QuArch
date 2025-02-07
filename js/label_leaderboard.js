@@ -137,11 +137,12 @@
             'c.tan': 'Northeastern',
             'Santosh Pandey': 'Rutgers',
             'harsh.sharma': 'Washington State',
-            'cmk91':'Duke',
-            'khor.i':'Northeastern',
+            'cmk91': 'Duke',
+            'khor.i': 'Northeastern',
             'zhao.yibo':'Northeastern',
             'justus': 'Brown',
             'noah.martin':'Tufts',
+            'philipndikumusa' : 'Mobiant AI',
             'Unknown User': 'N/A'
         };
     
