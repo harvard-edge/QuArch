@@ -123,17 +123,25 @@
     function getAffiliation(username) {
         const affiliations = {
             'amir.yazdanbakhsh': 'Google DeepMind',
-            'andycheng': 'Harvard University',
+            'andycheng': 'Harvard',
             'ankitan': 'Qualcomm AI Research',
-            'aryatschand': 'Harvard University',
-            'jyik': 'Harvard University',
-            'rghosal': 'Harvard University',
-            'sprakash': 'Harvard University',
-            'vjreddi': 'Harvard University',
+            'aryatschand': 'Harvard',
+            'jyik': 'Harvard',
+            'rghosal': 'Harvard',
+            'sprakash': 'Harvard',
+            'vjreddi': 'Harvard',
             'shreyasgrampurohit': 'IIT Bombay',
             'npadilla': 'Univ. Nac. de Tucuman',
             'zishenwan': 'Georgia Tech',
             'jennyhuang': 'NVIDIA',
+            'c.tan': 'Northeastern',
+            'Santosh Pandey': 'Rutgers',
+            'harsh.sharma': 'Washington State',
+            'cmk91':'Duke',
+            'khor.i':'Northeastern',
+            'zhao.yibo':'Northeastern',
+            'justus': 'Brown',
+            'noah.martin':'Tufts',
             'Unknown User': 'N/A'
         };
     
