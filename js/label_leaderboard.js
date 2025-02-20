@@ -144,6 +144,8 @@
             'noah.martin':'Tufts',
             'philipndikumusa' : 'Mobiant AI',
             'santosh.pandey': 'Rutgers',
+            'modema': 'UC Irvine',
+            'j.shin': 'Northeastern',
             'Unknown User': 'N/A'
         };
     
