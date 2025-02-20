@@ -143,6 +143,7 @@
             'justus': 'Brown',
             'noah.martin':'Tufts',
             'philipndikumusa' : 'Mobiant AI',
+            'santosh.pandey': 'Rutgers',
             'Unknown User': 'N/A'
         };
     
